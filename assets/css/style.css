@@ -42,6 +42,10 @@ button:hover {
     background-color: #ff0000;
 
 }
+.portfolio-label{
+    color: #600000;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 640px) {
     #main-nav-link {
