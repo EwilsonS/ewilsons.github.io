@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-image: url('assets/images/ice-background-2.jpg')">
+    <div class="container mt-5 rounded p-5" style="background-color: rgba(249, 249, 250, 0.568)">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Crystal Game
+                    <small>by Evan Wilson</small>
+                </h1>
+                <p>You will be given a random number when the game starts.
+                    <br>
+                    <br> There are four crytals below. By clicking on a crystal, you will be adding a certain amount of points
+                    to your total score.
+                    <br>
+                    <br> You win by matching your total score to the random number displayed. You lose by exceeding that number.
+                    <br>
+                    <br> The value of the crytals is hidden from you, but they do not change umtil you've either won or lost.
+                    <br>
+                    <br>
+                    <h4>GOOD LUCK!</h4>
+
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Try To Match</h4>
+                        <br>
+                        <h5 class="ml-5 pl-3" id="main-random" style="color: red"></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Wins:
+                            <span id="wins"></span>
+                        </p>
+                        <p>Losses:
+                            <span id="losses"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-5" id="crystal-images">
+                        <img src="assets/images/green-crystal.png" alt="green crystal" id="blue-crystal" height="100px" width="100px">
+                        <img src="assets/images/red-crystal.png" alt="red crystal" id="red-crystal" height="100px" width="100px">
+                        <img src="assets/images/white-crystal.png" alt="white crystal" id="white-crystal" height="100px" width="100px">
+                        <img src="assets/images/yellow-crystal.png" alt="yellow crystal" id="yellow-crystal" height="100px" width="100px">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Your Score</h4>
+                        <h5 class="ml-5 pl-3" id="score" style="color: green"></h5>
+                        <h5 id="win-lose"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+// Global variables
+// =============================
+var ranNum;
+var blueNum;
+var redNum;
+var whiteNum;
+var yellowNum;
+var crystalScore = 0;
+
+var wins = 0;
+var losses = 0;
+
+
+// functions
+// =================================
+// lets generate all of the random numbers needed to begin and store 
+// them in a function so they reset together when a new game begins
+function startGame() {
+    ranNum = Math.floor(Math.random() * 121) + 20;
+    $("#main-random").html(ranNum);
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+
+    blueNum = Math.floor(Math.random() * 12) + 1;
+    redNum = Math.floor(Math.random() * 12) + 1;
+    whiteNum = Math.floor(Math.random() * 12) + 1;
+    yellowNum = Math.floor(Math.random() * 12) + 1;
+    console.log(ranNum, blueNum, redNum, whiteNum, yellowNum);
+
+}
+
+
+function blue() {
+    $("#blue-crystal").click(function () {
+        $("#score").html(crystalScore += blueNum );
+        console.log(crystalScore);
+    });
+}
+function red() {
+    $("#red-crystal").click(function () {
+        $("#score").html(crystalScore += redNum );
+        console.log(crystalScore);
+    });
+}function white() {
+    $("#white-crystal").click(function () {
+        $("#score").html(crystalScore += whiteNum );
+        console.log(crystalScore);
+    });
+}function yellow() {
+    $("#yellow-crystal").click(function () {
+        $("#score").html(crystalScore += yellowNum );
+        console.log(crystalScore);
+    });
+}
+
+function gamePlay(){
+    
+    if (crystalScore === ranNum){
+        wins++;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+// main process
+// ====================================
+startGame();
+blue();
+red();
+white();
+yellow();

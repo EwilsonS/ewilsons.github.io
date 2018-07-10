@@ -1,0 +1,32 @@
+body {
+    background-image: url(../images/books.jpg);
+}
+.mains {
+    opacity: 1;
+}
+
+.main{
+    background-color:  rgb(220,166,81,.75);
+    color: antiquewhite;
+    text-align: center;
+}
+
+.button{
+    font-size:50px;
+    background-color: rgb(10,94,87,.75);
+    border: none;
+    color: antiquewhite;
+    
+
+}
+.button:hover{
+    background-color:  #0a5e57; 
+    color: antiquewhite
+}
+.button:active{
+    border: none;
+}
+
+#discard {
+    display: inline;
+}

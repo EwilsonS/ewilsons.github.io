@@ -1,0 +1,19 @@
+*{
+    
+}
+body{
+    background-image: url("../images/002-sandblasting.png");
+    display: flex;
+    
+    justify-content: center;
+}
+.container{
+    background-color: #fff3e5;
+    
+   
+}
+
+input[type="radio"]{
+    margin: 0 0 0 10px;
+  }
+
