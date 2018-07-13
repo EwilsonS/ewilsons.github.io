@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <title>Survey</title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalBodyImage">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Survey </h1>
+                <h5>Answer the questions by selecting
+                    <strong style="color:red"> strongly disagree(1) </strong>to
+                    <strong style="color: green"> strongly agree(5)</strong>, or anywhere in between.
+                    <br> Don't forget to include your name and link to your photo!
+                </h5>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <br>
+                        <input class="form-control" type="text" name="" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Photo Link</label>
+                        <br>
+                        <input class="form-control" type="url" name="" id="photo">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="question-area">
+        </div>
+        <!-- dynamically created questionnaire -->
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+
+                <button type="button" data-toggle="modal"data-target="#myModal" class="btn btn-success btn-block p-2" id="submit">Find my match</button>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4"></div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/api/friends">Friends API |</a>
+                <a href="https://github.com/EwilsonS/friend_finder">GitHub Repo</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+
+    var questions = [
+        "Cheese and coffee are equally important",
+        "If you're early, you're on time. If you're on time you're late.",
+        "Earth is not flat, but Middle Earth is where the real story is.",
+        "It's cheaper to keep her.",
+        "Kanye was right.",
+        "If I did it, I would say I did it.",
+        "Rocky is the greatest movie franchise of all time",
+        "I like Post-it notes, but I never use them",
+        "Beyonce",
+        "The weather man is a liar."
+    ];
+
+    $("document").ready(function () {
+
+        for (var i = 0; i < questions.length; i++) {
+
+            var questionDiv = $("<div class='row'>");
+
+            questionDiv.html("<div class='col-md-12'><hr>" +
+                "<h5>" + questions[i] + "</h5>" +
+                "<form class='formQuestions' action=''>" +
+                "<div class='form-check form-check-inline'>" +
+                "<input class='form-check-input' type='radio' name='inlineRadioOptions' value=1>" +
+                "<label style='color:red'><strong>1</strong></label>" +
+                "</div>" +
+                "<div class='form-check form-check-inline'>" +
+                "<input class='form-check-input' type='radio' name='inlineRadioOptions' value=2>" +
+                "<label> 2</label>" +
+                "</div>" +
+                "<div class='form-check form-check-inline'>" +
+                "<input class='form-check-input' type='radio' name='inlineRadioOptions' value=3>" +
+                "<label> 3</label>" +
+                "</div>" +
+                "<div class='form-check form-check-inline'>" +
+                "<input class='form-check-input' type='radio' name='inlineRadioOptions' value=4>" +
+                "<label >4</label>" +
+                "</div>" +
+                "<div class='form-check form-check-inline'>" +
+                "<input class='form-check-input' type='radio' name='inlineRadioOptions' value=5>" +
+                "<label style='color:green'><strong>5</strong></label>" +
+                "</div>" +
+                "</form>" +
+                "</div>");
+
+            $("#question-area").append(questionDiv);
+        }
+    })
+
+    $("#submit").on("click", function () {
+        event.preventDefault();
+        
+        var position = $(".form-check-input:checked");
+        var results = [];
+        for (var i = 0; i < position.length; i++) {
+            results.push(position[i].value);
+        }
+
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: results
+        }
+        console.log("Just Made:" + newFriend)
+
+        $.post("/api/friends", newFriend, function (friends) {
+            if (friends) {
+                // matching logic
+            
+                // alert("success")
+                // location.reload();
+            } else {
+                alert("something went wrong")
+            }
+        })
+
+
+
+    })
+    function matchFriends() {
+        var currentURL = window.location.origin;
+        $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+            .then(function (friends) {
+                for (var i = 0; i < friends.length; i++) {
+                    console.log("----------------------")
+                    console.log(friends[i].scores)
+                    console.log("----------------------")
+                    console.log(friends[i].scores[i])
+
+                    $("#modalTitle").text(friends[2].name);
+                    $("#modalBodyImage").attr("src",friends[2].photo);
+
+
+                }
+            })
+
+    }
+    matchFriends()
+
+</script>
+
+</html>
