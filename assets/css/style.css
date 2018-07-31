@@ -12,7 +12,7 @@ body {
 }
 .foot{
     background-color:#1a660b;
-    height: 50px; 
+    height: 25%; 
     border-top: solid #7eaad1 4px
 }
 
@@ -36,6 +36,20 @@ border-right: solid 3px #ff0000 */
     font-size: 20px;
 
 }
+.navbar{
+    padding: 0 16px;
+    z-index: 1000;
+    margin-bottom: 0;
+    height: 40px;
+    min-height: 40px;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+}
 
 a:hover {
     color: #ff0000;
@@ -54,6 +68,9 @@ button:hover {
 .portfolio-label{
     color: #600000;
     font-weight: bold;
+}
+.portfolioRow{
+    background-color: #7eaad1
 }
 
 @media screen and (max-width: 640px) {
