@@ -23,7 +23,7 @@
 
 <body>
     <nav class="navbar">
-        <a class="navbar-brand text-light" href="#">
+        <a class="navbar-brand text-dark" href="#">
             E.Wilson
         </a>
     </nav>
@@ -32,25 +32,49 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-2">
-                <div class="card sticky-top rounded-0 mt-5">
-                    <div class="card-body personal-card text-light">
-                        <p>
-                            <img class="rounded-circle pic" src="https://media.licdn.com/dms/image/C4E03AQEZCYdnGNwllQ/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=dRvgQPGMU4NFVhDr1c3ffMcg5Fk9zNPxTQ5mWRrmwIc"
-                                height="95px" width="95px" alt=""> My goal is to use the vastness
-                            of technology to improve the user experience while empowering them with resources to find success.
-                            <a href="" id="read-more">
-                                <span data-toggle="modal" data-target="#aboutMeModal">Read more... </span>
-                            </a>
-                        </p>
+                <div class="sticky-top">
+                    <div class="card  rounded-0 mt-5">
+                        <div class="card-body personal-card text-light">
+                            <p>
+                                <img class="rounded-circle pic mr-1" src="https://media.licdn.com/dms/image/C4E03AQEZCYdnGNwllQ/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=dRvgQPGMU4NFVhDr1c3ffMcg5Fk9zNPxTQ5mWRrmwIc"
+                                    height="95px" width="95px" alt=""> I'm Evan, Thanks for visiting
+                                my portfolio! My goal is to use the vastness of technology to improve the user experience
+                                while empowering them with resources to find success.
+                                <a href="" id="read-more">
+                                    <span data-toggle="modal" data-target="#aboutMeModal">Read more... </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 mt-5 text-center">
+                        <div class="card-body personal-card text-light">
+                            <h5 class="light-purple">Education</h5>
+                            <br>
+                            <p>
+                                <img src="./assets/images/unc-charlotte-logo.gif" height="40px" alt="" srcset="">
+                                <br> University of North Carolina, Charlotte<br>
+                                <small>Web Development Bootcamp</small>
+                                <br>
+                                <br>
+                                <img src="./assets/images/1200px-Tennessee_Volunteers_logo.svg.png" height="40px" alt="" srcset="">
+                                <br> University of Tennessee, Knoxville <br>
+                                <small>BS Communications</small>
+                                <br>
+                                <!-- <br>
+                            <img src="./assets/images/nossi.png" height="40px" alt="" srcset="">
+                            <br> Nossi College of Art and Design <br>
+                            <small>Photography</small> -->
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="card rounded-0 mt-5">
-                            <div class="card-body rounded-0 personal-card head">
-                                <h5 class="text-light">Below are examples of my work that use a combination of the following
+                        <div class="card rounded-0 mt-5 ">
+                            <div class="card-body rounded-0 personal-card " id="head">
+                                <h5 class="light-green">Below are examples of my work that use a combination of the following
                                     technologies and concepts:</h5> <br>
                                 <p class="text-light"> MERN (Mongo db/mogoose, Express, React, Node), Html, CSS, JavaScript,
                                     jQuery, Ajax, REST, firebase, mySQL/sequelize, MVC, Handlebars, Git, Heroku, Bootstrap,
@@ -62,33 +86,63 @@
                 <!-- row 1 cards -->
                 <div class="row mt-5">
                     <div class="card-deck m-1">
-                        <div class="card rounded-0">
-                            <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper.JPG" alt="Card image cap">
+                        <div class="card rounded-0 works">
+                            <a href="https://guarded-meadow-50380.herokuapp.com/" target="_blank">
+                                <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper.JPG" alt="Card image cap">
+                            </a>
                             <div class="card-body works-body">
                                 <a href="https://guarded-meadow-50380.herokuapp.com/" target="_blank">
-                                    <h5 class="card-title">The Radish</h5>
+                                    <h5 class="card-title">The Radish <a href="https://github.com/EwilsonS/scraper" target="_blank"><small>github
+                                                repo
+                                            </small></a> </h5>
                                 </a>
-                                <p class="card-text">This is a scraper from "The Onion" news parody site.</p>
+                                <p class="card-text">
+                                    <small>
+                                        This is a scraper from "The Onion" news parody site:
+                                        <li>Express</li>
+                                        <li>Handlebars</li>
+                                        <li>Cheerio</li>
+                                        <li>Mongoose</li>
+                                    </small>
+                                </p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
-                            <img class="card-img-top" src="./assets/images/friend.JPG" alt="Card image cap">
+                        <div class="card rounded-0 works">
+                            <a href="https://rocky-sands-70274.herokuapp.com" target="_blank">
+                                <img class="card-img-top" src="./assets/images/friend.JPG" alt="Card image cap">
+                            </a>
                             <div class="card-body works-body">
                                 <a href="https://rocky-sands-70274.herokuapp.com" target="_blank">
-                                    <h5 class="card-title">Friend Finder</h5>
+                                    <h5 class="card-title">Friend Finder <a href="https://github.com/EwilsonS/friend_finder"
+                                            target="_blank"><small>github repo</small> </a></h5>
                                 </a>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    <small>
+                                        Friend Finder is an app that allows users to fill out a survey and be matched with compatible users.
+                                        <li>Express</li>
+                                        <li>Body-parser</li>
+                                        <li>Path</li>
+                                    </small>
+                                </p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
-                            <img class="card-img-top rounded-0" src="./assets/images/Travel.JPG" alt="Card image cap">
+                        <div class="card rounded-0 works">
+                            <a href="EvansTravels/index.html" target="_blank">
+                                <img class="card-img-top rounded-0" src="./assets/images/Travel.JPG" alt="Card image cap">
+                            </a>
                             <div class="card-body works-body">
                                 <a href="EvansTravels/index.html" target="_blank">
-                                    <h5 class="card-title">One-Way Flights</h5>
+                                    <h5 class="card-title">Non-Stop Flights <a href="https://github.com/EwilsonS/ewilsons.github.io/tree/master/EvansTravels"
+                                            target="_blank"><small>github repo</small></a> </h5>
                                 </a>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Flight info retrieval App
+                                    <small>
+                                        <li>Ajax</li>
+                                        <li>jQuery</li>
+                                        <li>Materialize</li>
+                                    </small>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -96,17 +150,24 @@
                 <!-- row 2 cards -->
                 <div class="row mt-5">
                     <div class="card-deck m-1">
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
+                                <a href="GiphyApi/index.html" target="_blank">
                             <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/gifApp.JPG" alt="Card image cap">
+                            </a>
                             <div class="card-body works-body">
                                 <a href="GiphyApi/index.html" target="_blank">
-                                    <h5 class="card-title">Gif Generator</h5>
+                                    <h5 class="card-title">Gif Generator <a href="https://github.com/EwilsonS/GiphyApi"><small>github repo</small></a> </h5>
                                 </a>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    <small>
+                                        <li>Ajax</li>
+                                        <li>jQuery</li>
+                                        <li>Bootstrap</li>
+                                    </small>
+                                </p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
                             <img class="card-img-top" src="./assets/images/bamazon.JPG" alt="Card image cap">
                             <div class="card-body works-body">
                                 <a href="https://github.com/EwilsonS/bamazon" target="_blank">
@@ -119,7 +180,7 @@
                                     to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
                             <img class="card-img-top rounded-0" src="./assets/images/Train.JPG" alt="Card image cap">
                             <div class="card-body works-body">
                                 <a href="TrainDatabase/index.html" target="_blank">
@@ -134,7 +195,7 @@
                 <!-- row 3 cards -->
                 <div class="row mt-5">
                     <div class="card-deck m-1">
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
                             <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/fitness.JPG" alt="Card image cap">
                             <div class="card-body works-body">
                                 <a href="https://young-hamlet-41284.herokuapp.com/" target="_blank">
@@ -144,7 +205,7 @@
                                     to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
                             <img class="card-img-top rounded-0" src="./assets/images/soundstock.JPG" alt="Card image cap">
                             <div class="card-body works-body">
                                 <a href="https://glacial-mesa-41642.herokuapp.com/" target="_blank">
@@ -154,7 +215,7 @@
                                     to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
-                        <div class="card rounded-0">
+                        <div class="card rounded-0 works">
                             <img class="card-img-top" src="./assets/images/liri.JPG" alt="Card image cap">
                             <div class="card-body works-body">
                                 <a href="https://github.com/EwilsonS/liri-node-app" target="_blank">
@@ -170,13 +231,14 @@
             <div class="col-md-2">
                 <div class="card sticky-top rounded-0 mt-5">
                     <div class="card-body personal-card text-light">
-                        <h5>Contact</h5>
+                        <h5 class="light-purple">Contact</h5>
                         <h6>Evan Wilson</h6>
                         <p>
-                        Email: Ewilsons@aol.com <br>
-                        Ph: 704-281-2589 <br> <br>
-                        <a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img src="./assets/images/LinkedIn-Logo-500x500.png" height="30px" width="30px"></a>
-                        <a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg" height="30px" alt="" srcset=""></a>
+                            Email: Ewilsons@aol.com <br> Ph: 704-281-2589 <br> <br>
+                            <a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img
+                                    src="./assets/images/LinkedIn-Logo-500x500.png" height="30px"></a>
+                            <a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
+                                    height="30px" alt="" srcset=""></a>
                         </p>
                     </div>
                 </div>
