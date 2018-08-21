@@ -1,9 +1,9 @@
 body {
-    background-color:#dfdfdf
+    background-color: rgb(207, 207, 207)
 }
 
 .navbar{
-    background-color:#dfdfdf;
+    background-color:  rgb(14, 14, 49);
     box-shadow: 0px 6px 6px 0px rgba(50, 50, 50, 0.49);
     padding: 0 16px;
     z-index: 1000;
@@ -11,7 +11,7 @@ body {
     height: 40px;
     min-height: 40px;
     border: 0;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -19,17 +19,35 @@ body {
 }
 .personal-card{
     background-color: rgb(14, 14, 49);
-
-    
 }
 .card{
-    box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.47);}
+    box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.47);
+    border: none
+}
 .pic{
     border: 3px solid white;
     float: left;
 }
-
-
+.works-body{
+    background-color:  #f0f0f0;
+    
+}
+#read-more{
+    color: rgb(185, 179, 207);
+}
+#read-more:hover{
+    text-decoration: none;
+    color: rgb(152, 141, 192);
+    
+}
+a{
+    color:  rgb(14, 14, 49)
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(103, 88, 156);
+   
+}
 @media screen and (max-width: 640px) {
     #main-nav-link {
         width: 100%;

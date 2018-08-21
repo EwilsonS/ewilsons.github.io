@@ -23,11 +23,11 @@
 
 <body>
     <nav class="navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-light" href="#">
             E.Wilson
         </a>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <div class="row mt-2">
             <div class="col-md-1">
             </div>
@@ -36,9 +36,9 @@
                     <div class="card-body personal-card text-light">
                         <p>
                             <img class="rounded-circle pic" src="https://media.licdn.com/dms/image/C4E03AQEZCYdnGNwllQ/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=dRvgQPGMU4NFVhDr1c3ffMcg5Fk9zNPxTQ5mWRrmwIc"
-                                height="95px" width="95px" alt=""> My goal is to use the vastness of technology to improve the user experience while empowering
-                            them with resources to find success.
-                            <a href="">
+                                height="95px" width="95px" alt=""> My goal is to use the vastness
+                            of technology to improve the user experience while empowering them with resources to find success.
+                            <a href="" id="read-more">
                                 <span data-toggle="modal" data-target="#aboutMeModal">Read more... </span>
                             </a>
                         </p>
@@ -46,34 +46,142 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row mt-5"></div>
-                <div class="card-deck">
-                    <div class="card rounded-0">
-                        <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper.JPG" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="https://limitless-citadel-55587.herokuapp.com/" target="_blank"> <h5 class="card-title">The Radish</h5>
-                            </a> 
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="card rounded-0">
-                        <img class="card-img-top" src="./assets/images/friend.JPG" alt="Card image cap">
-                        <div class="card-body">
-                           <a href="https://rocky-sands-70274.herokuapp.com" target="_blank"> <h5 class="card-title">Friend Finder</h5></a>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="card rounded-0">
-                        <img class="card-img-top rounded-0" src="./assets/images/Travel.JPG" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                content is a little bit longer.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card rounded-0 mt-5">
+                            <div class="card-body rounded-0 personal-card head">
+                                <h5 class="text-light">Below are examples of my work that use a combination of the following
+                                    technologies and concepts:</h5> <br>
+                                <p class="text-light"> MERN (Mongo db/mogoose, Express, React, Node), Html, CSS, JavaScript,
+                                    jQuery, Ajax, REST, firebase, mySQL/sequelize, MVC, Handlebars, Git, Heroku, Bootstrap,
+                                    Materialize, agile, Cheerio, ES6 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- row 1 cards -->
+                <div class="row mt-5">
+                    <div class="card-deck m-1">
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://guarded-meadow-50380.herokuapp.com/" target="_blank">
+                                    <h5 class="card-title">The Radish</h5>
+                                </a>
+                                <p class="card-text">This is a scraper from "The Onion" news parody site.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top" src="./assets/images/friend.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://rocky-sands-70274.herokuapp.com" target="_blank">
+                                    <h5 class="card-title">Friend Finder</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0" src="./assets/images/Travel.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="EvansTravels/index.html" target="_blank">
+                                    <h5 class="card-title">One-Way Flights</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 cards -->
+                <div class="row mt-5">
+                    <div class="card-deck m-1">
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/gifApp.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="GiphyApi/index.html" target="_blank">
+                                    <h5 class="card-title">Gif Generator</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top" src="./assets/images/bamazon.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://github.com/EwilsonS/bamazon" target="_blank">
+                                    <h5 class="card-title">Bamazon
+                                        <a href="https://drive.google.com/file/d/1WMO-x6bv7JJrClQ45qPYgaYJnRoshzBE/view?usp=sharing" target="_blank"> <small>video
+                                                demo
+                                            </small></a></h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0" src="./assets/images/Train.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="TrainDatabase/index.html" target="_blank">
+                                    <h5 class="card-title">Train Scheduler</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 3 cards -->
+                <div class="row mt-5">
+                    <div class="card-deck m-1">
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/fitness.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://young-hamlet-41284.herokuapp.com/" target="_blank">
+                                    <h5 class="card-title">Project Fitness</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top rounded-0" src="./assets/images/soundstock.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://glacial-mesa-41642.herokuapp.com/" target="_blank">
+                                    <h5 class="card-title">Sound Stock</h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-0">
+                            <img class="card-img-top" src="./assets/images/liri.JPG" alt="Card image cap">
+                            <div class="card-body works-body">
+                                <a href="https://github.com/EwilsonS/liri-node-app" target="_blank">
+                                    <h5 class="card-title">L.I.R.I. </h5>
+                                </a>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card sticky-top rounded-0 mt-5">
+                    <div class="card-body personal-card text-light">
+                        <h5>Contact</h5>
+                        <h6>Evan Wilson</h6>
+                        <p>
+                        Email: Ewilsons@aol.com <br>
+                        Ph: 704-281-2589 <br> <br>
+                        <a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img src="./assets/images/LinkedIn-Logo-500x500.png" height="30px" width="30px"></a>
+                        <a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg" height="30px" alt="" srcset=""></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
             </div>
         </div>
     </div>
@@ -96,12 +204,12 @@
             </div>
         </div>
     </div>
-    <script>
-        $("*").click(function (event) {
-            event.preventDefault()
-        })
-    </script>
 </body>
 
+<script>
+    $("#read-more").click(function (event) {
+        event.preventDefault()
+    })
+</script>
 
 </html>
