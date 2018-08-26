@@ -103,15 +103,8 @@ function oneWayDisplay(results) {
         $("#flight-display > tbody").prepend("<tr><td>$" + flightFare + "</td><td>" + airlineName + "</td><td>" + destinationAirport + "</td><td>" + flightNumberOut + "</td><td>" + outboundArrivalDate.format("MM/DD/YYYY") + "</td><td>" + outboundArrivalDate.format("hh:mm a") + "<br>" + "(" + outboundDurationDisplay + ")" + "</td><td>" + "NA" + "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td></tr>")
 
       });
-
-
-
     }
   }
-
-
-
-
 }
 
 
@@ -130,12 +123,13 @@ $("#submit-btn").on("click", function (event) {
   var returnDate = $("#return-date").val();
   var departureIATA = $("#departure-iata").val().trim();
   var destinationIATA = $("#destination-iata").val().trim();
+  var apikey = "QL7TZKxeTtsQmXv9C948GtXHm7suvnac";
 
 
-  var oneWayQueryURL = "https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=%20vA7jW9vS5DQj5MHWkavbCHddVJqDV47d&origin=" + departureIATA + "&destination=" + destinationIATA + "&departure_date=" + departureDate + "&nonstop=true&number_of_results=5"
+  var oneWayQueryURL = "https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=" + apikey + "&origin=" + departureIATA + "&destination=" + destinationIATA + "&departure_date=" + departureDate + "&nonstop=true&number_of_results=5"
 
 
-  var roundTripQueryURL = "https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=%20vA7jW9vS5DQj5MHWkavbCHddVJqDV47d&origin=" + departureIATA + "&destination=" + destinationIATA + "&departure_date=" + departureDate + "&return_date=" + returnDate + "&nonstop=true&number_of_results=5"
+  var roundTripQueryURL = "https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=" + apikey + "&origin=" + departureIATA + "&destination=" + destinationIATA + "&departure_date=" + departureDate + "&return_date=" + returnDate + "&nonstop=true&number_of_results=5"
 
 
 
@@ -150,7 +144,7 @@ $("#submit-btn").on("click", function (event) {
       error: function (err) {
         console.log("i have a bad feeling about this")
         $(".modal").modal();
-      $("#modal1").modal("open");
+        $("#modal1").modal("open");
       }
     }).then(function (response) {
       console.log(response);
@@ -163,9 +157,9 @@ $("#submit-btn").on("click", function (event) {
       error: function (err) {
         console.log("i have a bad feeling about this")
         $(".modal").modal();
-      $("#modal1").modal("open");
+        $("#modal1").modal("open");
       }
-      
+
     }).then(function (response) {
       console.log(response);
       oneWayDisplay(response);
