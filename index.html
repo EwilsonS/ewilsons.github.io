@@ -68,8 +68,9 @@
 				<!-- row  1 -->
 				<div class="row mt-5">
 					<div class="card-deck m-1">
+						<!-- about -->
 						<div class="card rounded-0 ">
-							<div class="card-body rounded-0 personal-card " id="head">
+							<div class="card-body rounded-0 head " id="head">
 								<small>
 									<h6 class="light-green">Here are examples of my work that use a combination of the following technologies and concepts:</h6>
 									<br>
@@ -78,6 +79,7 @@
 								</small>
 							</div>
 						</div>
+						<!-- proj fitness -->
 						<div class="card rounded-0 works">
 							<a href="https://young-hamlet-41284.herokuapp.com/" target="_blank">
 								<img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/fitness.JPG" alt="Card image cap">
@@ -98,6 +100,7 @@
 								</p>
 							</div>
 						</div>
+						<!-- bamazon -->
 						<div class="card rounded-0 works">
 							<img class="card-img-top" src="./assets/images/bamazon.JPG" alt="Card image cap">
 							<div class="card-body works-body">
@@ -122,14 +125,52 @@
 				<!-- row  2-->
 				<div class="row mt-5">
 					<div class="card-deck m-1">
-						<div class="card rounded-0 ">
-							<div class="card-body rounded-0 personal-card " id="head">
+						<!-- crystal game -->
+						<div class="card rounded-0 head">
+							<div class="card-body  text-light">
+								<h5 class="light-green">Crystal Game</h5>
+								<small>
+									<p>You are given a random number.
+										<br>By clicking on a crystal, you will be adding a certain amount of points to your score.
+										<br> You win by matching your score to the random number. You lose by exceeding that number.
+										<br> The value of each crytal is hidden from you, but they do not change umtil game resets.
+										<h5 class="light-green">GOOD LUCK!</h5>
+									</p>
+									<div>
+										<div>
+											<div>
+												<h5 class="light-green">Try To Match <span class="h5" id="main-random" style="color: red"></span></h5>
+											</div>
+											<div>
+												<p>Wins:
+													<span id="wins"></span>
 
-								<!--  -->
+													Losses:
+													<span id="losses"></span>
+												</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12" id="crystal-images">
+												<img src="assets/images/green-crystal.png" alt="green crystal" id="blue-crystal" height="50px" width="50px">
+												<img src="assets/images/red-crystal.png" alt="red crystal" id="red-crystal" height="50px" width="50px">
+												<img src="assets/images/white-crystal.png" alt="white crystal" id="white-crystal" height="50px" width="50px">
+												<img src="assets/images/yellow-crystal.png" alt="yellow crystal" id="yellow-crystal" height="50px" width="50px">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<h5 class="light-green">Your Score <span class="span" id="score" style="color: green"></span></h5>
 
+												<h5 id="win-lose"></h5>
+											</div>
+										</div>
+									</div>
+								</small>
 							</div>
 						</div>
-						<div class="card rounded-0 works">
+						<!-- sound stock -->
+						<div class="card rounded-0 works ">
 							<a href="https://glacial-mesa-41642.herokuapp.com/" target="_blank">
 								<img class="card-img-top rounded-0" src="./assets/images/soundstock.JPG" alt="Card image cap">
 							</a>
@@ -145,6 +186,7 @@
 								</p>
 							</div>
 						</div>
+						<!-- the radish -->
 						<div class="card rounded-0 works">
 							<a href="https://guarded-meadow-50380.herokuapp.com/" target="_blank">
 								<img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper.JPG" alt="Card image cap">
@@ -170,13 +212,15 @@
 				<!-- row test cards 3-->
 				<div class="row mt-5">
 					<div class="card-deck m-1">
+						<!-- about -->
 						<div class="card rounded-0 ">
-							<div class="card-body rounded-0 personal-card " id="head">
+							<div class="card-body rounded-0 head " id="head">
 
 								<!--  -->
 
 							</div>
 						</div>
+						<!-- giphy -->
 						<div class="card rounded-0 works">
 							<a href="GiphyApi/index.html" target="_blank">
 								<img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/gifApp.JPG" alt="Card image cap">
@@ -196,6 +240,7 @@
 								</p>
 							</div>
 						</div>
+						<!-- friend finder -->
 						<div class="card rounded-0 works">
 							<a href="https://rocky-sands-70274.herokuapp.com" target="_blank">
 								<img class="card-img-top" src="./assets/images/friend.JPG" alt="Card image cap">
@@ -221,6 +266,7 @@
 				<!-- row 4 -->
 				<div class="row mt-5">
 					<div class="card-deck m-1">
+						<!-- train -->
 						<div class="card rounded-0 works">
 							<a href="TrainDatabase/index.html" target="_blank">
 								<img class="card-img-top rounded-0" src="./assets/images/Train.JPG" alt="Card image cap">
@@ -240,6 +286,7 @@
 								</p>
 							</div>
 						</div>
+						<!-- flight -->
 						<div class="card rounded-0 works">
 							<a href="EvansTravels/index.html" target="_blank">
 								<img class="card-img-top rounded-0" src="./assets/images/Travel.JPG" alt="Card image cap">
@@ -259,6 +306,7 @@
 								</p>
 							</div>
 						</div>
+						<!-- liri -->
 						<div class="card rounded-0 works">
 							<a href="https://github.com/EwilsonS/liri-node-app" target="_blank">
 								<img class="card-img-top" src="./assets/images/liri.JPG" alt="Card image cap">
@@ -279,7 +327,7 @@
 			</div>
 			<div class="col-md-2">
 				<div class="sticky-top">
-
+					<!-- contact -->
 					<div class="card rounded-0 mt-5">
 						<div class="card-body personal-card text-light">
 							<h5 class="light-purple">Contact</h5>
@@ -293,49 +341,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card rounded-0 mt-5">
-						<div class="card-body personal-card text-light">
-							<h5 class="light-purple">Crystal Game</h5>
-							<small>
-								<p>You are given a random number.
-									<br>By clicking on a crystal, you will be adding a certain amount of points to your score.
-									<br> You win by matching your score to the random number. You lose by exceeding that number.
-									<br> The value of each crytal is hidden from you, but they do not change umtil game resets.
-									<h5 class="light-purple">GOOD LUCK!</h5>
-								</p>
-								<div>
-									<div>
-										<div>
-											<h5 class="light-purple">Try To Match <span class="h5" id="main-random" style="color: red"></span></h5>
-										</div>
-										<div>
-											<p>Wins:
-												<span id="wins"></span>
 
-												Losses:
-												<span id="losses"></span>
-											</p>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12" id="crystal-images">
-											<img src="assets/images/green-crystal.png" alt="green crystal" id="blue-crystal" height="50px" width="50px">
-											<img src="assets/images/red-crystal.png" alt="red crystal" id="red-crystal" height="50px" width="50px">
-											<img src="assets/images/white-crystal.png" alt="white crystal" id="white-crystal" height="50px" width="50px">
-											<img src="assets/images/yellow-crystal.png" alt="yellow crystal" id="yellow-crystal" height="50px" width="50px">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12">
-											<h5 class="light-purple">Your Score <span class="span" id="score" style="color: green"></span></h5>
-
-											<h5 id="win-lose"></h5>
-										</div>
-									</div>
-								</div>
-							</small>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div class="col-md-1">
