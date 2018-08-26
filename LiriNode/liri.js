@@ -23,7 +23,7 @@ var result = " ";
 
 function liri() {
   if (command === "my-tweets") {
-    client.get("search/tweets", { q: (screen_name = "neo74961601") }, function(
+    client.get("search/tweets", { q: (screen_name = "BarackObama") }, function(
       error,
       tweets,
       response

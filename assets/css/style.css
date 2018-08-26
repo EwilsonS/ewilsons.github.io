@@ -1,6 +1,6 @@
 body {
     /* background-color: rgb(207, 207, 207); */
-    background-image: url("../images/04-Soft-Cloth.png")
+    background-image: url("../images/04-Soft-Cloth.png");
 }
 
 .navbar{
@@ -20,6 +20,11 @@ body {
 }
 #head{
     background-color: rgb(4, 43, 3)
+}
+.gn-btn{
+    background-color: rgb(4, 43, 3);
+    box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.47);
+    color: rgb(168, 202, 168);
 }
 .light-green{
     color: rgb(168, 202, 168)
@@ -71,6 +76,13 @@ li{
 ul{
     margin: 0
 }
+.mod-btn{
+    background-color: rgb(152, 141, 192) 
+}
+.mod-btn:hover{
+    background-color: rgb(103, 88, 156)
+}
+
 @media screen and (max-width: 640px) {
     #main-nav-link {
         width: 100%;
