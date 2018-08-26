@@ -12,5 +12,7 @@ module.exports = function (app) {
         res.json(true)
 
         console.log(friends)
+        console.log(`response ${res.data[0]}`)
+
     })
 }

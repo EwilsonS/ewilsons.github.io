@@ -16,14 +16,29 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-center" id="modalTitle">
+                            <p class="text-center" id="text"></p>
+
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img id="modalBodyImage">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="h3 " id="user"></label>
+                            <br>
+                            <img class="rounded-circle" id="modalBodyImage2" height="150px">
+                        </div>
+                       
+                        <div class="col-md-6">
+                            <label class="h3 " id="db"></label>
+                            <br>
+                            <img class="rounded-circle" id="modalBodyImage" height="150px">
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
@@ -50,7 +65,7 @@
                     <div class="form-group">
                         <label for="photo">Photo Link</label>
                         <br>
-                        <input class="form-control" type="url" name="" id="photo">
+                        <input class="form-control" type="url" name="photo" id="photo">
                     </div>
                 </form>
             </div>
@@ -62,7 +77,8 @@
         <div class="row">
             <div class="col-md-4">
 
-                <button type="button" data-toggle="modal"data-target="#myModal" class="btn btn-success btn-block p-2" id="submit">Find my match</button>
+                <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-block p-2" id="submit">Find
+                    my match</button>
             </div>
             <div class="col-md-4">
             </div>
@@ -140,7 +156,7 @@
 
     $("#submit").on("click", function () {
         event.preventDefault();
-        
+
         var position = $(".form-check-input:checked");
         var results = [];
         for (var i = 0; i < position.length; i++) {
@@ -154,14 +170,27 @@
         }
         console.log("Just Made:" + newFriend)
 
-        $.post("/api/friends", newFriend, function (friends) {
-            if (friends) {
-                // matching logic
-            
-                // alert("success")
-                // location.reload();
+        $.post("/api/friends", newFriend, function (res) {
+            if (res) {
+                var currentURL = window.location.origin;
+                $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+                    .then(function (res) {
+                        for (var i = 0; i < res.length; i++) {
+                            
+                            $("#text").text(`Match!`);
+                            $("#user").text(`${newFriend.name}`);
+                            $("#db").text(`${res[2].name}`);
+
+                            $("#modalBodyImage").attr("src", res[2].photo);
+                            $("#modalBodyImage2").attr("src", newFriend.photo);
+
+
+
+                        }
+                    })
+
             } else {
-                alert("something went wrong")
+                // alert("something went wrong")
             }
         })
 
@@ -171,22 +200,20 @@
     function matchFriends() {
         var currentURL = window.location.origin;
         $.ajax({ url: currentURL + "/api/friends", method: "GET" })
-            .then(function (friends) {
-                for (var i = 0; i < friends.length; i++) {
+            .then(function (res) {
+                for (var i = 0; i < res.length; i++) {
                     console.log("----------------------")
-                    console.log(friends[i].scores)
+                    console.log(res[i].scores)
                     console.log("----------------------")
-                    console.log(friends[i].scores[i])
+                    console.log(res[i].scores[i])
 
-                    $("#modalTitle").text(friends[2].name);
-                    $("#modalBodyImage").attr("src",friends[2].photo);
 
 
                 }
             })
 
     }
-    matchFriends()
+    // matchFriends()
 
 </script>
 
