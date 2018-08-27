@@ -83,10 +83,6 @@ ul{
     background-color: rgb(103, 88, 156)
 }
 
-@media screen and (max-width: 640px) {
-    #main-nav-link {
-        width: 100%;
-
-    }
+@media screen and (max-width: 2000px) {
 
 }
