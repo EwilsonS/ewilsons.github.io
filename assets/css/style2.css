@@ -55,6 +55,27 @@ padding: 5%;
 .footer{
   background-color:  #49494b
 }
+.footLeft{
+  color: #e9e8e8
+}
+.footLeft:hover{
+  color: #bd8c7d
+}
+.footRight{
+  color: #8e8e90
+}
+.footMiddle{
+  color: #b3b3b3
+}
+.gitLink{
+  color: #707070
+}
+.gitLink:hover{
+  color: #bd8c7d
+}
+.divider{
+  color: #bd8c7d
+}
 .resumeModal{
   font-size: 15px;
 
