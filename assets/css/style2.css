@@ -1,0 +1,105 @@
+body{
+  background-color: #e9e8e8;
+  margin-top: 5%
+}
+.evan-nav{
+  background-color:#49494b;
+  /* box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.49); */
+}
+.header-card{
+  background-color: #d1bfa7;
+  box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.49);
+  border: 0;
+  font-size: 17px
+}
+#read-more{
+  color: #bd8c7d;
+  font-weight: bold;
+}
+#read-more:hover{
+  text-decoration: none;
+  color: #a1786c;
+  font-weight: bold;
+}
+.pic{
+  border: 5px solid #bd8c7d
+}
+.works{
+  border: 0
+}
+.ss{
+  border: 1px solid #49494b
+}
+.row0{
+background-color: #8e8e90;
+border-top: 5px solid #bd8c7d;
+
+padding: 5%;
+}
+.row1{
+  background-color: #49494b
+}
+.row2{
+  background-color: #bd8c7d;
+  padding: 5%
+}
+.row3{
+  background-color: #8e8e90;
+  padding: 5%
+
+}
+.row4{
+  background-color: #d1bfa7;
+  padding: 5%
+}
+.footer{
+  background-color:  #49494b
+}
+#resumeModal{
+  font-size: 15px;
+  
+}
+.modal-text{
+  font-size: 15px
+}
+.custom-btn{
+  background-color: #8e8e90;
+  color: white
+}
+.custom-btn:hover{
+  background-color: #bd8c7d;
+  color: white
+}
+.top-header{
+  background-color: #e9e8e8;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid  #bd8c7d; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .03em; /* Adjust as needed */
+  animation: 
+    typing 1s steps(8, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 12% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-right-color: #bd8c7d }
+}
+@media screen and (max-width: 900px) {
+  .header-card{
+    background-color: #d1bfa7;
+    box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.49);
+    border: 0;
+    font-size: 20px;
+    min-width: 100%;
+  }
+}
