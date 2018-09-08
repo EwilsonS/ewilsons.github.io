@@ -1,7 +1,7 @@
 body{
   background-color: #e9e8e8;
   margin-top: 0;
-  color: #2b2b2b
+  color: #2b2b2b;
 }
 li{
   list-style: none;
@@ -102,6 +102,9 @@ padding: 5%;
   border: none;
   box-shadow: none
 }
+.hr{
+  display: none
+}
 .name{
   background-color: #e9e8e800;
   color: #535353;
@@ -163,6 +166,11 @@ padding: 5%;
     font-size: 20px;
     min-width: 100%;
   }
+.pic{
+  width: 120px;
+  height: 120px;
+}
+
   /* .row0,.row1,.row2,.row3,.row4,.evan-nav, .footer{
     min-width: 100%
   }
@@ -171,5 +179,52 @@ padding: 5%;
   .row0,.row1,.row2,.row3,.row4,.evan-nav, .footer{
   width: 100%;
 } */
+
+}
+@media only screen and (max-width: 783px) {
+.name{
+font-size: 40px;
+margin-bottom: 5px;
+border-right: none
+
+  }
+  
+  * {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    }
+}
+@media only screen and (max-width: 783px) {
+.hr{
+  display: block;
+}
+.pic{
+  display: none
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .custom-btn{
+    margin: 3px;
+    width: 100%
+  }
 
 }
