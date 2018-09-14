@@ -1,0 +1,126 @@
+.nav-section{
+  background-color: rgb(0, 88, 146);
+  height: 10rem;
+  color: white;
+  font-size: 3rem;
+  line-height: 2.25rem;
+  /* font-family: 'Fredericka the Great', cursive; */
+  font-family: 'Black Ops One', cursive;
+  /* font-family: 'Baloo', cursive; */
+  /* font-family: 'Kumar One Outline', cursive; */
+  /* font-family: 'Emblema One', cursive; */
+}
+.name{
+  text-decoration: none;
+  color: white
+}
+.name:hover{
+  color: rgb(218, 143, 45);
+  text-decoration: none
+
+}
+.row1{
+  background-color: rgb(0, 77, 128);
+  height: 40rem;
+}
+.row1-middle{
+  background-color: rgb(0, 84, 139)
+}
+.pic{
+  border: 5px solid rgb(221, 221, 221);
+  height: 115px;
+  margin-top: 2rem;
+}
+.nav-titles{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.nav-titles a{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.nav-titles a:hover{
+  color: rgb(218, 143, 45)
+}
+.sub-line{
+  font-size: 1.25rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-icons{
+  font-size: 3rem;
+  text-align: center;
+}
+.row1-text{
+  color: rgb(221, 221, 221);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: left;
+}
+.icon-area{
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(0, 77, 128);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icon-area2{
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 77, 128);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.clear-a{
+  text-decoration: none
+}
+.row2{
+  background-color: rgb(226, 226, 226);
+}
+.row3{
+  background-color: rgb(240, 240, 240);
+}
+.more-proj{
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(0, 84, 139);
+  border-radius: 25px;
+  padding: 2rem
+}
+.footLeft{
+  color: #ffffff
+}
+.footLeft:hover{
+  color: rgb(218, 143, 45)
+}
+.footMiddle{
+  color: #e6e6e6
+}
+.footRight{
+  color: #c4c4c4
+}
+.gitLink{
+  color: rgb(172, 172, 172)
+}
+.gitLink:hover{
+  color: rgb(218, 143, 45)
+}
+.divider{
+  color: rgb(226, 226, 226)
+}
+.card{
+  background-color: rgb(226, 226, 226);
+  border: none;
+  transition: .25s;
+}
+.card:hover{
+  z-index: 10;
+  -webkit-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  transform: scale(1.025);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
+}
