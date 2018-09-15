@@ -112,7 +112,9 @@ color: rgb(179, 115, 32)
 }
 .row3{
   background-color: rgb(240, 240, 240);
-  padding-bottom: 3rem;
+  padding-bottom: 15rem;
+  padding-top: 6rem;
+
 }
 .row4{
   background-color: rgb(226, 226, 226);
