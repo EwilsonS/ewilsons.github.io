@@ -1,3 +1,7 @@
+li{
+  list-style: url("../images/hand-point-right-solid.svg");
+  font-size: 1rem
+}
 .nav-section{
   background-color: rgb(0, 88, 146);
   height: 10rem;
@@ -15,7 +19,7 @@
   color: white
 }
 .name:hover{
-  color: rgb(218, 143, 45);
+  color: rgb(236, 153, 44);
   text-decoration: none
 
 }
@@ -63,16 +67,19 @@
 .icon-area{
   background-color: rgb(226, 226, 226);
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgb(0, 77, 128);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .icon-area2{
   background-color: rgb(240, 240, 240);
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   color: rgb(0, 77, 128);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.orange{
+  color: rgb(218, 143, 45)
 }
 .clear-a{
   text-decoration: none
@@ -82,13 +89,49 @@
 }
 .row3{
   background-color: rgb(240, 240, 240);
+  padding-bottom: 3rem;
+}
+.row4{
+  background-color: rgb(226, 226, 226);
+  padding-top: 2rem;
 }
 .more-proj{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(0, 84, 139);
   border-radius: 25px;
   padding: 2rem
+}
+.render{
+  background-size: 29rem;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(0, 84, 139);
+  border-radius: 25px;
+  padding: 2rem ;
+}
+.about{
+  background-color: rgb(218, 143, 45);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 25px;
+  padding: 2rem;
+  color: rgb(218, 218, 218);
+  font-size: 1.5rem;
+}
+.top-arrow{
+  z-index: 100;
+  font-size: 2rem;
+  bottom: 1.5rem;
+  right: .8rem;
+  position: fixed;
+  color: rgb(218, 143, 45);
+  background-color: rgba(0, 84, 139,.5);
+  border-radius: 5px;
+  padding: .5rem;
+  transition: .4s
+}
+.top-arrow:hover{
+  background-color: rgb(0, 84, 139)
 }
 .footLeft{
   color: #ffffff
