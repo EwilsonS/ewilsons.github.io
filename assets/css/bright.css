@@ -102,7 +102,8 @@ color: rgb(179, 115, 32)
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
-.carolina-image{
+button.close{
+  width: 750px
 }
 .clear-a{
   text-decoration: none
@@ -112,8 +113,9 @@ color: rgb(179, 115, 32)
 }
 .row3{
   background-color: rgb(240, 240, 240);
-  padding-bottom: 15rem;
+  padding-bottom: 30rem;
   padding-top: 6rem;
+  
 
 }
 .row4{
@@ -135,7 +137,12 @@ color: rgb(179, 115, 32)
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(0, 84, 139);
   border-radius: 25px;
-  padding: 2rem     
+  padding: 2rem;
+  /* height: 15rem;   */
+}
+.giphy-object{
+  border-radius: 25px;
+  
 }
 .render{
   background-size: 29rem;
@@ -177,7 +184,7 @@ transition: .5s;
   font-size: 10rem;
   position: absolute;
   bottom: .2rem;
-  right: 0
+  right: 3rem;
 }
 .contact-pic:hover{
   color: rgb(218, 143, 45)

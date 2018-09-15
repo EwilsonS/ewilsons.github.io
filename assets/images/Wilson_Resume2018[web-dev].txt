@@ -1,0 +1,81 @@
+﻿A teacher at heart, leader by default seeking a full-time web development position with a dynamic progressive company. Driven by personal growth and the success of those around me. 
+
+
+Technical Skills
+Node
+	MySQL
+	Agile
+	Firebase
+	OOP
+	Heroku
+	Chrome Dev Tools
+	Express
+	CSS3
+	CLI
+	Bootstrap
+	NPM
+	Handlebars
+	
+
+	MongoDB
+	HTML5
+	API
+	REST
+	MVC
+	Javascript
+	
+
+	React
+	JSON
+	AJAX
+	jQuery
+	GIT
+	Github pages
+	
+
+	
+
+Applications Built
+SoundStock.io | https://soundstock.io 
+Creator/Founder
+• Social site that merges crowdfunding with stock acquisition, in the form of shared royalties
+• MongoDB, Express, Node, React, Bootstrap
+
+
+Project Fitness | https://young-hamlet-41284.herokuapp.com/ 
+Front-End Developer
+• Fitness app that allows users to create workouts and track progress 
+• Responsible for front-end and user authentication in a team of 4
+
+
+Experience
+Assistant Manager - Responsible for the development of team members.
+QuikTrip Charlotte, NC   July 2014 - March 2018
+• Executed strategies to improve inventory control via replenishment ordering and loss prevention.
+• 90th percentile company wide for sales and controllable profit.
+• Selected to participate in peer resource program to develop training programs/ in store processes.
+
+
+Store Manager/Opener - Set initial staffing and replenishment needs for new stores.
+Family Dollar Atlanta, GA Nov 2010 – Dec 2012
+• Supervise, train and develop store team members to fulfill operating standards
+• Produced 1.09% shrink, nearly 2 percentage points under goal. Promoted 6 asst to management.
+
+
+Production Assistant
+Turner/Kwokman Atlanta, GA Nov 2008 - 2013 (Intermittent)
+• Produced live half-time spot showcasing Lady Vols basketball
+• Production Crew for “Sunday Best” & “Chicago Fire”
+Education
+University of North Carolina, Charlotte
+Full Stack web development Certification
+Training program designed for adults who wish to gain proficiency in the theory and application of web development. 
+	
+
+University of Tennessee, Knoxville
+BS Communication
+Journalism and electronic media-visual communication
+
+
+University of Nicosia, Cyprus
+Documentary Film Study
