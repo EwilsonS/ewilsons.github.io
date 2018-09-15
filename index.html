@@ -27,43 +27,42 @@
 
 <body>
   <div class="">
-    <a class="scroll" href="#nav-section">  
+    <a class="scroll" href="#nav-section">
       <i class="fas fa-arrow-up top-arrow"></i>
     </a>
   </div>
   <!-- Nav -->
   <div class="row nav-section mx-0 px-0" id="nav-section">
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <p class="text-center mt-4">
         <a class="name" href="#">
           Evan <br> Wilson
         </a>
       </p>
     </div>
-    <div class="col sm-3 nav-titles">
+    <div class="col sm-1 nav-titles">
       <p class="p-0">
         <a class="scroll" href="#row2a">
           <i class="fas fa-angle-double-down nav-icons"></i>
           <br> Works
         </a></p>
-      <p class="sub-line">Describe</p>
     </div>
-    <div class="col sm-3 nav-titles">
+    <div class="col sm-1 nav-titles">
       <p class="p-0">
         <a class="scroll" href="#about">
           <i class="fas fa-book-open nav-icons"></i>
           <br> Story
         </a></p>
-      <p class="sub-line">Describe</p>
     </div>
-    <div class="col sm-3 nav-titles">
+    <div class="col sm-1 nav-titles">
       <p class="p-0">
-        <a class="scroll" href="">
-          <i class="fas fa-phone nav-icons"></i>
-          <br> Contact
+        <a class="scroll" href="#contact">
+          <i class="fas fa-mobile-alt nav-icons"></i>
+          <br> Connect
         </a></p>
-      <p class="sub-line">Describe</p>
     </div>
+    <div class="col-sm-7"></div>
+
   </div>
   <div class="row row1 mx-0 px-0">
     <div class="col-sm-4 text-center">
@@ -73,8 +72,22 @@
         empowering them with resources to find success...I just want to make meaningful contributions to the world via tech.
       </p>
     </div>
-    <div class="col-sm-4 row1-middle"></div>
-    <div class="col-sm-4"></div>
+    <div class="col-sm-4 row1-middle">
+     <a class="resume" href="https://docs.google.com/document/d/175whR867s35G7plPy7dObQU-h7fRSMBqbe-i94jrbwY/edit?usp=sharing" target="_blank"><span class="orange"> {</span> Resume <span class="orange"> }</span></a>
+    </div>
+    <div class="col-sm-4 row1-right text-center">
+        <p class="mt-5 carolina">
+            <img class="carolina-image" src="./assets/images/49ers_wordmark.png" height="75px" alt="" srcset="">
+            <br> University of North Carolina, Charlotte<br>
+            <small>Full Stack Web Development Certification Program</small>
+          </p>
+          <p class="mt-5 tennessee">
+              <img src="./assets/images/1200px-Tennessee_Volunteers_logo.svg.png" height="75px" alt="" srcset="">
+              <br> University of Tennessee, Knoxville <br>
+              <small>BS Communications</small>
+              <br>
+            </p>
+    </div>
   </div>
   <div class="row row2a mx-0 px-0 icon-area" id="row2a">
     <div class="col-sm-12">
@@ -213,57 +226,62 @@
         <span> <a class="gitLink" href="https://github.com/EwilsonS/liri-node-app" target="_blank">github</a> </span>
         <br>
       </p>
+      <p class="giphy">
+        <br><br><br><br><br>
+      </p>
     </div>
     <div class="col-sm-3">
       <div class="render">
-          <div class="card-body text-light">
-              <h5 class="">Crystal Game</h5>
-              <small>
-                <p>You are given a random number.
-                  <br>By clicking on a crystal, you will be adding a certain amount of points to your score.
-                  <br> You win by matching your score to the random number. You lose by exceeding that number.
-                  <br> The value of each crytal is hidden from you, but they do not change umtil game resets.
-                  <h5 class="light-green">GOOD LUCK!</h5>
-                </p>
+        <div class="card-body text-light">
+          <h5 class="">Crystal Game</h5>
+          <small>
+            <p>You are given a random number.
+              <br>By clicking on a crystal, you will be adding a certain amount of points to your score.
+              <br> You win by matching your score to the random number. You lose by exceeding that number.
+              <br> The value of each crytal is hidden from you, but they do not change umtil game resets.
+              <span class="light-green">GOOD LUCK!</span>
+            </p>
+            <div>
+              <div>
                 <div>
-                  <div>
-                    <div>
-                      <h5 class="light-green">Try To Match <span class="h5" id="main-random" style="color: red"></span></h5>
-                    </div>
-                    <div>
-                      <p>Wins:
-                        <span id="wins"></span>
-
-                        Losses:
-                        <span id="losses"></span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12" id="crystal-images">
-                      <img src="assets/images/green-crystal.png" alt="green crystal" id="blue-crystal" height="50px" width="50px">
-                      <img src="assets/images/red-crystal.png" alt="red crystal" id="red-crystal" height="50px" width="50px">
-                      <img src="assets/images/white-crystal.png" alt="white crystal" id="white-crystal" height="50px" width="50px">
-                      <img src="assets/images/yellow-crystal.png" alt="yellow crystal" id="yellow-crystal" height="50px" width="50px">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h5 class="light-green">Your Score <span class="span" id="score" style="color: green"></span></h5>
-
-                      <h5 id="win-lose"></h5>
-                    </div>
-                  </div>
+                  <h5 class="light-green">Try To Match <span class="h5" id="main-random" style="color: red"></span></h5>
                 </div>
-              </small>
+                <div>
+                  <p>Wins:
+                    <span id="wins"></span>
+
+                    Losses:
+                    <span id="losses"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="crystal-images">
+                  <img src="assets/images/green-crystal.png" alt="green crystal" id="blue-crystal" height="50px" width="50px">
+                  <img src="assets/images/red-crystal.png" alt="red crystal" id="red-crystal" height="50px" width="50px">
+                  <img src="assets/images/white-crystal.png" alt="white crystal" id="white-crystal" height="50px" width="50px">
+                  <img src="assets/images/yellow-crystal.png" alt="yellow crystal" id="yellow-crystal" height="50px" width="50px">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="light-green">Your Score <span class="span" id="score" style="color: rgb(3, 197, 3)"></span></h5>
+
+                  <h5 id="win-lose"></h5>
+                </div>
+              </div>
             </div>
+          </small>
+        </div>
       </div>
     </div>
     <div class="col-sm-1"></div>
   </div>
   <!-- about -->
-  <div class="row row4 mx-0 px-0">
-    <div class="col-sm-5"></div>
+  <div class="row row4 py-5 mx-0 px-0">
+    <div class="col-sm-5">
+      <i class="fas fa-chess-board about-pic"></i>
+    </div>
     <div class="col-sm-6">
       <p class="about" id="about">
         So who am I? I would describe myself as a thinker. Learning new things is exciting to me to me, personal growth is essential.
@@ -275,15 +293,30 @@
         door and let myself in. Once I got my footing, I enrolled in the University of North Carolina’s Coding bootcamp to
         tie it all together for me. Here I am.
         <br><br> I specialize in working with the MERN (mongoDB, express, react and node) stack. Also, I’m a champion of
-        modern methodologies such as Agile and MVC. Please afford me the opportunity to discuss with you in person my possible
-        contribution to your team. I am confident that you will be pleased with my work ethic, knowledge and enthusiasm.
+        modern methodologies/conventions such as Agile and MVC. Let's connect! I am confident that you will be pleased with
+        my work ethic, knowledge and enthusiasm.
 
       </p>
     </div>
-    <div class="col-sm-5"></div>
-
-
+    <div class="col-sm-1"></div>
   </div>
+  <!-- contact -->
+  <div class="row row5 pt-5 mx-0 px-0" id="contact">
+    <div class="col-sm-6">
+      <p class="contact my-5">
+        <span class="h3">Evan S. Wilson</span class="h3">
+        <br> Email: wilsonscottevan@gmail.com <br> Ph: 704-281-2589 <br> <br>
+        <a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img src="./assets/images/LinkedIn-Logo-500x500.png"
+            height="60px"></a>
+        <a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
+            height="60px" alt="" srcset=""></a>
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <i class="fas fa-chess contact-pic float-right"></i>
+    </div>
+  </div>
+
   <script src="./assets/javascript/index.js"></script>
 </body>
 

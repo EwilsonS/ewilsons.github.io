@@ -16,7 +16,8 @@ li{
 }
 .name{
   text-decoration: none;
-  color: white
+  color: white;
+  transition: .2s;
 }
 .name:hover{
   color: rgb(236, 153, 44);
@@ -28,7 +29,19 @@ li{
   height: 40rem;
 }
 .row1-middle{
-  background-color: rgb(0, 84, 139)
+  background-color: rgb(0, 84, 139);
+  font-size: 7rem;
+  text-align: center;
+  padding-top: 9rem;
+}
+.resume{
+  color: rgb(218, 218, 218);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.resume:hover{
+text-decoration: none;
+color: rgb(179, 115, 32)
 }
 .pic{
   border: 5px solid rgb(221, 221, 221);
@@ -46,6 +59,7 @@ li{
   margin-top: 1rem;
   color: white;
   text-decoration: none;
+  transition: .15s;
 }
 .nav-titles a:hover{
   color: rgb(218, 143, 45)
@@ -67,19 +81,28 @@ li{
 .icon-area{
   background-color: rgb(226, 226, 226);
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(0, 77, 128);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .icon-area2{
   background-color: rgb(240, 240, 240);
   text-align: left;
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(0, 77, 128);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .orange{
   color: rgb(218, 143, 45)
+}
+.tennessee,
+.carolina{
+  font-size: 2rem;
+  color: rgb(221, 221, 221);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.carolina-image{
 }
 .clear-a{
   text-decoration: none
@@ -95,6 +118,9 @@ li{
   background-color: rgb(226, 226, 226);
   padding-top: 2rem;
 }
+.row5{
+  background-color: rgb(0, 84, 139)
+}
 .more-proj{
   font-size: 1.2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,13 +128,20 @@ li{
   border-radius: 25px;
   padding: 2rem
 }
-.render{
-  background-size: 29rem;
-  font-size: 1.5rem;
+.giphy{
+  font-size: 1.2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(0, 84, 139);
   border-radius: 25px;
-  padding: 2rem ;
+  padding: 2rem     
+}
+.render{
+  background-size: 29rem;
+  font-size: 1.25rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(0, 77, 128);
+  border-radius: 25px;
+  padding: .25rem ;
 }
 .about{
   background-color: rgb(218, 143, 45);
@@ -117,6 +150,35 @@ li{
   padding: 2rem;
   color: rgb(218, 218, 218);
   font-size: 1.5rem;
+}
+.about-pic{
+color: rgba(50, 50, 50, 0.5);
+font-size: 35rem;
+margin-top: 3rem;
+margin-left: 5rem;
+transition: .5s;
+}
+.about-pic:hover{
+  color: rgb(218, 143, 45)
+}
+.contact{
+  font-size: 1.5rem;
+  color: rgb(0, 77, 128);
+  padding: 2rem;
+  background-color: rgb(226, 226, 226);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 25px;
+}
+.contact-pic{
+  transition: .2s;
+  color: rgb(240, 240, 240);
+  font-size: 10rem;
+  position: absolute;
+  bottom: .2rem;
+  right: 0
+}
+.contact-pic:hover{
+  color: rgb(218, 143, 45)
 }
 .top-arrow{
   z-index: 100;
