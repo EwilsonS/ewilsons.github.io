@@ -393,8 +393,11 @@ transition: .5s;
   margin-left: 2rem
 }
 .nav-icons{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: .8rem
+}
+.icon-margin{
+  margin-right: .6rem
 }
 .col-sm-4{
   height:11rem
@@ -413,8 +416,8 @@ transition: .5s;
 
 }
 .resume-object{
-  width: 315px;
-  height: 650px;
+  width: 250px;
+  height: 550px;
 }
 .works{
   padding: .5rem
