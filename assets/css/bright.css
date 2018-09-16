@@ -9,15 +9,21 @@ li{
   font-size: 3rem;
   line-height: 2.25rem;
   /* font-family: 'Fredericka the Great', cursive; */
-  font-family: 'Black Ops One', cursive;
+  /* font-family: 'Black Ops One', cursive; */
   /* font-family: 'Baloo', cursive; */
   /* font-family: 'Kumar One Outline', cursive; */
   /* font-family: 'Emblema One', cursive; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .name{
   text-decoration: none;
   color: white;
   transition: .2s;
+}
+.resume-object{
+  width: 750px;
+  height: 1050px;
 }
 .name:hover{
   color: rgb(236, 153, 44);
@@ -50,7 +56,7 @@ color: rgb(179, 115, 32)
 }
 .nav-titles{
   font-size: 1.25rem;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 1rem;
 }
 .nav-titles a{
@@ -64,6 +70,10 @@ color: rgb(179, 115, 32)
 .nav-titles a:hover{
   color: rgb(218, 143, 45)
 }
+.icon-margin{
+  margin-right: 5rem
+
+}
 .sub-line{
   font-size: 1.25rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -71,6 +81,8 @@ color: rgb(179, 115, 32)
 .nav-icons{
   font-size: 2.25rem;
   text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 .row1-text{
   color: rgb(221, 221, 221);
@@ -126,6 +138,13 @@ button.close{
   padding-bottom: 30rem;
   padding-top: 6rem;
 }
+  .card-group{
+    padding-right: 5rem;
+    padding-left: 5rem;
+    }
+.works{
+  padding: 3rem
+}
 .row4{
   background-color: rgb(226, 226, 226);
   padding-top: 2rem;
@@ -140,17 +159,10 @@ button.close{
   border-radius: 25px;
   padding: 2rem
 }
-.giphy{
-  font-size: 1.2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgb(0, 39, 65);
-  border-radius: 25px;
-  padding: 2rem;
-  /* height: 15rem;   */
-}
 .giphy-object{
   border-radius: 25px;
-  
+  width:100%;
+  height:150%;
 }
 .render{
   background-size: 29rem;
@@ -180,7 +192,7 @@ transition: .5s;
 }
 .contact{
   font-size: 1.5rem;
-  color: rgb(0, 39, 65));
+  color: rgb(0, 39, 65);
   padding: 2rem;
   background-color: rgb(226, 226, 226);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -245,4 +257,161 @@ transition: .5s;
   transform: scale(1.025);
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
+}
+
+@media only screen and (max-width: 1600px) {
+  .row1-text{
+    font-size: 1.25rem;
+  }
+  .tennessee,
+  .carolina{
+     font-size: 1.25rem;
+}
+  .giphy-object{
+    border-radius: 25px;
+    width:100%;
+    height:100%;
+  }
+  .about-pic-div{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+.card-group>.card {
+    -webkit-box-flex: 1;
+    -ms-flex: 100%;
+    flex: 100%;
+    margin-bottom: 2rem;
+    z-index: 10;
+  -webkit-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  transform: scale(1.025);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+.row3{
+  display: table-row;
+  }
+  .row1-middle{
+    font-size: 2.5rem
+  }
+  .row1-text,
+  .about,
+  .contact,
+  .tennessee,
+  .carolina{
+     font-size: 1.1rem;
+}
+  .render,
+  .more-proj,
+  .giphy-object{
+    height: 25rem;
+  }
+  .col-sm-7,
+  .col-sm-3,
+  .col-sm-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contact-pic{
+    visibility: hidden;
+  }
+  .pic{
+    height: 75px;
+    position: relative;
+  }
+}
+@media (max-width: 750px){
+  .resume-object{
+    width: 600px;
+    height: 900px;
+  }
+  .card-group{
+    padding-right: 0;
+    padding-left: 0;
+    }
+.row1{
+  display: table-row;
+ }
+ .col-sm-4{
+   -webkit-box-flex: 0;
+   flex: 0 0 100%;
+   max-width: 100%;
+   height: 10rem
+ }
+ .pic{
+   float: left;
+  height: 50px;
+  margin-top: 0;
+  border: 2px solid rgb(221, 221, 221);
+  display: none;
+}
+.row1-text{
+  font-size: .95rem;
+  padding-top: 1rem;
+}
+.resume{
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 6rem
+}
+.carolina{
+  float: left;
+  font-size: .95rem;
+  margin-left: 3rem
+}
+.tennessee{
+  float: left;
+  font-size: .95rem;
+  margin-left: 5rem
+}
+.nav-section{
+  text-align: center;
+  display: table-row;
+  height: 15rem;
+}
+.nav-icons{
+  font-size: 1.8rem
+}
+.icon-margin{
+  margin-right: 1rem
+}
+@media (max-width: 321px){
+.carolina{
+  margin-left: 2rem;
+}
+.tennessee{
+  margin-left: 2rem
+}
+.nav-icons{
+  font-size: 1.5rem;
+  margin-top: .8rem
+}
+.col-sm-4{
+  height:11rem
+}
+.more-proj{
+  padding: .75rem;
+  font-size: 1rem;
+  height: 33rem;
+}
+.render{
+  height: 28rem;
+}
+.about{
+  padding: .75rem;
+  font-size: 1rem;
+
+}
+.resume-object{
+  width: 315px;
+  height: 650px;
+}
+}
 }

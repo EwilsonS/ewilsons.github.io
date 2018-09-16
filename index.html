@@ -41,28 +41,23 @@
         </a>
       </p>
     </div>
-    <div class="col sm-1 nav-titles">
-      <p class="p-0">
-        <a class="scroll" href="#row2a">
-          <i class="fas fa-angle-double-down nav-icons"></i>
-          <br> Works
-        </a></p>
+    <div class="col-sm-10 nav-titles">
+      <p class="p-0 ml-4">
+
+        <a class="scroll icon-margin" href="#row2a">
+          <i class="fas fa-angle-double-down nav-icons"> <br> <span class="nav-icons">Works</span> </i>
+
+        </a>
+
+        <a class="scroll icon-margin" href="#row4b">
+          <i class="fas fa-book-open nav-icons"> <br> <span class="nav-icons">Story</span></i>
+        </a>
+
+        <a class="scroll icon-margin" href="#contact">
+          <i class="fas fa-mobile-alt nav-icons"> <br> <span class="nav-icons">Connect</span></i>
+        </a>
+      </p>
     </div>
-    <div class="col sm-1 nav-titles">
-      <p class="p-0">
-        <a class="scroll" href="#row4b">
-          <i class="fas fa-book-open nav-icons"></i>
-          <br> Story
-        </a></p>
-    </div>
-    <div class="col sm-1 nav-titles">
-      <p class="p-0">
-        <a class="scroll" href="#contact">
-          <i class="fas fa-mobile-alt nav-icons"></i>
-          <br> Connect
-        </a></p>
-    </div>
-    <div class="col-sm-7"></div>
 
   </div>
   <div class="row row1 mx-0 px-0">
@@ -78,12 +73,12 @@
         <span class="orange"> {</span> Resume <span class="orange"> }</span></a>
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content"> 
+          <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span  aria-hidden="true">&times;</span>
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <object data='./assets/images/Wilson_Resume2018[web-dev].pdf' width="750px" height="1050px" type=''></object>
+          <object class="resume-object" data='./assets/images/Wilson_Resume2018[web-dev].pdf' type=''></object>
         </div>
       </div>
     </div>
@@ -91,7 +86,7 @@
       <p class="mt-5 carolina">
         <img class="carolina-image" src="./assets/images/49ers_wordmark.png" height="55px" alt="" srcset="">
         <br> University of North Carolina, Charlotte<br>
-        <small>Full Stack Web Development Certification Program</small>
+        <small>Full Stack Web Development Certification</small>
       </p>
       <p class="mt-5 tennessee">
         <img src="./assets/images/1200px-Tennessee_Volunteers_logo.svg.png" height="55px" alt="" srcset="">
@@ -103,7 +98,7 @@
   </div>
   </div>
   <div class="row row2a mx-0 px-0 icon-area" id="row2a">
-    <div class="col-sm-12">
+    <div class="col-sm-12 text-center">
       <br>
       <p>My Work</p>
       <a class="scroll" href="#row2c">
@@ -114,12 +109,12 @@
   <!-- works -->
   <div class="row row2 mx-0 px-0">
     <div class="col-sm-12">
-      <div class="card-group p-5" data-aos-delay="100" data-aos="fade-up">
+      <div class="card-group" data-aos-delay="100" data-aos="fade-up">
         <!-- Sound Stock -->
-        <div class="card rounded-0 p-5">
+        <div class="card works rounded-0">
           <div>
             <a href="https://glacial-mesa-41642.herokuapp.com/" target="_blank">
-              <img class=" rounded-0" src="./assets/images/soundstock.JPG" alt="Card image cap" height="200">
+              <img class=" soundstock-image card-img-top rounded-0" src="./assets/images/soundstock.JPG" alt="Card image cap">
             </a>
             <a class="text-dark" href="https://glacial-mesa-41642.herokuapp.com/" target="_blank">
               <h3 class="text-dark">SoundStock.io</h3>
@@ -136,7 +131,7 @@
           </div>
         </div>
         <!-- Scraper -->
-        <div class="card rounded-0 p-5">
+        <div class="card works rounded-0">
           <a href="https://obscure-depths-38268.herokuapp.com/" target="_blank">
             <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/scraper2.JPG" alt="Card image cap">
           </a>
@@ -157,8 +152,8 @@
           </div>
         </div>
         <!-- Bamazon -->
-        <div class="card rounded-0 p-5">
-          <iframe class="rounded-0 works" src="https://drive.google.com/file/d/1WMO-x6bv7JJrClQ45qPYgaYJnRoshzBE/preview"></iframe>
+        <div class="card works rounded-0">
+          <iframe class="rounded-0 works card-img-top" src="https://drive.google.com/file/d/1WMO-x6bv7JJrClQ45qPYgaYJnRoshzBE/preview"></iframe>
           <div>
             <a class="text-dark" href="https://github.com/EwilsonS/bamazon" target="_blank">
               <h3 class="">Bamazon
@@ -176,10 +171,10 @@
           </div>
         </div>
         <!-- Fitness -->
-        <div class="card rounded-0 p-5">
+        <div class="card works rounded-0">
           <div>
             <a href="https://young-hamlet-41284.herokuapp.com/" target="_blank">
-              <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/fitness.JPG" alt="Card image cap" height="200px">
+              <img class="card-img-top rounded-0 m-0 p-0" src="./assets/images/fitness.JPG" alt="Card image cap">
             </a>
             <a class="text-dark" href="https://young-hamlet-41284.herokuapp.com/" target="_blank">
               <h3 class="text-dark">Project Fitness</h3>
@@ -200,7 +195,7 @@
     </div>
   </div>
   <div class="row row2c mx-0 px-0 icon-area2" id="row2c">
-    <div class="col-sm-12">
+    <div class="col-sm-12 text-center">
       <br>
       <p>More Projects
         <i class="fas fa-plus mb-3 orange"></i>
@@ -241,10 +236,8 @@
         <span> <a class="gitLink" href="https://github.com/EwilsonS/liri-node-app" target="_blank">github</a> </span>
         <br>
       </p>
-      <!-- <p class="giphy"> -->
-      <object class="mt-3  giphy-object" width="100%" height="150%" data="./GiphyApi/index.html">
+      <object class="mt-3 giphy-object" data="./GiphyApi/index.html">
       </object>
-      <!-- </p> -->
     </div>
     <div class="col-sm-3">
       <div class="render">
@@ -292,18 +285,18 @@
     </div>
     <div class="col-sm-1"></div>
   </div>
-  <div class="row row4b mx-0 pr-5 icon-area3" id="row4b">
-      <div class="col-sm-12">
-        <br>
-        <p>
-          <i class="fas fa-book-open mb-3 orange"></i>
-          About me
-        </p>
-      </div>
+  <div class="row row4b mx-0 px-0pr-5 icon-area3" id="row4b">
+    <div class="col-sm-12 text-center">
+      <br>
+      <p>
+        About me
+        <i class="fas fa-book-open mb-3 orange"></i>
+      </p>
     </div>
+  </div>
   <!-- about -->
   <div class="row row4 py-5 mx-0 px-0">
-    <div class="col-sm-5">
+    <div class="col-sm-5 about-pic-div">
       <i class="fas fa-chess-board about-pic"></i>
     </div>
     <div class="col-sm-6">
