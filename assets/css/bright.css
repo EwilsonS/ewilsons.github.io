@@ -432,12 +432,12 @@ transition: .5s;
 .about{
   padding: .75rem;
   font-size: 1rem;
-  height: 55rem;
+  height: 59rem;
 
 }
 .resume-object{
-  width: 250px;
-  height: 550px;
+  width: 275px;
+  height: 525px;
 }
 .works{
   padding: .5rem
