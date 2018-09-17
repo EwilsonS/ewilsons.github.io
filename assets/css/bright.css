@@ -182,6 +182,9 @@ button.close{
   color: rgb(218, 218, 218);
   font-size: 1.5rem;
 }
+.darker-text{
+  color: rgb(255, 215, 163)
+}
 .about-pic{
 color: rgba(50, 50, 50, 0.5);
 font-size: 35rem;
