@@ -46,6 +46,10 @@ li{
 .resume-g{
   color: rgb(0, 32, 53)
 }
+.resume-g:hover{
+  text-decoration: none;
+  color: rgb(128, 128, 128)
+}
 .resume:hover{
 text-decoration: none;
 color: rgb(179, 115, 32)
