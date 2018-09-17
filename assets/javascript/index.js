@@ -22,11 +22,6 @@ $(document).ready(function () {
     } // End if
   });
 
-  $(".footLeft").click(function () {
-    $(".render").show()
-  })
-
-
   // Global variables
   // =============================
   var ranNum;
