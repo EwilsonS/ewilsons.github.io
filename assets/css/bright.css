@@ -359,8 +359,8 @@ transition: .5s;
   display: table-row;
  }
  .blog-row{
-   display: table-row;
-   width: 100%
+   /* display: table-row; */
+   /* width: 100% */
  }
  .col-sm-4{
    -webkit-box-flex: 0;
@@ -396,7 +396,7 @@ transition: .5s;
 }
 .nav-section{
   text-align: center;
-  display: table-row;
+  /* display: table-row; */
   height: 11rem;
   width: 100%
 }
@@ -409,9 +409,6 @@ transition: .5s;
 .nav-icons{
   margin-top: 1.3rem;
   font-size: 1.5rem
-}
-.blog-object{
-  display: table-row;
 }
 .about,
 .more-proj,
