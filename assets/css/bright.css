@@ -6,7 +6,7 @@ li{
   background-color: rgb(0, 32, 53);
   height: 7rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 2.25rem;
   /* font-family: 'Fredericka the Great', cursive; */
   /* font-family: 'Black Ops One', cursive; */
@@ -65,7 +65,7 @@ color: rgb(179, 115, 32)
   margin-top: 1rem;
 }
 .nav-titles a{
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 1rem;
   color: white;
@@ -76,7 +76,7 @@ color: rgb(179, 115, 32)
   color: rgb(218, 143, 45)
 }
 .icon-margin{
-  margin-right: 5rem
+  margin-right: 2rem
 
 }
 .sub-line{
@@ -84,7 +84,7 @@ color: rgb(179, 115, 32)
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav-icons{
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
@@ -415,6 +415,11 @@ transition: .5s;
 .crystal-text{
   padding: .5rem
 }
+}
+@media (max-width:577px){
+  .icon-text{
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 425px){
