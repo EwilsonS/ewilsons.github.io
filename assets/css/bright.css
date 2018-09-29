@@ -279,7 +279,7 @@ transition: .5s;
   margin: 1rem;
   opacity: .75;
   transition: .25s;
-  width: 100px;
+  width: 5rem;
   filter: grayscale(25%)
 
 }
@@ -355,6 +355,14 @@ transition: .5s;
   .pic{
     height: 75px;
     position: relative;
+  }
+  .tech-images img{
+    margin: .25rem;
+    opacity: .85;
+    transition: .25s;
+    width: 4rem;
+    filter: grayscale(0%)
+  
   }
 }
 @media (max-width: 850px){
