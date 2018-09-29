@@ -183,7 +183,7 @@ button.close{
   padding: .25rem ;
 }
 .about{
-  background-color: rgb(218, 143, 45);
+  /* background-color: rgb(218, 143, 45); */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 25px;
   padding: 2rem;
@@ -276,7 +276,15 @@ transition: .5s;
   background-color: rgb(240, 240, 240);
 }
 .tech-images img{
-  margin-right: 2rem
+  margin: 1rem;
+  opacity: .85;
+  transition: .25s;
+  width: 100%;
+
+}
+.tech-images img:hover{
+  opacity: 1;
+
 }
 
 @media only screen and (max-width: 1600px) {
