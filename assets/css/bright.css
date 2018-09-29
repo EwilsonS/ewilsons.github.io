@@ -277,13 +277,15 @@ transition: .5s;
 }
 .tech-images img{
   margin: 1rem;
-  opacity: .85;
+  opacity: .75;
   transition: .25s;
-  width: 100%;
+  width: 100px;
+  filter: grayscale(25%)
 
 }
 .tech-images img:hover{
   opacity: 1;
+  filter: grayscale(0)
 
 }
 
