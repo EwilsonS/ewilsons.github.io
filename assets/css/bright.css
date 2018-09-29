@@ -271,6 +271,13 @@ transition: .5s;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
 }
+.tech{
+  color: rgb(0, 32, 53);
+  background-color: rgb(240, 240, 240);
+}
+.tech-images img{
+  margin-right: 2rem
+}
 
 @media only screen and (max-width: 1600px) {
   .row1-text{
