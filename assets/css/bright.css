@@ -388,7 +388,7 @@ transition: .5s;
 }
 @media (max-width: 850px){
   .nav-icons{
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     font-size: 1.8rem
   }
 }
@@ -443,7 +443,7 @@ transition: .5s;
 .nav-section{
   text-align: center;
   /* display: table-row; */
-  height: 11rem;
+  height: 6rem;
   width: 100%
 }
 .icon-margin{
@@ -465,6 +465,9 @@ transition: .5s;
 @media (max-width:577px){
   .icon-text{
     visibility: hidden;
+  }
+  .nav-section{
+    height: 7.5rem;
   }
 }
 
