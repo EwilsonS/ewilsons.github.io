@@ -3,17 +3,28 @@ li{
   font-size: 1rem
 }
 .nav-section{
-  background-color: rgb(0, 32, 53);
-  height: 7rem;
+  /* background-color: rgb(0, 32, 53); */
+  background-color: rgb(218, 143, 45);
+  height: 4rem;
   color: white;
-  font-size: 2.5rem;
-  line-height: 2.25rem;
+  font-size: 2rem;
+  line-height: 1.75rem;
   /* font-family: 'Fredericka the Great', cursive; */
   /* font-family: 'Black Ops One', cursive; */
   /* font-family: 'Baloo', cursive; */
   /* font-family: 'Kumar One Outline', cursive; */
   /* font-family: 'Emblema One', cursive; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 0;
+
+}
+.nav-section .col-sm-2{
+  padding-bottom: 0;
+
+}
+.name-pos-750{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .name{
   text-decoration: none;
@@ -25,7 +36,7 @@ li{
   height: 1050px;
 }
 .name:hover{
-  color: rgb(236, 153, 44);
+  color: rgb(0, 44, 73);
   text-decoration: none
 
 }
@@ -62,22 +73,24 @@ color: rgb(179, 115, 32)
 .nav-titles{
   font-size: 1.25rem;
   /* text-align: center; */
-  margin-top: 1rem;
+  margin-top:0.25rem;
+  margin-bottom: .25rem;
+  padding-bottom: 0;
 }
 .nav-titles a{
   font-size: 1rem;
   text-align: center;
   margin-top: 1rem;
-  color: white;
+  /* color: white; */
+  color: rgb(0, 44, 73);
   text-decoration: none;
   transition: .15s;
 }
 .nav-titles a:hover{
-  color: rgb(218, 143, 45)
+  color: rgb(80, 79, 79)
 }
 .icon-margin{
   margin-right: 2rem
-
 }
 .sub-line{
   font-size: 1.25rem;
@@ -87,7 +100,10 @@ color: rgb(179, 115, 32)
   font-size: 1.75rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  color:rgb(0, 39, 65);
+}
+.icon-text{
+  color: white
 }
 .row1-text{
   color: rgb(221, 221, 221);
@@ -127,7 +143,6 @@ color: rgb(179, 115, 32)
   font-size: 1.5rem;
   color: rgb(221, 221, 221);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
 }
 button.close{
   width: 750px
@@ -157,6 +172,7 @@ button.close{
 }
 .row5{
   background-color: rgb(0, 32, 53);
+  border-top: 5px solid rgb(218, 143, 45)
 }
 .more-proj{
   font-size: 1.2rem;
@@ -187,11 +203,11 @@ button.close{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 25px;
   padding: 2rem;
-  color: rgb(0, 32, 53);
+  color: rgb(2, 47, 77);
   font-size: 1.5rem;
 }
 .darker-text{
-  color: rgb(0, 60, 100)
+  color: rgb(80, 79, 79)
 }
 .about-pic{
 color: rgba(50, 50, 50, 0.5);
