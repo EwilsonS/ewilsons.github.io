@@ -22,6 +22,17 @@ li{
   padding-bottom: 0;
 
 }
+.nav-resume{
+  font-size: 1.5rem
+}
+.responsiveness-image{
+  padding: 0;
+  margin: 0;
+}
+.responsive{
+  background-color: rgb(240, 240, 240);
+
+}
 .name-pos-750{
   margin-top: 0;
   margin-bottom: 0;
@@ -41,11 +52,11 @@ li{
 }
 .row1{
   background-color:rgb(0, 39, 65);
-  height: 25rem;
+  height: 22rem;
 }
 .row1-middle{
   background-color: rgb(0, 44, 73);
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding-top: 9rem;
 }
@@ -77,7 +88,7 @@ color: rgb(179, 115, 32)
   padding-bottom: 0;
 }
 .nav-titles a{
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-align: center;
   margin-top: 1rem;
   /* color: white; */
@@ -143,6 +154,12 @@ color: rgb(179, 115, 32)
   color: rgb(221, 221, 221);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.carolina-image{
+  width: 6rem
+}
+.tennessee-image{
+  width: 3rem
+}
 button.close{
   width: 750px
 }
@@ -206,7 +223,7 @@ button.close{
   border-radius: 25px;
   padding: 2rem;
   color: rgb(2, 47, 77);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .darker-text{
   color: rgb(80, 79, 79)
@@ -309,11 +326,11 @@ transition: .5s;
 
 @media only screen and (max-width: 1600px) {
   .row1-text{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .tennessee,
   .carolina{
-     font-size: 1.25rem;
+     font-size: 1rem;
 }
   .giphy-object{
     border-radius: 25px;
@@ -380,8 +397,10 @@ transition: .5s;
     transition: .25s;
     width: 4rem;
     filter: grayscale(0%)
-  
   }
+.responsiveness-image{
+width: 20rem
+}
 }
 @media (max-width: 850px){
   .nav-icons{
@@ -480,6 +499,9 @@ transition: .5s;
   .icon-text{
     display: none
   }
+  .responsiveness-image{
+    width: 15rem;
+    }
 }
 
 @media (max-width: 321px){
