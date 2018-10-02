@@ -31,7 +31,8 @@ li{
 }
 .responsive{
   background-color: rgb(240, 240, 240);
-  padding-bottom: 1rem
+  padding-bottom: 5rem;
+  padding-top: 11rem
 
 }
 .name-pos-750{
@@ -310,6 +311,8 @@ transition: .5s;
 .tech{
   color: rgb(0, 32, 53);
   background-color: rgb(240, 240, 240);
+  padding-top:5rem ;
+  padding-bottom:5rem ;
 }
 .tech-images img{
   margin: 1rem;
