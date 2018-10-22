@@ -1,5 +1,6 @@
 # Welcome to Evan's portfolio github
-### Here you will find links and descriptions to all projects mentioned on my portfolio
+## Here you will find links and descriptions to all projects mentioned on my portfolio
 
-## [Soudstock.io](soundstock.io)
-![ss](./assets/images/soundstock.JPG =100x)
+### [Soudstock.io](soundstock.io)
+<!-- ![ss](./assets/images/soundstock.JPG =100x) -->
+<img src="./assets/images/soundstock.JPG" width="100px">
