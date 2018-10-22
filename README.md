@@ -12,6 +12,7 @@ Social site that merges crowdfunding with shared publishing
 * React
 * Node
 * Authentication
+<hr>
 
 ### [The Lemon](https://obscure-depths-38268.herokuapp.com/)
 [View repo](https://github.com/EwilsonS/NewScraper)
@@ -23,6 +24,7 @@ This is a scraper from "The Onion" news parody site
 * Handlebars
 * Cheerio
 * Mongoose
+<hr>
 
 ### [Bamazon](https://drive.google.com/file/d/1WMO-x6bv7JJrClQ45qPYgaYJnRoshzBE/preview)
 [View repo](https://github.com/EwilsonS/bamazon)
@@ -33,6 +35,7 @@ This is a scraper from "The Onion" news parody site
 * MySql
 * Node
 * Inquirer
+<hr>
 
 ### [Project Fitness](https://young-hamlet-41284.herokuapp.com/)
 [View repo](https://github.com/EwilsonS/Project2)
@@ -53,6 +56,7 @@ Whole app
 * Handlebars
 * Bootstrap
 * Passport
+<hr>
 
 ### [Friend Finder](https://rocky-sands-70274.herokuapp.com)
 [View repo](https://github.com/EwilsonS/friend_finder)
@@ -64,6 +68,7 @@ App that allows users to fill out a survey and be matched with compatible users.
 * Body-parser
 * Path
 * Node
+<hr>
 
 ### [Train Scheduler](TrainDatabase/index.html)
 [View repo](https://github.com/EwilsonS/ewilsons.github.io/tree/master/TrainDatabase)
@@ -79,9 +84,21 @@ User friendly scheduling app.
 ### [Non-Stop Flights](EvansTravels/index.html)
 [View repo](https://github.com/EwilsonS/ewilsons.github.io/tree/master/TrainDatabase)
 <br />
-<img src="./assets/images/Train.JPG" width="200px">
+<img src="./assets/images/Travel.JPG" width="200px">
 <br />
 User friendly scheduling app.
 * Firebase
 * Moment.js
 * jQuery
+<hr>
+
+### [Non-Stop Flights](EvansTravels/index.html)
+[View repo](https://github.com/EwilsonS/ewilsons.github.io/tree/master/TrainDatabase)
+<br />
+<img src="./assets/images/Travel.JPG" width="200px">
+<br />
+User friendly scheduling app.
+* Firebase
+* Moment.js
+* jQuery
+<hr>
