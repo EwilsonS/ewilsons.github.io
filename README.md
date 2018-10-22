@@ -12,7 +12,7 @@ Social site that merges crowdfunding with shared publishing
 * React
 * Node
 * Authentication
-
+<br />
 
 ### [The Lemon](https://obscure-depths-38268.herokuapp.com/)
 [View repo](https://github.com/EwilsonS/NewScraper)
@@ -24,6 +24,7 @@ This is a scraper from "The Onion" news parody site
 * Handlebars
 * Cheerio
 * Mongoose
+<br />
 
 
 ### [Bamazon](https://drive.google.com/file/d/1WMO-x6bv7JJrClQ45qPYgaYJnRoshzBE/preview)
@@ -35,6 +36,7 @@ This is a scraper from "The Onion" news parody site
 * MySql
 * Node
 * Inquirer
+<br />
 
 
 ### [Project Fitness](https://young-hamlet-41284.herokuapp.com/)
@@ -56,6 +58,7 @@ Whole app
 * Handlebars
 * Bootstrap
 * Passport
+<br />
 
 
 ### [Friend Finder](https://rocky-sands-70274.herokuapp.com)
@@ -68,6 +71,7 @@ App that allows users to fill out a survey and be matched with compatible users.
 * Body-parser
 * Path
 * Node
+<br />
 
 
 ### [Train Scheduler](TrainDatabase/index.html)
@@ -79,6 +83,7 @@ User friendly scheduling app.
 * Firebase
 * Moment.js
 * jQuery
+<br />
 
 
 ### [Non-Stop Flights](EvansTravels/index.html)
@@ -90,6 +95,7 @@ Flight info retrieval App
 * Ajax
 * jQuery
 * Materialize
+<br />
 
 
 ### [L.I.R.I.](https://drive.google.com/file/d/19i75RcGe1XM1sYTHVPXZGUzNYzXhfw7E/preview)
