@@ -284,6 +284,18 @@ transition: .5s;
 .top-arrow:hover{
   background-color: rgb(0, 84, 139)
 }
+.top-arrow2{
+  z-index: 100;
+  font-size: 2rem;
+  bottom: 4.6rem;
+  right: .8rem;
+  position: fixed;
+  color: rgb(218, 143, 45);
+  background-color: rgba(0, 84, 139,.5);
+  border-radius: 5px;
+  padding: .5rem;
+  transition: .4s
+}
 .footLeft{
   color: #ffffff
 }
