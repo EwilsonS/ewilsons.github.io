@@ -74,9 +74,9 @@
   background:  
   linear-gradient(to bottom right,
     #0a163ada, 
-    #905715
+    #905715e5
     ),
-   url('../images/mtn.jpg');
+   url('../images/mtn_2.jpg');
   /* box-shadow: 0px 1px 1px grey; */
   /* border-bottom: 8px solid #13a2b8; */
   width: 100%;
@@ -464,6 +464,23 @@ width: 25rem;
   .nav-section{
     height: 7.5rem;
   }
+  .row1{
+    background:  
+    linear-gradient(to bottom right,
+      #0a163ada, 
+      #905715e5
+      ),
+     url('../images/mtn_mbl.jpg');
+    /* box-shadow: 0px 1px 1px grey; */
+    /* border-bottom: 8px solid #13a2b8; */
+    width: 100%;
+    background-size: 5%;
+    min-height: 15rem; 
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .card{
     margin: 0
   }
@@ -489,6 +506,7 @@ width: 25rem;
   .row1{
     height: 55rem
   }
+  
  }
 
 @media (max-width: 321px){
