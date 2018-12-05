@@ -1,39 +1,16 @@
+/* =========== Navbar ============================== */
 .nav-section{
-  /* background-color: rgb(0, 32, 53); */
   background-color: rgb(218, 218, 218);
   height: 3rem;
   color: white;
   font-size: 2rem;
   line-height: 1.75rem;
-  /* font-family: 'Fredericka the Great', cursive; */
-  /* font-family: 'Black Ops One', cursive; */
-  /* font-family: 'Baloo', cursive; */
-  /* font-family: 'Kumar One Outline', cursive; */
-  /* font-family: 'Emblema One', cursive; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-bottom: 0;
   border-bottom: 5px solid rgb(218, 143, 45)
 }
 .nav-section .col-sm-2{
   padding-bottom: 0;
-
-}
-.nav-resume{
-  font-size: 1.5rem
-}
-.responsiveness-image{
-  padding: 0;
-  margin: 0;
-}
-.responsive{
-  background-color: rgb(240, 240, 240);
-  padding-bottom: 5rem;
-  padding-top: 10rem;
-  
-}
-.name-pos-750{
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .name{
   text-decoration: none;
@@ -42,68 +19,23 @@
   font-size: 2rem;
   position: relative;
   top: .85rem;
-  
-}
-.resume-object{
-  width: 750px;
-  height: 1050px;
 }
 .name:hover{
   color: rgb(218, 143, 45);
   text-decoration: none
 }
-.row1{
-  background-color:rgb(0, 39, 65);
-  height: 22rem;
-}
-.row1-middle{
-  background-color: rgb(0, 44, 73);
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 9rem;
-}
-.resume{
-  color: rgb(218, 218, 218);
-  transition: .25s;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.resume-g{
-  color: rgb(218, 218, 218)
-}
-.resume-g:hover{
-  text-decoration: none;
-  color: rgb(128, 128, 128)
-}
-.resume:hover{
-text-decoration: none;
-color: rgb(128, 128, 128)
-}
-.pic{
-  border: 5px solid rgb(221, 221, 221);
-  height: 115px;
-  margin-top: 2rem;
-}
 .nav-titles{
   font-size: 1.25rem;
-  /* text-align: center; */
   margin-top:0.25rem;
   margin-bottom: .25rem;
   padding-bottom: 0;
 }
 .nav-titles a{
-  /* font-size: 1rem; */
   text-align: center;
   margin-top: 1rem;
-  /* color: white; */
   color: rgb(0, 44, 73);
   text-decoration: none;
   transition: .15s;
-}
-.tech-describe{
-  color: rgb(218, 143, 45);
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
 }
 .nav-titles a:hover{
   color: rgb(218, 143, 45)
@@ -111,24 +43,77 @@ color: rgb(128, 128, 128)
 .icon-margin{
   margin-right: 2rem
 }
-.sub-line{
-  font-size: 1.25rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .nav-icons{
   font-size: 1.125rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* color:rgb(0, 39, 65); */
 }
-/* .icon-text{
-  color: white
-} */
+.top-arrow{
+  z-index: 100;
+  font-size: 2rem;
+  bottom: 1.5rem;
+  right: .8rem;
+  position: fixed;
+  color: rgb(218, 143, 45);
+  background-color: rgba(0, 84, 139,.5);
+  border-radius: 5px;
+  padding: .5rem;
+  transition: .4s
+}
+.top-arrow:hover{
+  background-color: rgb(0, 84, 139)
+}
+/* =========================== Upper blue section ======================= */
+.row1{
+  background-color:rgb(0, 39, 65);
+  height: 22rem;
+}
 .row1-text{
   color: rgb(221, 221, 221);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.25rem;
   text-align: left;
+}
+.row1-middle{
+  background-color: rgb(0, 44, 73);
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 9rem;
+}
+.resume,
+.resume-g{
+  color: rgb(218, 218, 218);
+  transition: .25s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resume-g:hover,
+.resume:hover{
+  text-decoration: none;
+  color: rgb(128, 128, 128)
+}
+.tennessee,
+.carolina{
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carolina-image{
+  width: 6rem
+}
+.tennessee-image{
+  width: 3rem
+}
+/* ====================== Everything Else ===================================== */
+.tech-describe{
+  color: rgb(218, 143, 45);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.responsive{
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 5rem;
+  padding-top: 10rem;
 }
 .icon-area{
   background-color: rgb(226, 226, 226);
@@ -153,30 +138,6 @@ color: rgb(128, 128, 128)
 }
 .orange{
   color: rgb(218, 143, 45)
-}
-.crystal-text{
-  color: rgb(218, 218, 218)
-}
-.tennessee,
-.carolina{
-  font-size: 1.5rem;
-  color: rgb(221, 221, 221);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.carolina-image{
-  width: 6rem
-}
-.tennessee-image{
-  width: 3rem
-}
-button.close{
-  width: 750px
-}
-.clear-a{
-  text-decoration: none
-}
-.row1{
-  /* border-top: 5px solid rgb(218, 143, 45) */
 }
 .row2{
   background-color: rgb(226, 226, 226);
@@ -217,112 +178,27 @@ button.close{
   border-radius: 25px;
   padding: 2rem
 }
-.giphy-object{
-  border-radius: 25px;
-  width:100%;
-  height:30rem;
-}
 .blog-object{
   width: 100%;
   height: 2000%
 }
-.render{
-  background-size: 29rem;
-  font-size: 1.25rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgb(0, 39, 65);
-  border-radius: 25px;
-  padding: .25rem ;
-}
 .about{
-  /* background-color: rgb(218, 143, 45); */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 25px;
   padding: 2rem;
   color: rgb(2, 47, 77);
   font-size: 1.35rem;
 }
-.darker-text{
-  color: rgb(80, 79, 79)
-}
-.about-pic{
-color: rgba(50, 50, 50, 0.5);
-font-size: 35rem;
-margin-top: 3rem;
-margin-left: 5rem;
-transition: .5s;
-}
-.about-pic:hover{
-  color: rgb(218, 143, 45)
-}
 .contact{
   font-size: 1.25rem;
-  /* color: rgb(0, 39, 65); */
   color: rgb(0, 39, 65);
   color: rgb(218, 218, 218);
   padding: 2rem;
-  /* background-color: rgb(226, 226, 226); */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 25px;
 }
-.contact-pic{
-  transition: .2s;
-  color: rgb(240, 240, 240);
-  font-size: 10rem;
-  position: absolute;
-  bottom: .2rem;
-  right: 3rem;
-}
 .contact-pic:hover{
   color: rgb(218, 143, 45)
-}
-.top-arrow{
-  z-index: 100;
-  font-size: 2rem;
-  bottom: 1.5rem;
-  right: .8rem;
-  position: fixed;
-  color: rgb(218, 143, 45);
-  background-color: rgba(0, 84, 139,.5);
-  border-radius: 5px;
-  padding: .5rem;
-  transition: .4s
-}
-.top-arrow:hover{
-  background-color: rgb(0, 84, 139)
-}
-.top-arrow2{
-  z-index: 100;
-  font-size: 2rem;
-  bottom: 4.6rem;
-  right: .8rem;
-  position: fixed;
-  color: rgb(218, 143, 45);
-  background-color: rgba(0, 84, 139,.5);
-  border-radius: 5px;
-  padding: .5rem;
-  transition: .4s
-}
-.footLeft{
-  color: #ffffff
-}
-.footLeft:hover{
-  color: rgb(218, 143, 45)
-}
-.footMiddle{
-  color: #e6e6e6
-}
-.footRight{
-  color: #c4c4c4
-}
-.gitLink{
-  color: rgb(172, 172, 172)
-}
-.gitLink:hover{
-  color: rgb(218, 143, 45)
-}
-.divider{
-  color: rgb(226, 226, 226)
 }
 .card{
   background-color: rgb(226, 226, 226);
@@ -350,13 +226,15 @@ transition: .5s;
   transition: .25s;
   width: 5rem;
   filter: grayscale(25%)
-
 }
 .tech-images img:hover{
   opacity: 1;
   filter: grayscale(0)
 
 }
+/* ============================================================================================================= */
+/* ======================================== begin media Queries================================================ */
+/* ============================================================================================================= */
 
 @media only screen and (max-width: 1600px) {
   .row1-text{
@@ -366,11 +244,6 @@ transition: .5s;
   .carolina{
      font-size: 1rem;
 }
-  .giphy-object{
-    border-radius: 25px;
-    width:100%;
-    height:25rem;
-  }
   .about-pic-div{
     display: none;
   }
@@ -386,21 +259,7 @@ transition: .5s;
     -ms-flex: 50%;
     flex: 50%;
     margin-bottom: 2rem;
-    /* z-index: 10;
-    -webkit-transform: scale(1.025);
-    -ms-transform: scale(1.025);
-    transform: scale(1.025);  
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5); */
   }
-  /* .card:hover{
-    z-index: 10;
-    -webkit-transform: scale(1.025);
-    -ms-transform: scale(1.025);
-    transform: scale(1.025);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
-  } */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -408,9 +267,6 @@ transition: .5s;
     padding-right: 0;
     padding-left: 0;
     }
-.row3{
-  /* display: table-row; */
-  }
   .responsive{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -425,9 +281,7 @@ transition: .5s;
   .carolina{
      font-size: 1.1rem;
 }
-  .render,
-  .more-proj,
-  .giphy-object{
+  .more-proj{
     height: 25rem;
   }
   .col-sm-7,
@@ -452,8 +306,8 @@ transition: .5s;
     filter: grayscale(0%)
   }
 .responsiveness-image{
-width: 25rem
-}
+width: 25rem;
+  }
 }
 @media (max-width: 948px){
 .name{
@@ -487,6 +341,7 @@ width: 25rem
     height: 23rem
   }
 }
+
 @media (max-width: 805px){
 .name{
   transition: .2s;
@@ -500,76 +355,67 @@ width: 25rem
   .card{
     padding: 1rem;
   }
-  .resume-object{
-    width: 300px;
-    height: 600px;
-  }
   .card-group{
     padding-right: 0;
     padding-left: 0;
     }
-.row1{
-  display: table-row;
- }
- .col-sm-4{
-   -webkit-box-flex: 0;
-   flex: 0 0 100%;
-   max-width: 100%;
-   height: 10rem
- }
- .pic{
-   float: left;
-  height: 50px;
-  margin-top: 0;
-  border: 2px solid rgb(221, 221, 221);
-  display: none;
-}
-.row1-text{
-  font-size: .95rem;
-  padding-top: 1rem;
-}
-.resume{
-  font-size: 2.5rem;
-  position: relative;
-  bottom: 6rem
-}
-.carolina{
-  float: left;
-  font-size: .95rem;
-  margin-left: 3rem
-}
-.tennessee{
-  float: left;
-  font-size: .95rem;
-  margin-left: 5rem
-}
-.nav-section{
-  text-align: center;
-  /* display: table-row; */
-  height: 6rem;
-  width: 100%
-}
-.icon-margin{
-  margin-right: .8rem
-}
-.name-pos-750{
-  text-align: center
-}
-.name{
-  transition: .2s;
-  font-size: 2rem;
-  position: relative;
-  top: 1.25rem;
+  .row1{
+    display: table-row;
   }
-.nav-icons{
-  margin-top: 1.3rem;
-  font-size: 1.5rem
-}
-.about,
-.more-proj,
-.crystal-text{
-  padding: .5rem
-}
+  .col-sm-4{
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 10rem
+  }
+  .pic{
+    float: left;
+    height: 50px;
+    margin-top: 0;
+    border: 2px solid rgb(221, 221, 221);
+    display: none;
+  }
+  .row1-text{
+    font-size: .95rem;
+    padding-top: 1rem;
+  }
+  .resume{
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 6rem
+  }
+  .carolina{
+    float: left;
+    font-size: .95rem;
+    margin-left: 3rem
+  }
+  .tennessee{
+    float: left;
+    font-size: .95rem;
+    margin-left: 5rem
+  }
+  .nav-section{
+    text-align: center;
+    height: 6rem;
+    width: 100%
+  }
+  .icon-margin{
+    margin-right: .8rem
+  } 
+  .name{
+    transition: .2s;
+    font-size: 2rem;
+    position: relative;
+    top: 1.25rem;
+    }
+  .nav-icons{
+    margin-top: 1.3rem;
+    font-size: 1.5rem
+  }
+  .about,
+  .more-proj{
+    padding: .5rem
+  }
 }
 @media (max-width:577px){
   .card-group>.card {
@@ -597,8 +443,7 @@ width: 25rem
 
 @media (max-width: 425px){
   .about,
-  .more-proj,
-  .render{
+  .more-proj{
     height: 30rem
   }
   .about{
@@ -613,46 +458,35 @@ width: 25rem
 }
 
 @media (max-width: 321px){
-.carolina{
-  margin-left: 2rem;
-}
-.tennessee{
-  margin-left: 2rem
-}
-.nav-icons{
-  font-size: 1.3rem;
-  margin-top: .8rem
-}
-.icon-margin{
-  margin-right: .6rem
-}
-.col-sm-4{
-  height:11rem
-}
-.more-proj{
-  padding: .75rem;
-  font-size: 1rem;
-  height: 33rem;
-}
-.render{
-  height: 28rem;
-}
-.about{
-  padding: .75rem;
-  font-size: 1rem;
-  height: 40rem;
+  .carolina{
+    margin-left: 2rem;
+  }
+  .tennessee{
+    margin-left: 2rem
+  }
+  .nav-icons{
+    font-size: 1.3rem;
+    margin-top: .8rem
+  }
+  .icon-margin{
+    margin-right: .6rem
+  }
+  .col-sm-4{
+    height:11rem
+  }
+  .more-proj{
+    padding: .75rem;
+    font-size: 1rem;
+    height: 33rem;
+  }
+  .about{
+    padding: .75rem;
+    font-size: 1rem;
+    height: 40rem;
 
-}
-.resume-object{
-  width: 275px;
-  height: 525px;
-}
-.works{
-  padding: .5rem
-}
-.crystal-text{
-  padding: .5rem
-}
-
+  }
+  .works{
+    padding: .5rem
+  }
 
 }
