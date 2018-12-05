@@ -22,4 +22,21 @@ $(document).ready(function () {
       });
     } // End if
   });
+
+
+    // random quote
+    $(document).ready(function() {
+      var number = Math.floor((Math.random() * quotes.length));
+      $("#quote-q").text(quotes[number].q);
+      $("#quote-a").text(quotes[number].a)
+    })
+  
+  var quotes = [
+    {"q":"Leadership and learning are indispensable to each other", "a": "-JFK"},
+    {"q":"There are no secrets to success, It is the result of preparation, hard work, and learning from failure", "a": "-Colin Powell"},
+    {"q":"Tell me and I forget. Teach me and I remember. Involve me and I learn", "a": "-Benjamine Franklin"},
+    {"q":"Innovation distinguishes between a leader and a follower", "a": "-Steve Jobs"},
+    {"q":"It always seems imossible until it's done", "a": "-Nelson Mandel"}
+  ]
+
 })
