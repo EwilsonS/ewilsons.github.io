@@ -36,6 +36,8 @@ $(document).ready(function () {
     {"q":"There are no secrets to success, It is the result of preparation, hard work, and learning from failure", "a": "-Colin Powell"},
     {"q":"Tell me and I forget. Teach me and I remember. Involve me and I learn", "a": "-Benjamine Franklin"},
     {"q":"Innovation distinguishes between a leader and a follower", "a": "-Steve Jobs"},
+    {"q":"It always seems imossible until it's done", "a": "-Nelson Mandel"},
+    {"q":"Learn as if you were to live forever", "a": "-Gamdhi"},
     {"q":"It always seems imossible until it's done", "a": "-Nelson Mandel"}
   ]
 
