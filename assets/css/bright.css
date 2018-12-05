@@ -74,7 +74,7 @@
   background:  
   linear-gradient(to bottom right,
     #0a163ada, 
-    #905715e5
+    #a47517ec
     ),
    url('../images/mtn_2.jpg');
   /* box-shadow: 0px 1px 1px grey; */
@@ -465,12 +465,8 @@ width: 25rem;
     height: 7.5rem;
   }
   .row1{
-    background:  
-    linear-gradient(to bottom right,
-      #0a163a62, 
-      #9057154f
-      ),
-     url('../images/mtn_mbl.jpg');
+    background-image:  
+     url('../images/mtn7.jpg');
     width: 100%;
     background-size: 5%;
     min-height: 15rem; 
