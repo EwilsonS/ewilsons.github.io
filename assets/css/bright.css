@@ -63,22 +63,42 @@
 .top-arrow:hover{
   background-color: rgb(0, 84, 139)
 }
+.git-nav{
+  height: 2rem;
+  position: relative;
+  bottom: .5rem;
+
+}
 /* =========================== Upper blue section ======================= */
 .row1{
-  background-color:rgb(0, 39, 65);
-  height: 22rem;
+  background:  
+  linear-gradient(to bottom right,
+    #0a163ada, 
+    #905715
+    ),
+   url('../images/mtn.jpg');
+  /* box-shadow: 0px 1px 1px grey; */
+  /* border-bottom: 8px solid #13a2b8; */
+  width: 100%;
+  background-size: 5%;
+  min-height: 15rem; 
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .row1-text{
   color: rgb(221, 221, 221);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Bad Script', cursive;
   font-size: 1.25rem;
   text-align: left;
+  /* background-color: rgba(0, 0, 0, 0.192); */
 }
 .row1-middle{
-  background-color: rgb(0, 44, 73);
+  background-color: rgba(0, 0, 0, 0.171);
   font-size: 3rem;
   text-align: center;
-  padding-top: 9rem;
+  padding-top: 8rem;
 }
 .resume,
 .resume-g{
@@ -112,8 +132,8 @@
 }
 .responsive{
   background-color: rgb(240, 240, 240);
+  padding-top: 7rem;
   padding-bottom: 5rem;
-  padding-top: 10rem;
 }
 .icon-area{
   background-color: rgb(226, 226, 226);
@@ -237,9 +257,6 @@
 /* ============================================================================================================= */
 
 @media only screen and (max-width: 1600px) {
-  .row1-text{
-    font-size: 1rem;
-  }
   .tennessee,
   .carolina{
      font-size: 1rem;
@@ -274,7 +291,6 @@
   .row1-middle{
     font-size: 2.5rem
   }
-  .row1-text,
   .about,
   .contact,
   .tennessee,
@@ -360,13 +376,15 @@ width: 25rem;
     padding-left: 0;
     }
   .row1{
-    display: table-row;
+    /* display: table-row; */
+    height: 40rem
+
   }
   .col-sm-4{
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
-    height: 10rem
+    /* height: 10rem */
   }
   .pic{
     float: left;
@@ -417,6 +435,13 @@ width: 25rem;
     padding: .5rem
   }
 }
+
+@media (max-width:625px){
+ .row1{
+   height: 48rem
+ }
+}
+
 @media (max-width:577px){
   .card-group>.card {
     -webkit-box-flex: 1;
@@ -432,6 +457,9 @@ width: 25rem;
   }
   .icon-text{
     visibility: hidden;
+  }
+  .icon-margin{
+    margin-right: .5rem
   }
   .nav-section{
     height: 7.5rem;
@@ -456,6 +484,12 @@ width: 25rem;
     width: 15rem;
     }
 }
+
+@media (max-width:353px){
+  .row1{
+    height: 55rem
+  }
+ }
 
 @media (max-width: 321px){
   .carolina{
