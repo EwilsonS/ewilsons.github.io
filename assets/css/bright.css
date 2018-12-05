@@ -1,11 +1,7 @@
-li{
-  list-style: url("../images/hand-point-right-solid.svg");
-  font-size: 1rem
-}
 .nav-section{
   /* background-color: rgb(0, 32, 53); */
   background-color: rgb(218, 218, 218);
-  height: 4.25rem;
+  height: 3rem;
   color: white;
   font-size: 2rem;
   line-height: 1.75rem;
@@ -32,8 +28,8 @@ li{
 .responsive{
   background-color: rgb(240, 240, 240);
   padding-bottom: 5rem;
-  padding-top: 10rem
-
+  padding-top: 10rem;
+  
 }
 .name-pos-750{
   margin-top: 0;
@@ -43,6 +39,10 @@ li{
   text-decoration: none;
   color: rgb(0, 44, 73);
   transition: .2s;
+  font-size: 2rem;
+  position: relative;
+  top: .85rem;
+  
 }
 .resume-object{
   width: 750px;
@@ -116,7 +116,7 @@ color: rgb(128, 128, 128)
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav-icons{
-  font-size: 1.75rem;
+  font-size: 1.125rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* color:rgb(0, 39, 65); */
@@ -375,7 +375,11 @@ transition: .5s;
     display: none;
   }
 }
-
+@media only screen and (max-width: 1197px) {
+  .name{
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (max-width: 1300px) {
 .card-group>.card {
     -webkit-box-flex: 1;
@@ -451,6 +455,14 @@ transition: .5s;
 width: 25rem
 }
 }
+@media (max-width: 948px){
+.name{
+  transition: .2s;
+  font-size: 1.25rem;
+  position: relative;
+  top: .25rem;
+  }
+}
 @media (max-width: 865px){
   .card-group>.card {
     -webkit-box-flex: 1;
@@ -469,12 +481,21 @@ width: 25rem
   }
   .nav-icons{
     margin-top: 0rem;
-    font-size: 1.8rem
+    font-size: 1rem
   }
   .row1{
     height: 23rem
   }
 }
+@media (max-width: 805px){
+.name{
+  transition: .2s;
+  font-size: 1.125rem;
+  position: relative;
+  top: .75rem;
+  }
+}
+
 @media (max-width: 750px){
   .card{
     padding: 1rem;
@@ -489,10 +510,6 @@ width: 25rem
     }
 .row1{
   display: table-row;
- }
- .blog-row{
-   /* display: table-row; */
-   /* width: 100% */
  }
  .col-sm-4{
    -webkit-box-flex: 0;
@@ -538,6 +555,12 @@ width: 25rem
 .name-pos-750{
   text-align: center
 }
+.name{
+  transition: .2s;
+  font-size: 2rem;
+  position: relative;
+  top: 1.25rem;
+  }
 .nav-icons{
   margin-top: 1.3rem;
   font-size: 1.5rem
