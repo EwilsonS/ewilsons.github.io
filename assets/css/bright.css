@@ -483,18 +483,7 @@ width: 25rem;
     height: 7.5rem;
   }
   .row1{
-    background:  
-    linear-gradient(to bottom right,
-      #091436, 
-      #a47517d8
-      );
-    width: 100%;
-    min-height: 15rem; 
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-color: rgb(0, 39, 65);
   }
   .card{
     margin: 0
