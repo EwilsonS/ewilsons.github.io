@@ -483,7 +483,11 @@ width: 25rem;
     height: 7.5rem;
   }
   .row1{
-    background-image: url('../images/mtn7.jpg');
+    background:  
+    linear-gradient(to bottom right,
+      #091436, 
+      #a47517d8
+      );
     width: 100%;
     min-height: 15rem; 
     background-attachment: fixed;
