@@ -448,7 +448,7 @@ width: 25rem;
     }
   .nav-icons{
     margin-top: 1.3rem;
-    font-size: 1.5rem
+    font-size: 1.25rem
   }
   .about,
   .more-proj{
@@ -476,7 +476,8 @@ width: 25rem;
     box-shadow: 1px 0px 26px 0px rgba(50, 50, 50, 0.5);
   }
   .icon-text{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
   .icon-margin{
     margin-right: .5rem
