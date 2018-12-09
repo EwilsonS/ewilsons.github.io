@@ -71,6 +71,7 @@
 }
 /* =========================== Upper blue section ======================= */
 .row1{
+  background-color: rgb(0, 32, 53);
   background:  
   linear-gradient(to bottom right,
     #0a163ada, 
@@ -86,6 +87,7 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .row1-text{
   color: rgb(221, 221, 221);
