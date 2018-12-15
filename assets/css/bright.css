@@ -496,12 +496,9 @@ width: 25rem;
 }
 
 @media (max-width: 425px){
-  .about,
-  .more-proj{
-    height: 30rem
-  }
+ 
   .about{
-    height: 50rem;
+    height: 15rem;
   }
   .icon-text{
     display: none
