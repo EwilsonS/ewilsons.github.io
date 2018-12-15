@@ -42,7 +42,7 @@ $(document).ready(function () {
   var quotes = [
     {"q":"Leadership and learning are indispensable to each other", "a": "-JFK"},
     {"q":"There are no secrets to success, It is the result of preparation, hard work, and learning from failure", "a": "-Colin Powell"},
-    {"q":"Tell me and I forget. Teach me and I remember. Involve me and I learn", "a": "-Benjamine Franklin"},
+    {"q":"Tell me and I forget. Teach me and I remember. Involve me and I learn", "a": "-Benjamin Franklin"},
     {"q":"Innovation distinguishes between a leader and a follower", "a": "-Steve Jobs"},
     {"q":"It always seems impossible until it's done", "a": "-Nelson Mandela"},
     {"q":"Learn as if you were to live forever", "a": "-Gandhi"},
