@@ -88,7 +88,26 @@
 .card-columns {
       column-count: 2;
     }
+/* ================================ About =============================== */
+.about-text{
+    background-color: rgba(15, 136, 126, 0.068);
+    font-size: 1.25rem;
+    padding: 1rem
+}
+/* ============================== Contact/Footer ============================= */
+.contact-row{
+    background-color: rgba(15, 136, 126, 0.068);
+    /* background: 
+    linear-gradient(to bottom,
+     rgb(255, 255, 255),
+     #62646448
+     ),
+     url('../images/redtree.jpeg');
+     background-size: cover; */
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 
+    }
 /* ============================== Modal ====================================== */
 .mod-head{
     background-color: rgb(137, 179, 175);
