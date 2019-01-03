@@ -46,33 +46,23 @@
 	<div class="container main">
 		<div class="row navigate ">
 			<div class="col-md-12 text-center">
-				<div class="navigate-card">
-					<div class="navigate-icon"><i class="fas fa-angle-double-down"></i></div>
-					<p class="navigate-text">
-						Work
-					</p>
-				</div>
-				<div class=" navigate-card">
-					<div class="navigate-icon"><i class="fab fa-blogger-b "></i></div>
-					<p class="navigate-text">
-						Blog
-					</p>
-				</div>
-				<div class="navigate-card">
-					<div class="navigate-icon"><i class="fas fa-user-circle"></i></div>
-					<p class="navigate-text">
-						About
-					</p>
-				</div>
-				<div class="card navigate-card">
-					<div class="card-hearder navigate-icon"><i class="fas fa-mobile-alt"></i></div>
-					<p class="navigate-text">
-						Contact
-					</p>
-				</div>
+				<p>
+					<a class="navigate-button mx-5 scroll" href="#works-section"><i class="fas fa-angle-double-down navigate-icon text-secondary"><br><span
+							 class="navigate-text">Work</span></i>
+					</a>
+					<a class="navigate-button mx-5 scroll" href="#blog-section"><i class="fab fa-blogger-b navigate-icon text-secondary"><br><span
+							 class="navigate-text">Blog</span></i>
+					</a>
+					<a class="navigate-button mx-5 scroll" href=""><i class="fas fa-user-circle navigate-icon text-secondary"><br><span
+							 class="navigate-text">About</span></i>
+					</a>
+					<a class="navigate-button mx-5 scroll" href=""><i class="fas fa-mobile-alt navigate-icon text-secondary"><br><span
+							 class="navigate-text">Contact</span></i>
+					</a>
+				</p>
 			</div>
 		</div>
-		<div class="row works-row">
+		<div class="row works-row" id="works-section">
 			<div class="col-sm-12 text-center">
 				<h3>My Work</h3>
 				<br>
@@ -92,7 +82,7 @@
 							<p class="tech-describe m-0">
 								REACT
 							</p>
-							<button class="show-me">Show Me</button>
+							<button type="button" class="show-me" data-toggle="modal" data-target="#soundstock">Show Me</button>
 						</div>
 					</div>
 					<!-- Sharepost -->
@@ -113,7 +103,7 @@
 							<p class="tech-describe m-0">
 								PHP
 							</p>
-							<button class="show-me">Show Me</button>
+							<button type="button" class="show-me" data-toggle="modal" data-target="#shareposts">Show Me</button>
 						</div>
 					</div>
 					<!-- Scraper -->
@@ -133,7 +123,7 @@
 							<p class="tech-describe m-0">
 								JAVASCRIPT
 							</p>
-							<button class="show-me">Show Me</button>
+							<button type="button" class="show-me" data-toggle="modal" data-target="#lemon">Show Me</button>
 						</div>
 					</div>
 					<!-- Bamazon -->
@@ -154,17 +144,16 @@
 							<p class="tech-describe m-0">
 								NODE
 							</p>
-							<button class="show-me">Show Me</button>
+							<button type="button" class="show-me" data-toggle="modal" data-target="#bamazon">Show Me</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row blog-row">
+		<div class="row blog-row" id="blog-section">
 			<div class="col md-12">
 				<h3 class="text-center">Blog Posts</h3>
 				<div class="card-columns blog-posts p-5">
-
 				</div>
 			</div>
 		</div>
@@ -174,6 +163,61 @@
 
 
 
+	<!-- Modal Content -->
+	<div class="modal fade" id="soundstock" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="mod-head rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">SoundStock.io</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<img class="modal-img" src="./assets/images/soundstock5.JPG" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="shareposts" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="mod-head rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">SharePosts</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<img class="modal-img" src="./assets/images/sharepost2.JPG" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="lemon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="mod-head rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">The Lemon</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<img class="modal-img" src="./assets/images/lemon3.JPG" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="bamazon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="mod-head rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Bamazon</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<img class="modal-img" src="./assets/images/bamazon.JPG" alt="">
+			</div>
+		</div>
+	</div>
 
 	<script src="./assets/javascript/strava.js"></script>
 </body>
