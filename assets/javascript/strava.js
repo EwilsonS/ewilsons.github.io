@@ -1,9 +1,6 @@
 $(document).ready(() => {
 
-    // blogger api AIzaSyCdyvbqztCDHXmLkxyy8w_ANC9LEnOfAgo
-    const apiKey = 'AIzaSyCdyvbqztCDHXmLkxyy8w_ANC9LEnOfAgo';
-    const blogId = '3943554857418853370'
-    let queryUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}`
+    let queryUrl = `https://www.googleapis.com/blogger/v3/blogs/3943554857418853370/posts?key=AIzaSyA9RAPlHjpSqJPYQx5z80rBVNWaRK4M3us`
 
     function getBlogPosts() {
         let posts = [];
@@ -12,7 +9,7 @@ $(document).ready(() => {
             url: queryUrl,
             method: 'GET'
         }).then(res => {
-            for (let i = 0; i < res.items.length; i++) {
+            for (let i = 0; i < 4; i++) {
 
                 posts.push(res.items[i])
                 let blogCard = $('<div class="card p-2" id="blog-card">') 
@@ -26,7 +23,6 @@ $(document).ready(() => {
                 $('.blog-posts').append(blogCard);
                     console.log(posts[0])
             };
-           
         })
     }
     getBlogPosts();
