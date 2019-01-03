@@ -22,11 +22,43 @@
 /* ====================== Navigate ================================= */
 .navigate-text{
     color: rgb(15,136,126);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .navigate-icon{
     font-size: 2.5rem;
 }
 .navigate-card{
     border: none;
+}
+/* ====================== Works ============================ */
+
+.works{
+    border: none;
+    background-color: rgba(15, 136, 126, 0.068);
+    font-size: 1rem
+}
+.card-img-top{
+    display: none;
+}
+.tech-describe{
+    font-weight: bold;
+    color: rgb(15, 136, 126);
+    font-size: 1.5rem;
+}
+.show-me{
+    color: red;
+    border-radius: 1.5rem;
+    background-color: white;
+    border: 1px rgba(15, 136, 126, 0.356) solid;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-top: 1rem;
+    transition: .25s;
+}
+.show-me:hover{
+    cursor: pointer;
+    background-color: rgba(15, 136, 126, 0.274);
+
 }
