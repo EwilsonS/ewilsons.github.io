@@ -19,6 +19,16 @@
     position: relative;
     bottom: -8rem;
 }
+.hurry-section{
+    background-color: rgba(0, 0, 0, 0.123);
+    padding: 1rem;
+}
+.hurry-links{
+    list-style-type: none;
+}
+.dark-green{
+    color: rgb(15, 136, 126)
+}
 /* ====================== Navigate ================================= */
 .navigate{
     margin-top: 3rem;
@@ -97,15 +107,8 @@
 /* ============================== Contact/Footer ============================= */
 .contact-row{
     background-color: rgba(15, 136, 126, 0.068);
-    /* background: 
-    linear-gradient(to bottom,
-     rgb(255, 255, 255),
-     #62646448
-     ),
-     url('../images/redtree.jpeg');
-     background-size: cover; */
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 
     }
 /* ============================== Modal ====================================== */
