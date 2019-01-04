@@ -17,25 +17,57 @@
 	 crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
 	 crossorigin="anonymous">
-	 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<link rel="stylesheet" href="./assets/css/strava.css">
 	<title>E. Wilson</title>
 </head>
 
 <body>
+	<div class="side-nav text-center">
+		<a class="scroll" href="#topbar">
+			<i class="fas fa-home side-icon"></i>
+		</a>
+		<br>
+		<a class="scroll" href="#works-section">
+			<i class="fas fa-angle-double-down side-icon"></i>
+		</a>
+		<br>
+		<a class="scroll" href="#blog-section">
+			<i class="fab fa-blogger-b side-icon"></i>
+		</a>
+		<br>
+		<a class="scroll" href="#about-section">
+			<i class="fas fa-user-circle side-icon"></i>
+		</a>
+		<br>
+		<a class="scroll" href="#contact-section">
+			<i class="fas fa-mobile-alt side-icon"></i>
+		</a>
+		<br>
+	</div>
+
 	<div class="header">
-		<div class="topbar container">
+		<div class="topbar container" id="topbar">
 			<span class="name">Evan</span><span class="h1 text-danger">Wilson</span><br>
-			<span class="hurry-section text-light"><a class="text-white" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">Resume </a><span class="text-danger">|</span> <a class="text-white" href="https://github.com/EwilsonS" target="_blank">Github </a><span class="text-danger">|</span> <a class="text-white" href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank">LinkedIn</a></span>
+			<span class="hurry-section text-light"><a class="text-white" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd"
+				 target="_blank">Resume </a><span class="text-danger">|</span> <a class="text-white" href="https://github.com/EwilsonS"
+				 target="_blank">Github </a><span class="text-danger">|</span> <a class="text-white" href="https://www.linkedin.com/in/evan-wilson-27846615b/"
+				 target="_blank">LinkedIn</a></span>
 		</div>
 		<div class="header-body container">
-			<div class="input-group head-input-group">
-				<div class="input-group-prepend">
-					<span class="bg-white rounded-0" id="basic-addon1"><i class="fas fa-search p-3 pt-4"></i></span>
-				</div>
-				<input type="text" class="form-control main-input rounded-0" placeholder="Search" aria-label="Username"
-				 aria-described by="basic-addon1">
+			<div class="form-group">
+				<form class="search-bar">
+					<div class="input-group head-input-group">
+						<div class="input-group-prepend">
+							<span class="bg-white rounded-0" id="basic-addon1"><i class="fas fa-search p-3 pt-4"></i></span>
+						</div>
+						<input type="text" class="form-control main-input rounded-0" placeholder="Search" aria-label="Username"
+						 aria-described by="basic-addon1">
+						 <button type="submit" id="submit-btn"></button>
+					</div>
+				</form>
 			</div>
+			<div class="text-light search-return"></div>
 		</div>
 	</div>
 	<div class="container main">
@@ -153,33 +185,33 @@
 			</div>
 		</div>
 		<div class="row about-row mb-5" id="about-section">
-				<div class="col-sm-3 skills">
-					<p class="text-center about-text font-weight-bold">Skills</p>
-					<div class="about-text">
+			<div class="col-sm-3 skills">
+				<p class="text-center about-text font-weight-bold">Skills</p>
+				<div class="about-text">
 
-						<p class="p-0">
-							<strong>Front</strong><br>
-							JavaScript, CSS3, HTML5, AJAX, Adobe CS
-						</p>
-						<p class="p-0">
-							<strong>Back</strong><br>
-							Node, PHP, REST, JSON
-						</p>
-						<p class="p-0">
-							<strong>Databases</strong><br>
-							MySQL, MongoDB, Firebase
-						</p>
-						<p class="p-0">
-							<strong>Libraries</strong><br>
-							React, Express, NPM, Handlebars, jQuery, AJAX, Bootstrap
-						</p>
-						<p class="p-0">
-							<strong>Other</strong><br>
-							Agile, Object Oriented Programming, Heroku, Chrome Dev Tools, CLI, MVC, GIT version control, Final Cut Pro
-						</p>
-					</div>
-					</div>
-		
+					<p class="p-0">
+						<strong>Front</strong><br>
+						JavaScript, CSS3, HTML5, AJAX, Adobe CS
+					</p>
+					<p class="p-0">
+						<strong>Back</strong><br>
+						Node, PHP, REST, JSON
+					</p>
+					<p class="p-0">
+						<strong>Databases</strong><br>
+						MySQL, MongoDB, Firebase
+					</p>
+					<p class="p-0">
+						<strong>Libraries</strong><br>
+						React, Express, NPM, Handlebars, jQuery, AJAX, Bootstrap
+					</p>
+					<p class="p-0">
+						<strong>Other</strong><br>
+						Agile, Object Oriented Programming, Heroku, Chrome Dev Tools, CLI, MVC, GIT version control, Final Cut Pro
+					</p>
+				</div>
+			</div>
+
 			<div class="col-md-6 text-center">
 				<h3 class="">About Me</h3>
 				<img class="profile-pic mb-3" src="./assets/images/prof2.jpg" alt="">
@@ -198,8 +230,8 @@
 				</p>
 			</div>
 			<div class="col-md-3 text-center">
-					<p class="about-text">
-							<strong>Philosophy</strong>
+				<p class="about-text">
+					<strong>Philosophy</strong>
 					<p class="about-text">
 						Make your descisions before you <span class="font-weight-bold"> HAVE</span> to make them.
 					</p>
@@ -212,28 +244,28 @@
 						<span>Mobile First</span>
 						<img src="./assets/images/responivepng.png" alt="" class="mobile-first">
 					</p>
-				</div>
+			</div>
 		</div>
 	</div>
 
-		<div class="row contact-row mx-0 px-0" id="contact-section">
-			<div class="col-md-12 text-center">
-					<p class="contact p-0 m-0">
-							<span class="h6">Evan S. Wilson</span class="h6">
-								<span class="text-danger"> | </span>
-								<a class="dark-green h6" href="mailto:wilsonscottevan@gmail.com?Subject=I%20found%20your%20portfolio" target="_top">wilsonscottevan@gmail.com</a>
-							<span class="text-danger"> | </span>
-							<a class="h6 text-dark" id="" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">
-								<span class="dark-green"> {</span>Resume<span class="dark-green"><small>google docs</small>} </span></a>
-								<span class="text-danger"> | </span>
-							<a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img
-									src="./assets/images/LinkedIn-Logo-500x500.png" height="25px"></a>
-									<a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
-									height="25px" alt="" srcset=""></a>
-						</p>
-			</div>
-
+	<div class="row contact-row mx-0 px-0" id="contact-section">
+		<div class="col-md-12 text-center">
+			<p class="contact p-0 m-0">
+				<span class="h6">Evan S. Wilson</span class="h6">
+				<span class="text-danger"> | </span>
+				<a class="dark-green h6" href="mailto:wilsonscottevan@gmail.com?Subject=I%20found%20your%20portfolio" target="_top">wilsonscottevan@gmail.com</a>
+				<span class="text-danger"> | </span>
+				<a class="h6 text-dark" id="" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">
+					<span class="dark-green"> {</span>Resume<span class="dark-green"><small>google docs</small>} </span></a>
+				<span class="text-danger"> | </span>
+				<a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img src="./assets/images/LinkedIn-Logo-500x500.png"
+					 height="25px"></a>
+				<a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
+					 height="25px" alt="" srcset=""></a>
+			</p>
 		</div>
+
+	</div>
 
 
 
