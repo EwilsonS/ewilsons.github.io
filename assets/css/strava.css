@@ -118,6 +118,9 @@
 .text{
     font-size: .9rem;
 }
+#blog-card{
+    border: none;
+}
 /* ================================ About ================================ */
 .about-text{
     background-color: rgba(15, 136, 126, 0.068);
