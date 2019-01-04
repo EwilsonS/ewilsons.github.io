@@ -20,11 +20,11 @@
     bottom: -8rem;
 }
 .hurry-section{
-    background-color: rgba(0, 0, 0, 0.123);
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.288);
 }
 .hurry-links{
     list-style-type: none;
+    
 }
 .dark-green{
     color: rgb(15, 136, 126)
@@ -87,6 +87,21 @@
     cursor: pointer;
     background-color: rgba(15, 136, 126, 0.274);
 }
+.show-me:focus{
+    outline: none
+}
+.tech-images img{
+    margin: 1rem;
+    opacity: .75;
+    transition: .25s;
+    width: 4.5rem;
+    filter: grayscale(50%)
+  }
+  .tech-images img:hover{
+    opacity: 1;
+    filter: grayscale(0)
+  
+  }
 /* ============================ Blog Posts =============================== */
 .blog-row{
     margin-top: 7rem;
@@ -98,11 +113,21 @@
 .card-columns {
       column-count: 2;
     }
+.text{
+    font-size: .9rem;
+}
 /* ================================ About =============================== */
 .about-text{
     background-color: rgba(15, 136, 126, 0.068);
-    font-size: 1.25rem;
-    padding: 1rem
+    color: rgb(7, 59, 55);
+    font-size: .9rem;
+    padding: 1rem;
+}
+.profile-pic{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    border: 10px solid rgba(15, 136, 126, 0.068)
 }
 /* ============================== Contact/Footer ============================= */
 .contact-row{
@@ -157,9 +182,4 @@
     .navigate-text{
         font-size: 1rem;
     }
-    .navigate-card {
-       
-
-    }
-
 }

@@ -24,14 +24,7 @@
 <body>
 	<div class="header">
 		<div class="topbar container">
-			<span class="name">Evan</span><span class="h1 text-danger">Wilson</span>
-			<div class="float-right hurry-section text-center">
-				<p class="font-weight-bold float-right h4">In a hurry?
-					<li class="hurry-links"><a class="text-danger font-weight-bold" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">Resume</a></li>
-					<li class="hurry-links"><a class="text-danger font-weight-bold" href="https://github.com/EwilsonS" target="_blank">Github</a></li>
-					<li class="hurry-links"><a class="text-danger font-weight-bold" href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank">LinkedIn</a></li>
-				</p>
-			</div>
+			<span class="name">Evan</span><span class="h1 text-danger">Wilson</span><span class="h5 hurry-section text-dark">.In a Hurry<span class="text-warning">(</span><a class="text-white" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">Resume</a>, <a class="text-white font-weight-bold" href="https://github.com/EwilsonS" target="_blank">Github</a>, <a class="text-white font-weight-bold" href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank">LinkedIn</a><span class="text-warning">) { }</span> </span>
 		</div>
 		<div class="header-body container">
 			<div class="input-group head-input-group">
@@ -45,7 +38,7 @@
 
 	</div>
 	<div class="container main">
-		<div class="row navigate ">
+		<div class="row navigate">
 			<div class="col-md-12 text-center">
 				<p>
 					<a class="navigate-button mx-5 scroll" href="#works-section"><i class="fas fa-angle-double-down navigate-icon text-secondary"><br><span
@@ -151,20 +144,68 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="row tech-row mx-0 px-0">
+				
+				<div class="col-sm-12 offset-sm-1 tech-images px-0 mx-0">
+					<img src="./assets/images/html.png" alt="html">
+					<img src="./assets/images/css3.jpg" alt="css3">
+					<img src="./assets/images/javascript.png" alt="javascript">
+					<img src="./assets/images/jquery.gif" alt="jquery">
+					<img src="./assets/images/node.png" alt="node">
+					<img src="./assets/images/react.png" alt="react">
+					<img src="./assets/images/npm.png" alt="npm">
+					<img src="./assets/images/mongo.png" alt="mongo">
+					<img src="./assets/images/mysql.png" alt="mysql">
+					<img src="./assets/images/heroku.svg" alt="heroku">
+					<img src="./assets/images/handlebars-js.png" alt="handlebars">
+					<img src="./assets/images/firebase.png" alt="firebase">
+					<img src="./assets/images/github.png" alt="github">
+					<img src="./assets/images/git.png" alt="git">
+					<img src="./assets/images/Bootstrap.png" alt="Bootstrap">
+					<img src="./assets/images//vscode.png" alt="vscode">
+					<img src="./assets/images/Photoshop.png" alt="Photoshop">
+					<img src="./assets/images/PHP-PNG-Transparent-Image.png" alt="php">
+		
+				</div>
+			</div> -->
 		<div class="row blog-row" id="blog-section">
 			<div class="col md-12">
-				<h3 class="text-center">Blog Posts</h3>
+				<h3 class="text-center">Blog Posts <small class="text-secondary">(Using Blogger API)</small></h3>
 				<div class="card-columns blog-posts p-5">
 				</div>
 			</div>
 		</div>
-		<div class="row about-row" id="about-section">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-				<h3 class="text-center">About Me</h3>
+		<div class="row about-row mb-5" id="about-section">
+				<div class="col-sm-3 about-text">
+					<p class="text-center font-weight-bold">Skills</p>
+						<p class="p-0">
+							<strong>Front</strong><br>
+							JavaScript, CSS3, HTML5, AJAX, Adobe CS
+						</p>
+						<p class="p-0">
+							<strong>Back</strong><br>
+							Node, PHP, REST, JSON
+						</p>
+						<p class="p-0">
+							<strong>Databases</strong><br>
+							MySQL, MongoDB, Firebase
+						</p>
+						<p class="p-0">
+							<strong>Libraries</strong><br>
+							React, Express, NPM, Handlebars, jQuery, AJAX, Bootstrap
+						</p>
+						<p class="p-0">
+							<strong>Other</strong><br>
+							Agile, Object Oriented Programming, Heroku, Chrome Dev Tools, CLI, MVC, GIT version control, Final Cut Pro
+						</p>
+					</div>
+		
+			<div class="col-md-6 text-center">
+				<h3 class="">About Me</h3>
+				<img class="profile-pic mb-3" src="./assets/images/prof2.jpg" alt="">
 				<p class="about-text">
 					<strong>I'm not afraid to be wrong out
-						loud.</strong> Searching for the right
+						loud.</strong> <br>Searching for the right
 					answer is when we learn the most.
 					Technology moves civilization
 					forward and I refuse to be on the
@@ -176,7 +217,12 @@
 					of fellow passionate developers.
 				</p>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-3 text-center">
+					<p class="about-text">
+						<strong>Philosophy</strong><br>
+						Make your descisions before you HAVE to make them.
+					</p>
+				</div>
 		</div>
 	</div>
 
@@ -184,19 +230,17 @@
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 					<p class="contact p-0 m-0">
-							<span class="h3">Evan S. Wilson</span class="h3">
+							<span class="h4">Evan S. Wilson</span class="h4">
 								<span class="text-danger h2"> | </span>
-							
-								<a class="dark-green h3" href="mailto:wilsonscottevan@gmail.com?Subject=I%20found%20your%20portfolio" target="_top">wilsonscottevan@gmail.com</a>
+								<a class="dark-green h4" href="mailto:wilsonscottevan@gmail.com?Subject=I%20found%20your%20portfolio" target="_top">wilsonscottevan@gmail.com</a>
 							<span class="text-danger h2"> | </span>
-							<!-- <br> Ph: 704-281-2589 <br> -->
-							<a class="h3 text-dark" id="" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">
+							<a class="h4 text-dark" id="" href="https://drive.google.com/open?id=1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd" target="_blank">
 								<span class="dark-green"> {</span> Resume <span class="dark-green"> <small>google docs</small>} </span></a>
-							<br><br>
+								<span class="text-danger h2"> | </span>
 							<a href="https://www.linkedin.com/in/evan-wilson-27846615b/" target="_blank" rel="noopener noreferrer"> <img
-									src="./assets/images/LinkedIn-Logo-500x500.png" height="45px"></a>
-							<a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
-									height="45px" alt="" srcset=""></a>
+									src="./assets/images/LinkedIn-Logo-500x500.png" height="25px"></a>
+									<a href="https://github.com/EwilsonS/ewilsons.github.io" target="_blank"><img src="./assets/images/github-icon-for-resume-16.jpg"
+									height="25px" alt="" srcset=""></a>
 						</p>
 			</div>
 			<div class="col-md-2"></div>
