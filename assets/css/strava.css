@@ -20,7 +20,7 @@
     bottom: -8rem;
 }
 .hurry-section{
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.109);
 }
 .hurry-links{
     list-style-type: none;
@@ -32,7 +32,7 @@
 /* ====================== Navigate ================================= */
 .navigate{
     margin-top: 3rem;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 .navigate-text{
     color: rgb(15,136,126);
@@ -47,6 +47,10 @@
 .navigate-icon{
     font-size: 2.5rem;
 }
+.navigate-button{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
 
 .navigate-button:hover{
     text-decoration: none;
@@ -54,7 +58,7 @@
 }
 /* ====================== Works ============================ */
 .works-row{
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 7rem;
 }
 .works{
@@ -141,7 +145,7 @@
     border: none;
 }
 .modal-img{
-    width: 40rem;
+    width: 30rem;
 }
 /* ============================================================================================================================================= */
 /* ===================================================== Media Queries ========================================================================= */
@@ -164,19 +168,36 @@
         flex: 1 35%;
         margin-bottom: 2rem;
     }
-
+    .navigate-button{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .card-columns {
         column-count: 1;
       }
     .text{
         display: none;
     }
+    .skills{
+        display: none;
+    }
 }
 @media (max-width: 576px) {
+    .navigate-button{
+        margin-left: .70rem;
+        margin-right: .70rem;
+    }
     .navigate-icon{
         font-size: 1.5rem;
     }
     .navigate-text{
         font-size: 1rem;
+    }
+    .separator>a>img{
+        width: 75%;
+        height: 75%;
+    }
+    .modal-img{
+        width: 19rem;
     }
 }

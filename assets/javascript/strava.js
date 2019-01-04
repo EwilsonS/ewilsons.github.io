@@ -24,18 +24,20 @@ $(document).ready(() => {
 
 	function getBlogPosts() {
 		let posts = [];
-
+		
+		
 		$.ajax({
 			url: queryUrl,
 			method: 'GET'
 		}).then(res => {
 			for (let i = 0; i < 4; i++) {
-
+				
 				posts.push(res.items[i])
+				let pubDate = moment(posts[i].published).format("MMM Do YYYY");
 				let blogCard = $('<div class="card p-2" id="blog-card">')
 				blogCard.html(`
-                <h5 class="text-center" id="blog-title"><a class="text-dark" href="${posts[i].url}">${posts[i].title}</a>
-                <br><small>${posts[i].published}</small></h5>
+                <h5 class="text-center" id="blog-title"><a class="text-dark" href="${posts[i].url}">${posts[i].title}</a></h5>
+                <h6 class="text-center"><small>Written by <span class='font-weight-bold'>${posts[i].author.displayName}</span> <span class='text-secondary font-italic'>on ${pubDate}</span></small></h6>
                 <p id="blog-content">${posts[i].content}</p>
                 </div>`
 				);
