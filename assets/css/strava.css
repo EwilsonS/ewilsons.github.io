@@ -20,7 +20,7 @@
     bottom: -8rem;
 }
 .hurry-section{
-    background-color: rgba(0, 0, 0, 0.109);
+    /* background-color: rgba(0, 0, 0, 0.109); */
 }
 .hurry-links{
     list-style-type: none;
@@ -133,6 +133,9 @@
     width: 10rem;
     border-radius: 100%;
     border: 10px solid rgba(15, 136, 126, 0.068)
+}
+.mobile-first{
+    width: 100%;
 }
 /* ============================== Contact/Footer ============================= */
 .contact-row{
