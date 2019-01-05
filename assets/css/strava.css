@@ -31,7 +31,7 @@
     color: rgb(15, 136, 126)
 }
 .side-nav{
-    bottom: 10rem;
+    margin-top: 7rem;
     right: 0rem;
     position: fixed;
 }

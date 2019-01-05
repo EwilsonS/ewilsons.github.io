@@ -1,7 +1,12 @@
 $(document).ready(() => {
+	let y = $(this).scrollTop();
+		if (y === 0 ) {
+			$('.side-nav, .home').hide();
+		}
 	// Search bar
 	$('.search-bar').on('submit', function(){
-		alert('hi');
+		alert('text submitted');
+		console.log($('.main-input').val())
 		$('.main-input').val('');
 
 	})
@@ -22,7 +27,7 @@ $(document).ready(() => {
 
 	// show side nav afterscrolled past main nav
 	$(document).scroll(function() {
-		var y = $(this).scrollTop();
+		let y = $(this).scrollTop();
 		if (y > 505) {
 		  $('.side-nav, .home').fadeIn();
 		} else {
