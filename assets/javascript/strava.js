@@ -3,12 +3,30 @@ $(document).ready(() => {
 		if (y === 0 ) {
 			$('.side-nav, .home').hide();
 		}
-	// Search bar
-	$('.search-bar').on('submit', function(){
-		alert('text submitted');
-		console.log($('.main-input').val())
-		$('.main-input').val('');
+	// Search bar area
+	$('.search-bar').on('submit', function(e){
+		e.preventDefault()
 
+		//replace search opitons with a data dump of objects with various keywords that point to a place on the web OR on my portfolio
+		//==========================================
+				/* code here */
+		// -------------------------------------------
+		let searchOptions = ['work-section', 'blog-section', 'contact-section', ' result 4', 'result 5', 'result 6', 'result 7'];
+		let results = [];
+
+		let input = $('.main-input').val()
+		 if (input){
+			for(let i = 0; i < 6; i++){
+				let option = $(`<div>`)
+				
+				option.html(`<a href='#' class='h6 text-light'>${searchOptions[i]}</a> - <span class='font-italic'>Description</span>`)
+
+				$(".search-return").append(option)
+
+			}
+		 }
+		results.push(input);
+		$('.main-input').val('');
 	})
 
 	// Add smooth scrolling to all links

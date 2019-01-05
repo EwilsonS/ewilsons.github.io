@@ -19,7 +19,7 @@
 }
 .head-input-group{
     position: relative;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 #submit-btn{
     visibility: hidden;
@@ -52,6 +52,7 @@
   }
   .zz{
       display: none;
+      transition: .25s
   }
 /* ====================== Navigate ================================= */
 .navigate{
@@ -242,6 +243,7 @@
         transition: .4s;
     }
     .zz{
+        transition: .25s;
         display: block;
         
     }
