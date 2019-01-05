@@ -24,9 +24,9 @@ $(document).ready(() => {
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		if (y > 505) {
-		  $('.side-nav').fadeIn();
+		  $('.side-nav, .home').fadeIn();
 		} else {
-		  $('.side-nav').fadeOut();
+		  $('.side-nav, .home').fadeOut();
 		}
 	  });
 

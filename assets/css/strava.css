@@ -50,8 +50,8 @@
     color: rgb(7, 59, 55);
     transform: scale(1.5);
   }
-.home{
-      visibility: hidden;
+  .zz{
+      display: none;
   }
 /* ====================== Navigate ================================= */
 .navigate{
@@ -240,7 +240,10 @@
         padding: .25rem;
         margin-bottom: .75rem;
         transition: .4s;
-        visibility: visible;
+    }
+    .zz{
+        display: block;
+        
     }
     .other-side-icons{
         display: none;
