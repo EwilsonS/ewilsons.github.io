@@ -19,7 +19,7 @@
 }
 .head-input-group{
     position: relative;
-    bottom: -8rem;
+    margin-top: 8rem;
 }
 #submit-btn{
     visibility: hidden;
