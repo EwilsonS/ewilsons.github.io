@@ -9,8 +9,7 @@ $(document).ready(() => {
 		// Clear results pane before new search
 		$('.search-return').empty();
 
-		//replace search opitons with a data dump of objects with various keywords that point to a place on the web OR on my portfolio
-		//==========================================
+		// Constructor to create new serch index 
 		function IndexedItem(keyword, link, description, metaArr) {
 			this.keyword = keyword;
 			this.link = link;
@@ -21,12 +20,10 @@ $(document).ready(() => {
 		let allIndexed = [];
 		let searched = [];
 
-		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['resume', 'work', 'history', 'experience', 'contact']);
-		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript'])
-		allIndexed.blog = new IndexedItem('blog', 'https://ewilsons.github.io/#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delights', 'git'])
-		// console.log(Object(allIndexed))
-		// console.log(Object.values(allIndexed)[1].link)
-		// -------------------------------------------
+		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['','resume', 'work', 'history', 'experience', 'contact']);
+		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript']);
+		allIndexed.blog = new IndexedItem('blog', 'https://ewilsons.github.io/#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
+		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react'] )
 
 		// Store seach input to variable 'input'
 		let input = $('.main-input').val().toLowerCase();
@@ -40,9 +37,8 @@ $(document).ready(() => {
 			for (let j = 0; j < data.metaArr.length; j++) {
 				if (input === data.metaArr[j]) {
 
+					// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
 					searched.push(Object.values(allIndexed)[i])
-
-					console.log(searched[0].keyword)
 
 					let option = $(`<div>`)
 
@@ -50,8 +46,18 @@ $(document).ready(() => {
 
 					$(".search-return").append(option)
 				}
-			}
+				//  else if(input != data.metaArr[j]){
+				// 	let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
+				// 	console.log(google)
+
+				// 	let option2 = $(`<div>`)
+
+				// 	$(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
+				// 	// $(".search-return").append(option2)
+
+				// }
+			}
 		}
 		$('.main-input').val('');
 
