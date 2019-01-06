@@ -3,6 +3,21 @@ $(document).ready(() => {
 	if (y === 0) {
 		$('.side-nav, .home').hide();
 	}
+
+		// Add smooth scrolling to all links
+		$(".scroll").on('click', function (event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 500, function () {
+					window.location.hash = hash;
+				});
+			}
+		});
+	
 	// Search bar area
 	$('.search-bar').on('submit', function (e) {
 		e.preventDefault()
@@ -39,21 +54,23 @@ $(document).ready(() => {
 
 					// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
 					searched.push(Object.values(allIndexed)[i])
+					
+					let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
 					let option = $(`<div>`)
 
-					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`)
+					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`) ? option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`) : $(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
 
 					$(".search-return").append(option)
 				}
-				//  else if(input != data.metaArr[j]){
+				//  else if(input !== data.metaArr[j]){
 				// 	let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
 				// 	console.log(google)
 
 				// 	let option2 = $(`<div>`)
 
-				// 	$(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
+					// $(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
 				// 	// $(".search-return").append(option2)
 
 				// }
@@ -64,19 +81,6 @@ $(document).ready(() => {
 
 	})
 
-	// Add smooth scrolling to all links
-	$(".scroll").on('click', function (event) {
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 500, function () {
-				window.location.hash = hash;
-			});
-		}
-	});
 
 	// show side nav afterscrolled past main nav
 	$(document).scroll(function () {
