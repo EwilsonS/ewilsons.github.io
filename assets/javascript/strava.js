@@ -1,32 +1,61 @@
 $(document).ready(() => {
 	let y = $(this).scrollTop();
-		if (y === 0 ) {
-			$('.side-nav, .home').hide();
-		}
+	if (y === 0) {
+		$('.side-nav, .home').hide();
+	}
 	// Search bar area
-	$('.search-bar').on('submit', function(e){
+	$('.search-bar').on('submit', function (e) {
 		e.preventDefault()
+		// Clear results pane before new search
+		$('.search-return').empty();
 
 		//replace search opitons with a data dump of objects with various keywords that point to a place on the web OR on my portfolio
 		//==========================================
-				/* code here */
+		function IndexedItem(keyword, link, description, metaArr) {
+			this.keyword = keyword;
+			this.link = link;
+			this.description = description
+			this.metaArr = metaArr;
+		}
+
+		let allIndexed = [];
+		let searched = [];
+
+		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['resume', 'work', 'history', 'experience', 'contact']);
+		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript'])
+		allIndexed.blog = new IndexedItem('blog', 'https://ewilsons.github.io/#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delights', 'git'])
+		// console.log(Object(allIndexed))
+		// console.log(Object.values(allIndexed)[1].link)
 		// -------------------------------------------
-		let searchOptions = ['work-section', 'blog-section', 'contact-section', ' result 4', 'result 5', 'result 6', 'result 7'];
-		let results = [];
 
-		let input = $('.main-input').val()
-		 if (input){
-			for(let i = 0; i < 6; i++){
-				let option = $(`<div>`)
-				
-				option.html(`<a href='#' class='h6 text-light'>${searchOptions[i]}</a> - <span class='font-italic'>Description</span>`)
+		// Store seach input to variable 'input'
+		let input = $('.main-input').val().toLowerCase();
 
-				$(".search-return").append(option)
+		for (let i = 0; i < (Object.keys(allIndexed).length < 6 ? Object.keys(allIndexed).length : 6); i++) {
 
+			// Iterate through allIndexed array store to variabe 'data'
+			let data = Object.values(allIndexed)[i];
+
+			// Setup for loop to iterte through metaArr within data 
+			for (let j = 0; j < data.metaArr.length; j++) {
+				if (input === data.metaArr[j]) {
+
+					searched.push(Object.values(allIndexed)[i])
+
+					console.log(searched[0].keyword)
+
+					let option = $(`<div>`)
+
+					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`)
+
+					$(".search-return").append(option)
+				}
 			}
-		 }
-		results.push(input);
+
+		}
 		$('.main-input').val('');
+
+
 	})
 
 	// Add smooth scrolling to all links
@@ -44,27 +73,28 @@ $(document).ready(() => {
 	});
 
 	// show side nav afterscrolled past main nav
-	$(document).scroll(function() {
+	$(document).scroll(function () {
 		let y = $(this).scrollTop();
 		if (y > 505) {
-		  $('.side-nav, .home').fadeIn();
+			$('.side-nav, .home').fadeIn();
 		} else {
-		  $('.side-nav, .home').fadeOut();
+			$('.side-nav, .home').fadeOut();
 		}
-	  });
+	});
 
-	// Blogger API grab
-	let queryUrl = `https://www.googleapis.com/blogger/v3/blogs/3943554857418853370/posts?key=AIzaSyA9RAPlHjpSqJPYQx5z80rBVNWaRK4M3us`
-
+	// Blog
 	function getBlogPosts() {
+		// Blogger API grab
+		let queryUrl = `https://www.googleapis.com/blogger/v3/blogs/3943554857418853370/posts?key=AIzaSyA9RAPlHjpSqJPYQx5z80rBVNWaRK4M3us`
+
 		let posts = [];
-		
+
 		$.ajax({
 			url: queryUrl,
 			method: 'GET'
 		}).then(res => {
 			for (let i = 0; i < 4; i++) {
-				
+
 				posts.push(res.items[i])
 				let pubDate = moment(posts[i].published).format("MMM Do YYYY");
 				let blogCard = $('<div class="card p-2 mb-3 rounded-0" id="blog-card">')
@@ -76,7 +106,7 @@ $(document).ready(() => {
 				);
 
 				$('.blog-posts').append(blogCard);
-				console.log(posts[i])
+				// console.log(posts[i])
 			};
 		})
 	}
