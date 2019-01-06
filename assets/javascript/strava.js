@@ -37,11 +37,11 @@ $(document).ready(() => {
 
 		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['','resume', 'work', 'history', 'experience', 'contact']);
 		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript']);
-		allIndexed.blog = new IndexedItem('blog', 'https://ewilsons.github.io/#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
-		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react'] )
+		allIndexed.blog = new IndexedItem('blog', '#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
+		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react', 'php', 'handlebar', 'mvc'] )
 
 		// Store seach input to variable 'input'
-		let input = $('.main-input').val().toLowerCase();
+		let input = ($('.main-input').val().toLowerCase()).trim();
 
 		for (let i = 0; i < (Object.keys(allIndexed).length < 6 ? Object.keys(allIndexed).length : 6); i++) {
 
