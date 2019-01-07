@@ -51,7 +51,7 @@ $(document).ready(() => {
 			// Setup for loop to iterte through metaArr within data 
 			for (let j = 0; j < data.metaArr.length; j++) {
 				if (input === data.metaArr[j]) {
-
+					
 					// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
 					searched.push(Object.values(allIndexed)[i])
 					
@@ -59,7 +59,7 @@ $(document).ready(() => {
 
 					let option = $(`<div>`)
 
-					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`) ? option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`) : $(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
+					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`)
 
 					$(".search-return").append(option)
 				}
