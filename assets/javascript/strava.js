@@ -4,20 +4,20 @@ $(document).ready(() => {
 		$('.side-nav, .home').hide();
 	}
 
-		// Add smooth scrolling to all links
-		$(".scroll").on('click', function (event) {
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				event.preventDefault();
-				var hash = this.hash;
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 500, function () {
-					window.location.hash = hash;
-				});
-			}
-		});
-	
+	// Add smooth scrolling to all links
+	$(".scroll").on('click', function (event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 500, function () {
+				window.location.hash = hash;
+			});
+		}
+	});
+
 	// Search bar area
 	$('.search-bar').on('submit', function (e) {
 		e.preventDefault()
@@ -35,10 +35,10 @@ $(document).ready(() => {
 		let allIndexed = [];
 		let searched = [];
 
-		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['','resume', 'work', 'history', 'experience', 'contact']);
+		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['', 'resume', 'work', 'history', 'experience', 'contact']);
 		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript']);
 		allIndexed.blog = new IndexedItem('blog', '#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
-		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react', 'php', 'handlebar', 'mvc'] )
+		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react', 'php', 'handlebar', 'mvc'])
 
 		// Store seach input to variable 'input'
 		let input = ($('.main-input').val().toLowerCase()).trim();
@@ -51,10 +51,10 @@ $(document).ready(() => {
 			// Setup for loop to iterte through metaArr within data 
 			for (let j = 0; j < data.metaArr.length; j++) {
 				if (input === data.metaArr[j]) {
-					
+
 					// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
 					searched.push(Object.values(allIndexed)[i])
-					
+
 					let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
 					let option = $(`<div>`)
@@ -70,7 +70,7 @@ $(document).ready(() => {
 
 				// 	let option2 = $(`<div>`)
 
-					// $(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
+				// $(".search-return").html(`<a href='${google}' target='_blank' class='h6 text-white'>search google for ${input}</a> - <span class='font-italic'>zzzzzzzzzzzz</span>`)
 				// 	// $(".search-return").append(option2)
 
 				// }
