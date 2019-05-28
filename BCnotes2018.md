@@ -965,7 +965,7 @@ fi
 
 
 <!-- ======================================================================================================================================================================== -->
-"they think that technology just automatically improves. I only improves when alot of people work very hard to make it better" -Elon Musk
+"they think that technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk
 
 **regex**
 
