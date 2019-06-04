@@ -15,4 +15,15 @@
 `git push origin name-of-branch` 
 `git branch -D name-of-branch`
 
-**Java Bootcamp Day One**
+**Java Bootcamp**
+- 6/3/2018
+One week redos for summatives
+JRE- runtime environment
+JDK-development kit
+IDE-integrated development environment
+  - Eclipse
+  - NetBeans
+  - IntelliJ Idea
+  J2EE libraries
+  - Jakarta (apache)
+  - Spring(most popular)
