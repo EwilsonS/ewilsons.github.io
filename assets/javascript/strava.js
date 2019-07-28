@@ -19,50 +19,50 @@ $(document).ready(() => {
 	});
 
 	// Search bar area
-	$('.search-bar').on('submit', function (e) {
-		e.preventDefault()
+	// $('.search-bar').on('submit', function (e) {
+		// e.preventDefault()
 		// Clear results pane before new search
-		$('.search-return').empty();
+		// $('.search-return').empty();
 
 		// Constructor to create new serch index 
-		function IndexedItem(keyword, link, description, metaArr) {
-			this.keyword = keyword;
-			this.link = link;
-			this.description = description
-			this.metaArr = metaArr;
-		}
+		// function IndexedItem(keyword, link, description, metaArr) {
+		// 	this.keyword = keyword;
+		// 	this.link = link;
+		// 	this.description = description
+		// 	this.metaArr = metaArr;
+		// }
 
-		let allIndexed = [];
-		let searched = [];
+		// let allIndexed = [];
+		// let searched = [];
 
-		allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['', 'resume', 'work', 'history', 'experience', 'contact']);
-		allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript']);
-		allIndexed.blog = new IndexedItem('blog', '#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
-		allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react', 'php', 'handlebar', 'mvc'])
+		// allIndexed.resume = new IndexedItem('resume', 'https://drive.google.com/file/d/1RfZFrvjRWxgDYelFOrw_sL7sy4TmQrbd/view', 'View resume on Google Docs', ['', 'resume', 'work', 'history', 'experience', 'contact']);
+		// allIndexed.projects = new IndexedItem('projects', 'https://ewilsons.github.io/#works-section', 'Projects listed on this site', ['react', 'projects', 'php', 'ajax', 'node', 'javascript']);
+		// allIndexed.blog = new IndexedItem('blog', '#blog-section', "Evan's Blog", ['blog', 'write', 'post', 'blogger', 'article', 'user', 'auth', 'coding', 'micro', 'delight', 'git']);
+		// allIndexed.github = new IndexedItem('github', 'https://github.com/EwilsonS', 'View Evan\'s github profile', ['github', 'javascript', 'react', 'php', 'handlebar', 'mvc'])
 
-		// Store seach input to variable 'input'
-		let input = ($('.main-input').val().toLowerCase()).trim();
+		// // Store seach input to variable 'input'
+		// let input = ($('.main-input').val().toLowerCase()).trim();
 
-		for (let i = 0; i < (Object.keys(allIndexed).length < 6 ? Object.keys(allIndexed).length : 6); i++) {
+		// for (let i = 0; i < (Object.keys(allIndexed).length < 6 ? Object.keys(allIndexed).length : 6); i++) {
 
-			// Iterate through allIndexed array store to variabe 'data'
-			let data = Object.values(allIndexed)[i];
+		// 	// Iterate through allIndexed array store to variabe 'data'
+		// 	let data = Object.values(allIndexed)[i];
 
-			// Setup for loop to iterte through metaArr within data 
-			for (let j = 0; j < data.metaArr.length; j++) {
-				if (input === data.metaArr[j]) {
+		// 	// Setup for loop to iterte through metaArr within data 
+		// 	for (let j = 0; j < data.metaArr.length; j++) {
+		// 		if (input === data.metaArr[j]) {
 
-					// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
-					searched.push(Object.values(allIndexed)[i])
+		// 			// Objct.values digs into the allIndexed item and returns one obeject and pushes it into the searched array
+		// 			searched.push(Object.values(allIndexed)[i])
 
-					let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
+		// 			let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
-					let option = $(`<div>`)
+		// 			let option = $(`<div>`)
 
-					option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`)
+		// 			option.html(`<a href='${searched[0].link}' target='_blank' class='h6 text-white'>${searched[0].keyword}</a> - <span class='font-italic'>${searched[0].description}</span>`)
 
-					$(".search-return").append(option)
-				}
+		// 			$(".search-return").append(option)
+		// 		}
 				//  else if(input !== data.metaArr[j]){
 				// 	let google = `https://www.google.com/search?safe=off&q=${input}&spell=1&sa=X&ved=0ahUKEwinv-OntNjfAhUDLK0KHVlaBhcQBQgrKAA&biw=1600&bih=758`;
 
@@ -74,12 +74,12 @@ $(document).ready(() => {
 				// 	// $(".search-return").append(option2)
 
 				// }
-			}
-		}
-		$('.main-input').val('');
+	// 		}
+	// 	}
+	// 	$('.main-input').val('');
 
 
-	})
+	// })
 
 
 	// show side nav afterscrolled past main nav
@@ -103,6 +103,7 @@ $(document).ready(() => {
 			url: queryUrl,
 			method: 'GET'
 		}).then(res => {
+			$('.bcount').append(res.items.length);
 			for (let i = 0; i < 4; i++) {
 
 				posts.push(res.items[i])
