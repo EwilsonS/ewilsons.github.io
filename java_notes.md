@@ -1,3 +1,7 @@
+_This is a repository of project completed for a Java Bootcamp @UNCC_  
+_Below, are some of the topics mentioned_  
+
+
 <a name="top"></a>
 
 ##### Keywords
@@ -25,6 +29,15 @@
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
 [`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
 [`Microservices`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#microservices)
+[`Queue`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
+[`Cache`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
+[`Edge Service`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#edge)
+[`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
+[`Consumer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
+[`Security`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#security)
+[`Oauth`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#oauth)
+[`PWS`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#pws)
+[`Circuit Breaker`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#circuit)
 
 
 
@@ -226,7 +239,7 @@ _Instantiate_ - by using the "new" keyword
   - JVM will store new instance in **heap** memory and gives a reference  
 
 _Stack/ Heap_  
-  - Stack memory only exists ifor the duration of the code block they are in  
+  - Stack memory only exists for the duration of the code block they are in  
   - Local primitive values live on the stack
   - The reference variable the point to the heap lives in the stack.  
   OBjs created with the _new_ operator live on the heap and we use references to access them  
@@ -312,7 +325,7 @@ _Java Collections_
   - Interface
   - Collections dont work with primitives
 
-_Iterators_  
+_Iterator_ - interface  
   - Object that allows us to access each element in a collection
   - Two methods  
     - hasNext()
@@ -356,7 +369,7 @@ _Exceptions_
     -  something we catch or specify that our code may throw an error
   - unchecked  
     - Errors we cant or dont want ot recover from
-    - We do not have to catach jor specify these
+    - We do not have to catch or specify these
 `try`-code that might throw an exception  
 `catch`- catch err and do domething (message/ recover)  
 `finally`- run some code anyway  
@@ -436,7 +449,7 @@ new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Mot
 ```java
 List<Motorcycle> bikes = new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Motorcycle.class).build().parse();
 
-            // Print the information for all Suzuki motorcycles in inventory
+            // Print the information for all Suzuki motorcycles in inventory 
             String make = "Suzuki";
             System.out.println("All " + make + " motorcycles in inventory: ");
             bikes                                          // list type Motorcycle
@@ -525,7 +538,7 @@ _REST_
 
   In class API practice  
   create post /api/addRecord
-``` java
+``` 
   Method: Post 
   URI: /inventory
   Req Body: JSON of created rcord
@@ -533,21 +546,21 @@ _REST_
  ```
 
   retrieve /api/records?name=evan
-```java
+```
       Method: Get
       URI: /inventory
       Req Body: None
       Res body: Json returned
 ```
   update 
-```  java
+```  
       Method: Put
       URI: /inventory{id}
       Req Body: JSON of created rcord
       Res body: JSON returned
 ```
   delete
-```  java
+```  
       Method: DELETE
       URI: /inventory{id}
       Req Body: NONE
@@ -598,8 +611,8 @@ _Tomcat_ - reference implemetaion of the servlet container
   - Implements the Servlet specification
   - components 
     - `Catalina` - servlet container
-    - `Coyote` - 
-    - `Jasper` - provides support for JavaPages
+    - `Coyote` - http support 
+    - `Jasper` - provides support for JavaPages jsp
 
 _Servlet API_
   - web service - collection of requests, requests routing and servlets
@@ -617,10 +630,10 @@ _MVC Patterns_
 _Spring Rest Controller_
   - `Dispatcher servlet` routes requests to Rest controller
 ```java  
-@RestController - // class_ level annotation
-@RequestMapping - // method/class level, 2 params(value = "/endpoint", Method = RequestMethod Get..) class level will ensure you hit that route first (ex. /api/endpoint)
-@ResponseStatus - // method level
-@PathVariable - 
+@RestController  // class_ level annotation
+@RequestMapping  // method/class level, 2 params(value = "/endpoint", Method = RequestMethod Get..) class level will ensure you hit that route first (ex. /api/endpoint)
+@ResponseStatus  // method level
+@PathVariable 
 ```
 _DTO _ - Object that carries data between processes
 
@@ -632,8 +645,8 @@ _________________________________________________
 _Error Handling_
 
 ``` java
-@RestControllerAdvice - class_ level
-@ExceptionHandler - method level
+@RestControllerAdvice // class_ level
+@ExceptionHandler // method level
 ```
 Aspect oriented programming(AOP)
 
@@ -730,6 +743,19 @@ delete from car_lot where make = 'bmw';
  
 -- keeps you from deleteing w/o a key
 SET SQL_SAFE_UPDATES = 0;
+
+-- emplyee with max salary
+select * from employee where salary = (select MAX (salary) from employee) ;
+
+-- highest salary
+select MAX(salary) from eployee;
+
+-- second highest salary use NOT IN to filter
+select MAX(salary)
+from employee
+where salary NOT IN (select Max(salary) from employee) ;
+
+-- Declare an alias?
 
 ```
 
@@ -953,7 +979,7 @@ _Twelve-Factor app_  - software as a service Saas
   - Disposability
   - Dev/Prod parity
   - Logs
-  - Admin Proces
+  - Admin Process
 
 _Cloud-Native apps_
   - Main ideas
@@ -990,7 +1016,7 @@ _Config Client_ - For each service
   1. `@EnableConfigServer` in main app class level
 
   git file 
-``` java
+``` 
 server.port=7979 // arbitrary port num for browser
 management.endpoints.web.exposure.include=* // env variables to use with `@value` annotation in controller
 serviceName=service-name-in-project
@@ -1031,112 +1057,318 @@ _Service Registry_ - a database of services
   - Service discovery- similar to dns->used to find ip address of a site.
 
 
+``` java 
+// curl localhost:7979/actuator/refresh -d {} -H "Content-Type: application/json" 
+```
+_________________________________________________
+**_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="queue"></a>
 
+
+_Queues_ - FIFO
+  - sync - waits for response
+  - async - does not wait for response
+  - AMQP - advanced messaging queueing protocol
+
+_Cache_ - Storing a copy of data for future use
+  - saves a copy and accesses that copy
+  - might be old data, not very effective when data changes often
+  - best with non user specific data
+
+_Buffering_ - preloads data from original source
+
+
+
+_________________________________________________
+**_8/3/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="edge"></a>
+
+_Edge Sevice_ - The entry point into a service that sits in front of an api
+  - used to meet the needs for different clients
+  - exposed to the public internet
+  - improve security thru authentication
+  - improve performance thru load balancing
+  - encapsulates the internal structure of the app
+  - even more complexity and must be highly available
+
+
+_________________________________________________
+**_8/7/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="security"></a>
+
+_Spring Security_
+  - Penetration testing
+  - Ethical hacking
+  - Authentication
+  - Authorization
+  - Principal - object that represents a logged in user
+    - name, autorities etc.
+  - 
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="oauth"></a>
+_Oauth_-industry standard protocol for authorization
+
+
+
+
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="pws"></a>
+
+_Pivotal Web Services_
+  - __Software as a Service (SaaS)__ - The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure2 . The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g.,web-based email), or a program interface. The consumer does not manage or control theunderlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited userspecific application configuration settings.
+  - __Platform as a Service (PaaS)__ - The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider.3 The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
+  - __Infrastructure as a Service (IaaS)__ - The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).
+
+
+__On-demand self-service__ -  A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human
+interaction with each service provider.
+
+__Broad network access__ - Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g.,
+mobile phones, tablets, laptops, and workstations).
+
+__Resource pooling__ - The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter). Examples of resources include storage, processing, memory, and network bandwidth.
+
+__Rapid elasticity__ - Capabilities can be elastically provisioned and released, in some cases
+automatically, to scale rapidly outward and inward commensurate with demand. To the
+consumer, the capabilities available for provisioning often appear to be unlimited and can
+be appropriated in any quantity at any time.
+
+__Measured service__ - Cloud systems automatically control and optimize resource use by leveraging a metering capability1 at some level of abstraction appropriate to the type of service (e.g.,storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and
+consumer of the utilized service.
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="circuit"></a>
+
+_Circuit Breaker Pattern_ 
+  - helps to reduce resources tied up on operations that are likely to fail
+    
+_Fault tolerance article_
+  - network timeouts and retires
+  - separate threads on per depependency thread pools
+  - semaphors - multithreading concept
+  - circuit breakers
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="jenkins"></a>
+
+_DevOps_ - 
+  - 
+  - pros - continuous deployment, faster scaling, improves communication and collaboration
+  - cons - user fatigue, need beta users, security concerns,  vaiable environment from B2B(consistency)  
+
+_Contuous inegration_ - development practice that requires developers to integrate code into a shared repository several times a day. 
+  - cons - reduced integration risk, higher quality code(for not having to worry about breaking anything). costs, dev resistence  
+  - pros - rapid development
+
+_Continuous Delivery_- the ability to get changes of all types into production, or into the hands of users, safely and quickly in a sustainable way.  
+  - enable teams to release a constant flow of software updates into production to quicken release cycles, lower costs, and reduce the risks associated with development.   
+  - Low risk releases, faster time to market,  higher quality
+
+_Containerization_(docker, kubernetes) - is an OS-level virtualization method used to deploy and run distributed applications without launching an entire virtual machine (VM) for each app. Multiple isolated applications or services run on a single host and access the same OS kernel.
+  - lightweight, isolated, vunerable
+   
+_Jenkins_ - leading automation srerver
+
+_Docker_
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="testing"></a>
+
+system and performance
+_System testing_ – This is the first time end to end testing of application on the complete and fully integrated software product before it is launch to the market.
+  - Black Box testing - System test involves the external workings of the software from the user's perspective.
+
+_Java Reflection_ - 
 
 
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
 <a name="random"></a> 
-Revolving Box of Randoms
 
- ``` java 
-deserialization - json to java
-serialization- java to json
-servlet container
-tomcat - implementation of the servelet container by Spring boot
-@requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
-@responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
-rest architectural style
-yaml structure
-mvc vs spring mvc - 
-DOM ? -
-
-transactional manager
-@Transactional (params?)
-
-what is spring
-spring boot
-.class at the end of an object referece
-
-```
 
 ###Q and A
 ``` java
 
-"Compare and contrast web applications and web services. "
-// A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
-
-"List the two most common data transfer formats for web services."
-// JSON and xml
-
-"List the two main types of data stores that back web applications and web services."
-// Database and files
-
-"Describe a request-response protocol."
-// Client server db and back
-
-"Describe the three main parts of an HTTP request."
-// 
-"Describe the two required HTTP request methods."
-//
-"Describe the four most common HTTP request methods used by web services."
-//
-"Describe the three main parts of an HTTP response."
-//
-"Describe the five groups of HTTP response codes."
-//
-"Explain the architectural principles of REST."
-//
-"Explain the Richardson Maturity Model."
-// POM, resources, specific verbs, 
-
-"Describe JSON."
-// JS object notation
-
-"Explain how key/value pairs and arrays are used in JSON."
-//
-"Describe Spring."
-//
-"Describe Spring Boot."
-//
-"Explain the relationship between Spring Boot and the Spring Initializr."
-//
-"Explain the Spring Boot project structure."
-//
-"Explain the purpose of a Servlet container."
-//
-"Compare and contrast a Servlet container and the Servlet API."
-//
-"Explain Tomcats relationship with Servlet containers and the Servlet API."
-//
-"Describe Spring MVC."
-//
-"Explain the Front Controller Pattern."
-//
-"Describe the MVC Pattern."
-//
-"Explain the following sections of the OpenAPI 3.x specification:"
-//
-"Metadata, Servers, Paths, Parameters, Request body, Responses, Data Definitions and refs"
-//
-"Explain the following Spring annotations:"
-//
-"@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid"
-//
-"Explain the Document Object Model (DOM)"
-//
-"Explain how a browser renders conten"
-//
-
+"Compare and contrast web applications and web services." // A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
+"List the two most common data transfer formats for web services." // JSON and xml
+"List the two main types of data stores that back web applications and web services." // Database and files
+"Describe a request-response protocol." // Client, server, db and back
+"Describe the three main parts of an HTTP request." // request line, header, body
+"Describe the two required HTTP request methods." // 
+"Describe the four most common HTTP request methods used by web services." // GET, PUT, POST, DELETE
+"Describe the three main parts of an HTTP response." // response line, header, body
+"Describe the five groups of HTTP response codes." // 1xx-info, 2xx-success, 3xx-redirect, 4xx-client err, 5xx-server err
+"Explain the architectural principles of REST." //
+"Explain the Richardson Maturity Model." // POM, resources, specific verbs, hypermedia controls Hateoas
+"Describe JSON." // JS object notation
+"Explain how key/value pairs and arrays are used in JSON." //
+"Describe Spring." // 
+"Describe Spring Boot." //
+"Explain the relationship between Spring Boot and the Spring Initializr." // Initializr is the web interface used to spin up projects
+"Explain the Spring Boot project structure." //
+"Explain the purpose of a Servlet container." //
+"Compare and contrast a Servlet container and the Servlet API." //
+"Explain Tomcats relationship with Servlet containers and the Servlet API." //
+"Describe Spring MVC." //
+"Explain the Front Controller Pattern." //
+"Describe the MVC Pattern." //
+"Explain the following sections of the OpenAPI 3.x specification:" //
+"Metadata, Servers, Paths, Parameters, Request body, Responses, Data Definitions and refs" //
+"Explain the following Spring annotations:" //
+"@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid" //
+"Explain the Document Object Model (DOM)" //
+"Explain how a browser renders content" // 
 "Describe Lambda Expressions"
-"Explain Functional Interface"
-"Describe how to Default Methods"
-"What are Streams"
-// provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
-
+"Explain Functional Interface" // Interface that has one and only one absrtact method
+"Describe how to use default Methods" //
+"Types of sql joins" // 
+"What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
 "Date/Time API Changes"
+"Static variables"// static variables are, essentially, global variables. All instances of the class share the same static variable.
+"map.KeySet()" // return a Set of keys
+"map.values()" // returns a Collection
+"Consumer<T>" 
+// functional interface that represents an operation that accepts a single input and returns no result. Expected to operate via "side effects". ex.) 
+List<Integer> nums = new ArrayList<>();
+  nums.add(1);
+  nums.add(2);
+
+  List<Integer> nums2 = new ArrayList<>();
+
+  // Consumer Example to mult 100 to each element in nums and add to nums2
+  Consumer<List<Integer>> display = list -> list.forEach(a -> {
+      nums2.add(a * 100);
+      System.out.println(nums2);
+  });
+
+  // Consumer to print nums to screen
+  Consumer<List<Integer>> printNums = list -> list.forEach(a -> System.out.println("Here is an element in the nums Array List: "+a));
+
+  // Implement display using accept()
+  display.accept(nums); // runs display consumer on nums arrayList
+  printNums.accept(nums2); // runs printNums consumer on nums2 arrayList
+  display.andThen(printNums).accept(nums); // runs both consumer on nums array
 
 
-// char[] arr = str.toCharArray(); don't forget the 'single quotes'
+"Supply<T>" // 
+"Optional<T>" //
+"Predicate<T>" // Return Boolean use with filter
+List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
+        
+  // predicate can be used without lambdas. Its an interface, so any class can implement it
+  Predicate<Integer> btf = n -> n > 5;
+  
+  //negate() will get the opposite
+  nums.stream().filter(btf).forEach(System.out::println);
+
+"REST" //
+"RESTful"//
+"JAX-RS" //
+"marshal" //
+"unmarshal"//
+"durable" // queues will persist if service fails
+"marker interface" // indicates that an implementing class can be serialized and deserialized. Marker interfaces have no properties or defined methods.
+".class at the end of an object referece"
+"deserialization"// json to java
+"serialization" //java to json
+"servlet container" //
+"tomcat"// implementation of the servelet container by Spring boot
+@requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
+@responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+"transactional manager" //
+@Transactional (params? // 
+"Boyce-Codd normalization"//
+"Spring Securities" //
+"try with resources" // 
+"Singleton" // one "single" instance allowed. This is useful when exactly one object is needed to coordinate actions across the system. - spring default to singleton
+"Scopes"// run the app (global/session), make request(request), then usese either proto or singlton 
+// singleton-only one, 
+//prototype-many, 
+//request-instance only lives in the request, 
+//session - one instance lives until logout
+//global - 
+"Testing run with coverge" // shows lines of code that are tested
+"What is referentioal integrity?" //
+"What is depedndency injection?" // When the container provides an instance of the object
+"What is List and how is it used in java?" // List is an interface that extends the Collection and Iterable interfaces. All inplementations: AbstractList, AbstractSequentialList, ArrayList, AttributeList, CopyOnWriteArrayList, LinkedList, RoleList, RoleUnresolvedList, Stack, Vector
+"JSR303"// bean validation
+"ArgumentCaptor" // unit testing for void methods
+  service.updateBook(bvm);
+  ArgumentCaptor<Book> bookCaptor = ArgumentCaptor.forClass(Book.class);
+  verify(bookDao).update(bookCaptor.capture());
+  assertEquals(bvm.getAuthor(), bookCaptor.getValue().getAuthor());
+"Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
+"Caching vs buffering" // Caching stores a copy for later use, Buffering pulls from the original a little at a time. 
+"Exchange with a queue and binding" // Binds routing key to the appropriate queue
+"queue producer" // writes to the exchange
+"queue consumer" // reads form the queue
+"tdd"// begin with "should" and be descriptive
+"Mockmvc"//  
+
+
+char[] arr = str.toCharArray(); // don't forget the 'single quotes'
+/*
+
+write a query to display user's names who are on the same team
+
+  |     users         |
+  |-------------------|
+  |name  | fave_color |
+  |-------------------|
+  |Bob   | red        |
+  |Gwen  | blue       |
+  |Ernald| green      |
+  |Mavis | blue       |
+  ---------------------
+
+
+  |      teams        |
+  |-------------------|
+  |  id  | team_color |
+  |-------------------|
+  |1     | red        |
+  |2     | blue       |
+  |3     | green      |
+  ---------------------
+
+---
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+
+returns table with 2 columns, the number of people people and their country only if there are more than 5 people from there
+*/
 
 ```
+
+``` javascript
+// Passport review
+// •	Parsing through an array and manipulating strings/data
+// •	Prototypical inheritance
+// •	Asynchronous functions (particularly how they behave in a loop)...i.e. the event loop
+"ES6/ESNext features" //
+"Hoisting" // hoisting moves all declarations to the top of the current scope. Let and const are not hoisted. Using Let will allow reassignment of a variable inside a blosk without changing it outside the block.
+
+/*
+Q's
+What are you excited about?
+What are the company goals?
+What are the common challenges people in this possition face
+
+*/
+
+```
+
+ [![Build Status](https://dev.azure.com/definitelytyped/DefinitelyTyped/_apis/build/status/DefinitelyTyped.DefinitelyTyped?branchName=master)](https://dev.azure.com/definitelytyped/DefinitelyTyped/_build/latest?definitionId=1&branchName=master)
