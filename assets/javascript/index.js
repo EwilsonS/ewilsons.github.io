@@ -122,4 +122,7 @@ $(document).ready(() => {
 		})
 	}
 	getBlogPosts();
+
+	// modal
+
 })
