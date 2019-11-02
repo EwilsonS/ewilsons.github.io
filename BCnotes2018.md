@@ -592,9 +592,21 @@ review async excercise. remember that callback(result)... function(callback){con
 - `git commit -am "" `
 - `git push heroku master`
 
--`heroku apps:rename newname`
--`git remote rm heroku` removes git remote
--`heroku git:remote -a newname` sets new git remote
+- `heroku apps:rename newname`
+- `git remote rm heroku` removes git remote
+- `heroku git:remote -a newname` sets new git remote
+
+ **recloned need to add heroku remote**
+- `heroku login`
+- `cd my-project/`
+- `git init`
+- `heroku git:remote -a my-project` just the plain name of the app in heroku, no protocols or extensions
+- `git remote add origin https://github.com/user/my-project`
+
+	git pull origin master
+	git add .
+	git commit -am "pre-heroku"
+	git push heroku master
 
 ## 7-13-18
 
