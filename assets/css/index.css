@@ -1,314 +1,325 @@
 .header {
-    background-color: #c7d8b4;
-    background-image: url('../images/redtree.jpeg');
-    height: 25rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #c7d8b4;
+  background-image: url("../images/redtree.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .name {
-    color: rgb(15, 136, 126);
-    font-size: 3rem;
-    font-weight: bold;
+  color: rgb(15, 136, 126);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .main-input {
-    width: 100%;
-    height: 4rem;
-    border: none;
+  width: 100%;
+  height: 4rem;
+  border: none;
 }
 
 .main-input:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .head-input-group {
-    position: relative;
-    margin-top: 5rem;
+  position: relative;
+  margin-top: 5rem;
 }
 
 #submit-btn {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .hurry-links {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .dark-green {
-    color: rgb(15, 136, 126)
+  color: rgb(15, 136, 126);
 }
 
 .side-nav {
-    margin-top: 7rem;
-    right: 0rem;
-    position: fixed;
+  margin-top: 7rem;
+  right: 0rem;
+  position: fixed;
 }
 
-.side-nav>a:hover {
-    text-decoration: none;
+.side-nav > a:hover {
+  text-decoration: none;
 }
 
 .side-icon {
-    z-index: 1000;
-    font-size: 1.75rem;
-    color: rgba(90, 90, 90, 0.442);
-    padding: .25rem;
-    margin-bottom: .75rem;
-    transition: .4s
+  z-index: 1000;
+  font-size: 1.75rem;
+  color: rgba(90, 90, 90, 0.442);
+  padding: 0.25rem;
+  margin-bottom: 0.75rem;
+  transition: 0.4s;
 }
 
 .side-icon:hover {
-    color: rgb(7, 59, 55);
-    transform: scale(1.5);
+  color: rgb(7, 59, 55);
+  transform: scale(1.5);
 }
 
 .zz {
-    display: none;
-    transition: .25s;
+  display: none;
+  transition: 0.25s;
 }
 
 /* ====================== Navigate ================================= */
 .navigate {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .navigate-text {
-    color: rgb(15, 136, 126);
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    font-weight: 100;
-    transition: .25s;
+  color: rgb(15, 136, 126);
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  transition: 0.25s;
 }
 
 .navigate-text:hover {
-    color: red;
+  color: red;
 }
 
 .navigate-icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .navigate-button {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .navigate-button:hover {
-    text-decoration: none;
-    color: red;
+  text-decoration: none;
+  color: red;
 }
 
 /* ============================ Works ============================ */
 .works-row {
-    margin-top: 5rem;
-    margin-bottom: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
 }
 
 .works {
-    border: none;
-    background-color: rgba(15, 136, 126, 0.068);
-    font-size: 1rem
+  border: none;
+  background-color: rgba(15, 136, 126, 0.068);
+  font-size: 1rem;
 }
 
 .card-img-top {
-    display: none;
+  display: none;
 }
 
 .tech-describe {
-    font-weight: bold;
-    color: rgb(15, 136, 126);
-    font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(15, 136, 126);
+  font-size: 1.5rem;
+}
+
+.endorse {
+  font-weight: bold;
+  color: rgb(15, 136, 126);
+  font-size: 1rem;
+}
+
+.big-quote {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 0.5;
+  content: "\201C";
+  font-size: 5em;
+  color: rgba(15, 136, 126, 0.397);
 }
 
 .show-me {
-    color: red;
-    border-radius: 1.5rem;
-    background-color: white;
-    border: 1px rgba(15, 136, 126, 0.356) solid;
-    padding-left: .75rem;
-    padding-right: .75rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    margin-top: 1rem;
-    transition: .25s;
+  color: red;
+  border-radius: 1.5rem;
+  background-color: white;
+  border: 1px rgba(15, 136, 126, 0.356) solid;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 1rem;
+  transition: 0.25s;
 }
 
 .show-me:hover {
-    cursor: pointer;
-    background-color: rgba(15, 136, 126, 0.274);
+  cursor: pointer;
+  background-color: rgba(15, 136, 126, 0.274);
 }
 
 .show-me:focus {
-    outline: none
+  outline: none;
 }
 
 .tech-images img {
-    margin: 1rem;
-    opacity: .75;
-    transition: .25s;
-    width: 4.5rem;
-    filter: grayscale(50%)
+  margin: 1rem;
+  opacity: 0.75;
+  transition: 0.25s;
+  width: 4.5rem;
+  filter: grayscale(50%);
 }
 
 .tech-images img:hover {
-    opacity: 1;
-    filter: grayscale(0)
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 /* ============================ Blog Posts =============================== */
 .blog-row {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .blog-posts {
-    background-color: rgba(15, 136, 126, 0.068);
+  background-color: rgba(15, 136, 126, 0.068);
 }
 
 .card-columns {
-    column-count: 2;
+  column-count: 2;
 }
 
 .text {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 #blog-card {
-    border: none;
+  border: none;
 }
 
 /* ================================ About ================================ */
 .about-text {
-    background-color: rgba(15, 136, 126, 0.068);
-    color: rgb(7, 59, 55);
-    font-size: .9rem;
-    padding: 1rem;
+  background-color: rgba(15, 136, 126, 0.068);
+  color: rgb(7, 59, 55);
+  font-size: 0.9rem;
+  padding: 1rem;
 }
 
 .profile-pic {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 100%;
-    border: 10px solid rgba(15, 136, 126, 0.068)
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  border: 10px solid rgba(15, 136, 126, 0.068);
 }
 
 .mobile-first {
-    width: 100%;
+  width: 100%;
 }
 
 .carolina-image {
-    width: 50%;
+  width: 50%;
 }
 
 .tennessee-image {
-    width: 25%;
+  width: 25%;
 }
 
 /* ============================== Contact/Footer ============================= */
 .contact-row {
-    background-color: rgba(15, 136, 126, 0.068);
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-
+  background-color: rgba(15, 136, 126, 0.068);
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 /* ============================== Modal ====================================== */
 .mod-head {
-    background-color: rgb(137, 179, 175);
-    color: white;
-    border: none;
+  background-color: rgb(137, 179, 175);
+  color: white;
+  border: none;
 }
 
 .modal-img {
-    width: 30rem;
+  width: 30rem;
 }
 
 /* ============================================================================================================================================= */
 /* ===================================================== Media Queries ========================================================================= */
 /* ============================================================================================================================================= */
 @media (max-width: 992px) {
-    .works {
-        border: none;
-        background-color: rgba(15, 136, 126, 0.068);
-        font-size: .75rem
-    }
+  .works {
+    border: none;
+    background-color: rgba(15, 136, 126, 0.068);
+    font-size: 0.75rem;
+  }
 
-    .tech-describe {
-        font-weight: bold;
-        color: rgb(15, 136, 126);
-        font-size: 1rem;
-    }
+  .tech-describe {
+    font-weight: bold;
+    color: rgb(15, 136, 126);
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 770px) {
-    .card-group>.works {
-        flex: 1 35%;
-        margin-bottom: 2rem;
-    }
+  .card-group > .works {
+    flex: 1 35%;
+    margin-bottom: 2rem;
+  }
 
-    .navigate-button {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+  .navigate-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-    .card-columns {
-        column-count: 1;
-    }
+  .card-columns {
+    column-count: 1;
+  }
 
-    .text {
-        display: none;
-    }
+  .text {
+    display: none;
+  }
 
-    .skills {
-        display: none;
-    }
+  .skills {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
-    .navigate-button {
-        margin-left: .70rem;
-        margin-right: .70rem;
-    }
+  .navigate-button {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
 
-    .navigate-icon {
-        font-size: 1.5rem;
-    }
+  .navigate-icon {
+    font-size: 1.5rem;
+  }
 
-    .navigate-text {
-        font-size: 1rem;
-    }
+  .navigate-text {
+    font-size: 1rem;
+  }
 
-    .separator>a>img {
-        width: 75%;
-        height: 75%;
-    }
+  .separator > a > img {
+    width: 75%;
+    height: 75%;
+  }
 
-    .modal-img {
-        width: 19rem;
-    }
+  .modal-img {
+    width: 19rem;
+  }
 
-    .home {
-        font-size: 1.5rem;
-        position: fixed;
-        bottom: 0rem;
-        right: .25rem;
-        z-index: 999999999999;
-        color: rgba(90, 90, 90, 0.442);
-        padding: .25rem;
-        margin-bottom: .75rem;
-        transition: .4s;
-    }
+  .home {
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0rem;
+    right: 0.25rem;
+    z-index: 999999999999;
+    color: rgba(90, 90, 90, 0.442);
+    padding: 0.25rem;
+    margin-bottom: 0.75rem;
+    transition: 0.4s;
+  }
 
-    .zz {
-        transition: .25s;
-        display: block;
+  .zz {
+    transition: 0.25s;
+    display: block;
+  }
 
-    }
-
-    .other-side-icons {
-        display: none;
-    }
-
+  .other-side-icons {
+    display: none;
+  }
 }
