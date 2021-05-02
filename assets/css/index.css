@@ -131,9 +131,8 @@
 .big-quote {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 0.5;
-  content: "\201C";
   font-size: 5em;
-  color: rgba(15, 136, 126, 0.397);
+  color: rgba(15, 136, 126, 0.267);
 }
 
 .show-me {
