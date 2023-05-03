@@ -38,12 +38,12 @@
 			<i class="fas fa-angle-double-down side-icon other-side-icons"></i>
 		</a>
 		<br>
-		<a class="scroll" href="#blog-section">
-			<i class="fab fa-blogger-b side-icon other-side-icons"></i>
-		</a>
-		<br>
 		<a class="scroll" href="#about-section">
 			<i class="fas fa-user-circle side-icon other-side-icons"></i>
+		</a>
+		<br>
+		<a class="scroll" href="#blog-section">
+			<i class="fab fa-blogger-b side-icon other-side-icons"></i>
 		</a>
 		<br>
 		<a class="scroll" href="#contact-section">
@@ -63,22 +63,6 @@
 				</a></span>
 		</div>
 
-		<!-- <div class="header-body container">
-			<div class="form-group">
-				<form class="search-bar">
-					<div class="input-group head-input-group ml-2">
-						<div class="input-group-prepend">
-							<span class="bg-white rounded-0" id="basic-addon1"><i class="fas fa-search p-3 pt-4"></i></span>
-						</div>
-						<input type="text" class="form-control main-input rounded-0" placeholder="Search" aria-label="Username"
-						 aria-described by="basic-addon1">
-						<button type="submit" id="submit-btn"></button>
-					</div>
-				</form>
-			</div>
-			<div class="text-light search-return"></div>
-		</div> -->
-
 	</div>
 	<div class="container main">
 		<div class="row navigate">
@@ -88,11 +72,11 @@
 							class="fas fa-angle-double-down navigate-icon text-secondary"><br><span
 								class="navigate-text">Work</span></i>
 					</a>
-					<a class="navigate-button scroll" href="#blog-section"><i
-							class="fab fa-blogger-b navigate-icon text-secondary"><br><span class="navigate-text">Blog</span></i>
-					</a>
 					<a class="navigate-button scroll" href="#about-section"><i
 							class="fas fa-user-circle navigate-icon text-secondary"><br><span class="navigate-text">About</span></i>
+					</a>
+					<a class="navigate-button scroll" href="#blog-section"><i
+							class="fab fa-blogger-b navigate-icon text-secondary"><br><span class="navigate-text">Blog</span></i>
 					</a>
 					<a class="navigate-button scroll" href="#contact-section"><i
 							class="fas fa-mobile-alt navigate-icon text-secondary"><br><span class="navigate-text">Contact</span></i>
@@ -100,6 +84,8 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- Work -->
 		<div class="row works-row" id="works-section">
 			<div class="col-sm-12 text-center">
 				<h3>My Work</h3>
@@ -215,16 +201,6 @@
 			</div>
 		</div>
 
-		<!-- Blog -->
-		<div class="row blog-row" id="blog-section">
-			<div class="col md-12">
-				<div class="text-center"> <i class="fas fa-link text-secondary"></i><span class="h3"><a class="text-dark"
-							href="https://evanwilsonthegreat.blogspot.com/" target="_blank" rel="noopener"> Blog Posts</a> </span><span
-						class="text-secondary h6">(via Google API) displaying 4 of <span class="bcount"></span></span></div>
-				<div class="card-columns blog-posts p-5">
-				</div>
-			</div>
-		</div>
 		<!-- Endorsements -->
 		<div class="row works-row" id="works-section">
 			<div class="col-sm-12 text-center">
@@ -267,9 +243,12 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- About -->
+		<h3 class="text-center mb-5">Me</h3>
+
 		<div class="row about-row mb-5" id="about-section">
-			<div class="col-sm-3 skills">
+			<div class="col-sm-4 skills">
 				<p class="text-center about-text font-weight-bold">Skills</p>
 				<p class="about-text text-center">			
 					<img src="./assets/images/aws-certified-cloud-practitioner.png">				
@@ -294,10 +273,9 @@
 				</div>
 			</div>
 
-			<div class="col-md-6 text-center">
-				<h3 class="">About Me</h3>
+			<div class="col-md-4 text-center">
 				<img class="profile-pic mb-3" src="./assets/images/headshot.jpg" alt="">
-				<p class="about-text">
+				<p class="about-text mt-5">
 					<strong>I'm not afraid to be wrong out
 						loud.</strong> <br>Searching for the right
 					answer is when we learn the most.
@@ -311,23 +289,35 @@
 					of foward thinking technology professionals.
 				</p>
 			</div>
-			<div class="col-md-3 text-center">
-				<p class="about-text">
+			<div class="col-md-4 text-center">
+				<p class="about-text ">
 					<strong>Philosophy</strong>
-					<p class="about-text">
+					<p class="about-text my-5">
 						<span class="font-weight-bold"> ALWAYS</span> do the right thing.
 					</p>
-					<p class="about-text">
+					<p class="about-text my-5">
 						Make your descisions <span class="font-weight-bold"> BEFORE</span> you <span class="font-weight-bold"> HAVE</span> to make them.
 					</p>
-					<p class="about-text">
+					<p class="about-text my-5">
 						Leave it <span class="font-weight-bold"> BETTER</span> than you found it.
 					</p>
-					<p class="about-text">
+					<p class="about-text my-5">
 						Continue to <span class="font-weight-bold"> GROW</span>.
 					</p>
 			</div>
 		</div>
+
+		<!-- Blog -->
+		<div class="row blog-row" id="blog-section">
+			<div class="col md-12">
+				<div class="text-center"> <i class="fas fa-link text-secondary"></i><span class="h3"><a class="text-dark"
+							href="https://evanwilsonthegreat.blogspot.com/" target="_blank" rel="noopener"> Blog Posts</a> </span><span
+						class="text-secondary h6">(via Google API) displaying 4 of <span class="bcount"></span></span></div>
+				<div class="card-columns blog-posts p-5">
+				</div>
+			</div>
+		</div>
+	
 	</div>
 
 	<!-- Contact -->

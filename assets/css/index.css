@@ -107,9 +107,9 @@
 }
 
 .works {
-  border: none;
+  outline:  rgba(15, 136, 126, 0.641) solid 2px;
   background-color: rgba(15, 136, 126, 0.068);
-  font-size: 1rem;
+  font-size: 1rem;  
 }
 
 .card-img-top {
@@ -178,6 +178,7 @@
 
 .blog-posts {
   background-color: rgba(15, 136, 126, 0.068);
+  outline:  rgba(15, 136, 126, 0.641) solid 2px;
 }
 
 .card-columns {
@@ -198,12 +199,14 @@
   color: rgb(7, 59, 55);
   font-size: 0.9rem;
   padding: 1rem;
+  outline:  rgba(15, 136, 126, 0.641) solid 2px;
 }
 
 .profile-pic {
   height: 13rem;
   border-radius: 10%;
   border: 10px solid rgba(15, 136, 126, 0.068);
+  outline:  rgba(15, 136, 126, 0.641) solid 2px;
 }
 
 .mobile-first {
