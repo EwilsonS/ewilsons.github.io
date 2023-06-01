@@ -1,0 +1,51 @@
+html {
+    background-color: rgb(4, 0, 47);
+}
+body {
+    border-image: linear-gradient(to bottom right, rgb(0, 238, 255), rgb(221, 0, 255)) 30;
+    border-width: 4px;
+    border-style: solid;
+    margin: 10em;
+    padding: 3em;
+    color: white;
+}   
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav:hover {
+    font-size: 5em;
+}
+
+#name {
+    font-size: 3em;
+    margin-right: 2em;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#resume,#github,#linkedin {
+    transition: .25s;
+    font-size: 1.75em;
+}
+
+#resume:hover,#github:hover,#linkedin:hover {
+    transition: .25s;
+    text-decoration: underline  rgb(221, 0, 255);    
+}
+
+.pipe {
+    font-size: 2em;
+    color: rgb(255, 191, 0);
+    margin: .25em;
+}
+
+.endorse-row-a {
+    background-color: rgb(48, 46, 75);
+}
+.endorse-row-b {
+
+}
