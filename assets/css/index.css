@@ -1,7 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(243, 243, 243);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header {
-  background-color: #c7d8b4;
-  background-image: url("../images/redtree.jpeg");
-  height: 25rem;
+  background-color: #1f1f1f;
+  height: 7rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -223,9 +234,10 @@
 
 /* ============================== Contact/Footer ============================= */
 .contact-row {
-  background-color: rgba(15, 136, 126, 0.068);
+  background-color: #1f1f1f;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  color: white;
 }
 
 /* ============================== Modal ====================================== */
