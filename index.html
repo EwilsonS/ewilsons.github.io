@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="./assets/images/Efave2.ico" />
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -91,6 +91,41 @@
 				<h3>Samples</h3>
 				<br>
 				<div class="card-group">
+					<!-- EvanAI -->
+					<div class="card works mx-3 p-2 text-center rounded-0">
+						<h5 class="text-center">EvanAI</h5>
+						<br>
+						<div>
+							<p class="text-dark">
+								My personalized AI chatbot, so you and I can chat anytime!
+							</p>
+							<p class="tech-describe m-0">
+								PYTHON ➕ SVELTE ➕ OPENAI
+							</p>
+							<button type="button" class="show-me" data-toggle="modal" data-target="#evanAI">Preview</button>
+							<br>
+							<br>
+							<span>
+								<a class="text-dark" disabled=true
+									href="https://evanai-frontend-cf97916600c4.herokuapp.com"
+									target="_blank" rel="noopener">
+									deployed site
+								</a>
+								|
+								<a class="text-danger"
+									href="https://github.com/EwilsonS/EvanAI-FrontEnd"
+									target="_blank" rel="noopener">
+									github
+								</a>
+								|
+								<a class="text-danger"
+									href="https://github.com/EwilsonS/EvanAI"
+									target="_blank" rel="noopener">
+									github2
+								</a>
+							</span>
+						</div>
+					</div>
 					<!-- Stwitter -->
 					<div class="card works mx-3 p-2 text-center rounded-0">
 						<h5 class="text-center">Simple Twitter
@@ -387,6 +422,20 @@
 					</button>
 				</div>
 				<img class="modal-img" src="./assets/images/java.JPG" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="evanAI" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="mod-head rounded-0">
+				<div class="modal-header">
+					<h6 class="modal-title" id="exampleModalLongTitle">EvanAI (python, svelte, heroku, openai)</h6>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<img class="modal-img" src="./assets/images/EvanAI.png" alt="">
 			</div>
 		</div>
 	</div>
