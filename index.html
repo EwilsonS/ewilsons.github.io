@@ -34,12 +34,12 @@
 <body>
   <div id="portfolio">
     <div class="side-nav text-center">
-      <a class="scroll" href="#about-section">
-        <i class="fas fa-user-circle side-icon other-side-icons"></i>
-      </a>
-      <br>
       <a class="scroll" href="#topbar">
         <i class="fas fa-home side-icon other-side-icons"></i>
+      </a>
+      <br>
+      <a class="scroll" href="#about-section">
+        <i class="fas fa-user-circle side-icon other-side-icons"></i>
       </a>
       <br>
       <a class="scroll" href="#works-section">
@@ -128,7 +128,8 @@
       </div>
 
       <!-- Work -->
-      <h3 class="text-center" id="works-section">Projects <small>(Apps may need a 10s or so to wake up)</small>()</h3>
+      <h3 class="text-center" id="works-section">Projects</h3>
+      <h6 class="text-center">(Deployed apps may need 15s to wake up)</h6>
   
       <!-- EvanAI -->
       <div class="row works p-4 my-5">			
@@ -137,16 +138,10 @@
             <span class="fs-2 text-break">EvanAI</span>
             <p class="text-dark">
               My personalized AI chatbot
-            </p>		
-            <div class="my-2">
-              <img src="./assets/images/icons8-python-96.png" alt="" width="30%">
-              <img src="./assets/images/icons8-svelte-480.png" alt="" width="30%">
-              <img src="./assets/images/icons8-chatgpt-96.png" alt="" width="30%">
-            </div>			
-            <br>
+            </p>
             <span class="mb-2">
               <img src="./assets/images/icons8-link-90.png" alt="" width="15%">								
-              <a class="text-dark" href="https://evanai-frontend-cf97916600c4.herokuapp.com/" target="_blank" noopener">deployed site</a>
+              <a class="text-dark" href="https://evanai-frontend-cf97916600c4.herokuapp.com/" target="_blank" rel="noopener">deployed site</a>
             </span>
             <br>
             <span class="mb-2">
@@ -160,7 +155,7 @@
             </span>
           </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <p>
             I wanted to become familiar with ChatGPT, as my work colleagues and I were making efforts to apply AI for the bank. It only seemed right to build a personal project that demonstrates my newfound knowledge.
           </p>
@@ -170,8 +165,13 @@
           <p>	
             On the front end, I went with Svelte, which is definitely off the beaten path. I also added Google Analytics for fun. 
           </p>
+          <div class="my-2">
+            <img src="./assets/images/icons8-python-96.png" alt="" width="50em">
+            <img src="./assets/images/icons8-svelte-480.png" alt="" width="50em">
+            <img src="./assets/images/icons8-chatgpt-96.png" alt="" width="50em">
+          </div>			
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <img src="./assets/images/EvanAI2.png" alt="" width="100%">
         </div>					
       </div>
@@ -183,13 +183,7 @@
             <p class="fs-2 text-break">SoundStock</p>
             <p class="text-dark">
               Crowdfunding meets shared publishing
-            </p>		
-            <div class="my-2">
-              <img src="./assets/images/icons8-nodejs-96.png" alt="" width="30%">
-              <img src="./assets/images/icons8-react-100.png" alt="" width="30%">
-              <img src="./assets/images/icons8-mongodb-96.png" alt="" width="30%">
-            </div>			
-            <br>								
+            </p>								
             <span class="mb-2">
               <img src="./assets/images/icons8-link-90.png" alt="" width="15%">								
               <a class="text-dark" href="https://sound-stock.herokuapp.com" rel="noopener">deployed site</a>
@@ -201,7 +195,7 @@
             </span>
           </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <p>
             This is where my coding journey began. This idea was the fuel I needed to get through endless hours of learning how to code and deploy applications.
             I figured that if I wanted to be able to communicate grand tech ideas, I should be able to prototype them as well.
@@ -210,8 +204,13 @@
             For this project (built in 2018 and only remains as an artifact of that time), I chose the MERN stack. Good ol' mongo, express, react and node.
             Standard full stack crud app here. This project tells the story of a relentless newbie dev and his thirst for innovation.
           </p>
+          <div class="my-2">
+            <img src="./assets/images/icons8-nodejs-96.png" alt="" width="50em">
+            <img src="./assets/images/icons8-react-100.png" alt="" width="50em">
+            <img src="./assets/images/icons8-mongodb-96.png" alt="" width="50em">
+          </div>	
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <img src="./assets/images/soundstock5.JPG" alt="" width="100%">
         </div>					
       </div>
@@ -223,12 +222,7 @@
             <span class="fs-2 text-break">SharePosts</span>
             <p class="text-dark">
               Login and post messages for others to read
-            </p>		
-            <div class="my-2">
-              <img src="./assets/images/icons8-php-96.png" alt="" width="30%">
-              <img src="./assets/images/icons8-mysql-96.png" alt="" width="30%">
-            </div>			
-            <br>								
+            </p>							
             <span class="mb-2">
               <img src="./assets/images/icons8-link-90.png" alt="" width="15%">								
               <a class="text-dark" href="https://share-posts.herokuapp.com" target="_blank" rel="noopener">deployed site</a>
@@ -240,7 +234,7 @@
             </span>
           </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <p>
             Why not build a PHP app? I don't see PHP very often in a modern professional setting, but when I do, 
             I'm glad I have some muscle memory building out those templates. 
@@ -249,8 +243,12 @@
             This is one of my more stable applications. This thing is a tank. Go ahead, try to break it. Complete with custom sanitization 
             and simple views, this app makes a great starting point for anything.
           </p>
+          <div class="my-2">
+            <img src="./assets/images/icons8-php-96.png" alt="" width="50em">
+            <img src="./assets/images/icons8-mysql-96.png" alt="" width="50em">
+          </div>	
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <img src="./assets/images/sharepost2.png" alt="" width="100%">
         </div>					
       </div>
@@ -262,19 +260,14 @@
             <span class="fs-2 text-break">Simple Twitter</span>
             <p class="text-dark">
               Collection of services used for a Twitter(X)-like application
-            </p>		
-            <div class="my-2">
-              <img src="./assets/images/icons8-java-96.png" alt="" width="30%">
-              <img src="./assets/images/icons8-mysql-96.png" alt="" width="30%">
-            </div>
-            <br>
+            </p>
             <span class="mb-2">
               <img src="./assets/images/icons8-github-48.png" alt="" width="15%">	
               <a class="text-dark" href="https://github.com/EwilsonS/Evan_Wilson_JavaS1/tree/master/EvanWilsonU2M2Summative"	target="_blank" rel="noopener">github</a>
             </span>
           </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <p>
             Java has been my bread and butter. There is such a strong community of Java developers out there. You can always find the 
             right sdk, library or framework. I learned frameworks and architectures in my 2019 Java coding bootcamp that might be considered 
@@ -284,8 +277,12 @@
             Here, I'm taking advantage of Netflix's Eureka, openfeign and much more. Check out these annotations @EnableEurekaServer, 
             @EnableFeignClients, @EnableDiscoveryClient, @EnableCaching. Cool huh?
           </p>
+          <div class="my-2">
+            <img src="./assets/images/icons8-java-96.png" alt="" width="50em">
+            <img src="./assets/images/icons8-mysql-96.png" alt="" width="50em">
+          </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <img src="./assets/images/stwitter.png" alt="" width="100%">
         </div>					
       </div>

@@ -20,7 +20,7 @@ $(document).ready(() => {
 	// Show side nav on scroll
 	$(document).scroll(function () {
 		let y = $(this).scrollTop();
-		if (y > 505) {
+		if (y > 200) {
 			$('.side-nav, .home').fadeIn();
 		} else {
 			$('.side-nav, .home').fadeOut();

@@ -83,6 +83,7 @@
 .navigate-button {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+  text-decoration: none;
 }
 
 .navigate-button:hover {
@@ -99,7 +100,7 @@
 .works {
   outline:  rgba(15, 136, 126, 0.354) solid 0px;
   background-color: rgba(15, 136, 126, 0.068);
-  font-size: 1rem;  
+  font-size: .85rem;  
   transition: .3s;
   z-index: 10;
   -webkit-transform: scale(1);
@@ -119,7 +120,7 @@
 .endorse {
   font-weight: bold;
   color: rgb(15, 136, 126);
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 .endorsement {
