@@ -124,7 +124,8 @@
 }
 
 .endorsement {
-  outline:  rgba(15, 136, 126, 0.354) solid 2px;
+  /* outline:  rgba(15, 136, 126, 0.354) solid 2px; */
+  border: 0;
   background-color: rgba(15, 136, 126, 0.068);
 }
 
@@ -143,7 +144,7 @@
 
 .blog-posts {
   background-color: rgba(15, 136, 126, 0.068);
-  outline:  rgba(15, 136, 126, 0.641) solid 2px;
+  /* outline:  rgba(15, 136, 126, 0.641) solid 2px; */
 }
 
 .card-columns {
@@ -156,7 +157,8 @@
   color: rgb(7, 59, 55);
   font-size: 0.9rem;
   padding: 1rem;
-  height: 16rem;
+  border-radius: 0;
+  height: 100%;
   /* outline:  rgba(15, 136, 126, 0.641) solid 2px; */
 }
 
@@ -165,12 +167,13 @@
   color: rgb(7, 59, 55);
   font-size: 0.9rem;
   padding: 1rem;
-  height: 16rem;
+  /* height: 16rem; */
 }
 
 .profile-pic {
-  height: 16rem;
-  /* border-radius: 10%; */
+  width: 100%;
+  border-radius: 0%;
+  background-color: rgba(0, 0, 0, 0);
   border: 10px solid rgba(15, 136, 126, 0.068);
   /* outline:  rgba(15, 136, 126, 0.641) solid 2px; */
 }
@@ -188,7 +191,7 @@
 /* ============================================================================================================================================= */
 @media (max-width: 1399px) {
   .about-text {
-    /* display: none; */
+    
   }
 }
 
@@ -249,4 +252,5 @@
   .other-side-icons {
     display: none;
   }
+
 }
